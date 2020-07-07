@@ -15,17 +15,7 @@ body
     background-attachment: fixed;
 }   
 /* ajustes seccion principal */
-.home-landing
-{
-    display:grid;
-    grid-template-rows: [fin-header] 467px [inicio-floats] 140px [fin-hero] 118px [fin-floats] 60px 
-                        [inicio-productos] repeat(1,max-content) [fin-productos] 60px [inicio-promociones] repeat(1,max-content)
-                        [fin-promociones] 60px [inicio-compañia] repeat(1,max-content) [fin-compañia] 60px 
-                        [inicio-marcas] repeat(1,max-content) [fin-marcas] 60px
-                        [inicio-contacto] repeat(1,max-content) [fin-contacto] 150px [fin-home];
-    grid-template-columns: 100%;
-    flex-direction: row;
-}
+
 
 
 /* propiedades de todo el header */
@@ -290,9 +280,8 @@ header
 /* hero */
 .hero
 {
-    grid-row: fin-header / fin-hero;
-    grid-column: 1 / span 1;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -346,21 +335,6 @@ header
     padding: 0px 20px 20px 0px;
 }
 
-
-
-
-/* 3 floats */
-.float
-{
-    grid-row: inicio-floats / fin-floats;
-    grid-column: 1 / span 1;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr; 
-    grid-template-rows: 34px 190px 34px;
-    grid-template-areas: ". float1 . . . float3 ."
-                         ". float1 . float2 . float3 ."
-                         ". . . float2 . . ." ;
-}
 
 .float1-container
 {
