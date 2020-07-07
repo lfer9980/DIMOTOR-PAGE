@@ -1,0 +1,15 @@
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1976d2;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <path id="Trazado_45" data-name="Trazado 45" class="cls-1" d="M30.625,0H4.375A4.379,4.379,0,0,0,0,4.375v26.25A4.379,4.379,0,0,0,4.375,35h26.25A4.379,4.379,0,0,0,35,30.625V4.375A4.379,4.379,0,0,0,30.625,0Z"/>
+  <path id="Trazado_46" data-name="Trazado 46" class="cls-2" d="M208.406,106.938h-5.469v-4.375c0-1.208.98-1.094,2.188-1.094h2.188V96h-4.375a6.562,6.562,0,0,0-6.562,6.563v4.375H192v5.469h4.375v12.031h6.563V112.406h3.281Z" transform="translate(-178.875 -89.438)"/>
+</svg>

@@ -1,0 +1,1381 @@
+/* sets de html y grid principal del body */
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body
+{
+    margin: 0;
+    background-image:url('../fondos/fondo_landing.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+/* ajustes seccion principal */
+.home-landing
+{
+    display:grid;
+    grid-template-rows: [fin-header] 467px [inicio-floats] 140px [fin-hero] 118px [fin-floats] 60px 
+                        [inicio-productos] repeat(1,max-content) [fin-productos] 60px [inicio-promociones] repeat(1,max-content)
+                        [fin-promociones] 60px [inicio-compañia] repeat(1,max-content) [fin-compañia] 60px 
+                        [inicio-marcas] repeat(1,max-content) [fin-marcas] 60px
+                        [inicio-contacto] repeat(1,max-content) [fin-contacto] 150px [fin-home];
+    grid-template-columns: 100%;
+    flex-direction: row;
+}
+
+
+/* propiedades de todo el header */
+header
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 120px;
+    grid-template-areas: "superior"
+                         "main";
+    background: white;
+}
+
+
+/* primera barra del header */
+.header-superior
+{
+    display: grid;
+    grid-area: superior;
+    grid-template-columns: 1fr 280px 1fr 160px 1fr 240px 1fr 65px 65px 65px 1fr;
+    grid-template-rows: 40px;
+    grid-template-areas: ". exchange . phone . email . fb ln wp .";
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color:white;
+    background: rgba(9,26,43,1);
+    background: -moz-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,26,43,1)), color-stop(100%, rgba(41,89,138,1)));
+    background: -webkit-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -o-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -ms-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
+}
+.header-superior figure 
+{
+    margin:10px 6px;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+}
+.header-exchange
+{
+    grid-area: exchange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-phone
+{
+    grid-area: phone;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.header-phone a
+{
+    cursor:pointer;
+    text-decoration: none;
+    color: white;
+}
+.header-email
+{
+    grid-area: email;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-email a
+{
+    text-decoration: none;
+    color: white;
+}
+.header-fb
+{
+    grid-area: fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-ln
+{
+    grid-area: ln;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-wp
+{
+    grid-area: wp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* barra principal del header */
+.header-principal
+{
+    grid-area:main;
+    display: grid;
+    grid-template-columns: [inicio] 1fr [inicio-logo] 215px [fin-logo] 1fr 
+                           [inicio-barra] 688px [fin-barra] 1fr [inicio-search] 350px 
+                           [fin-search] 1fr [fin];
+    grid-template-rows: [inicio] 43px [inicio-search] 12px [inicio-barra] 23px
+                        [fin-search] 9.5px [fin-barra] 1fr [fin];
+    background-image:url('../fondos/fondo_header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3px 0px rgba(9,26,43, 0.47);
+}
+
+/* logo de dimotor */
+.logo-container
+{
+    grid-column:  inicio-logo / fin-logo;
+    grid-row: inicio / fin ;
+    display: block;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+.logo-container img
+{
+    width: 100%;
+    vertical-align: top;
+}
+/* Secciones del menu */
+.sections-container
+{
+    grid-column:  inicio-barra / fin-barra;
+    grid-row: inicio-barra / fin-barra;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "productos promociones contacto descargables conoce"
+                         "under1 under2 under3 under4 under5";
+    column-gap: 25px;
+    row-gap: 0;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+}
+.sections-container span
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.333rem;
+    font-weight: 500;
+    color: #091A2B;
+}
+.productosItem
+{
+    grid-area: productos;
+    text-decoration: none;
+    cursor: pointer;
+}
+.promocionesItem
+{
+    grid-area: promociones;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contactoItem
+{
+    grid-area: contacto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.descargablesItem
+{
+    grid-area: descargables;
+    text-decoration: none;
+    cursor: pointer;
+}
+.conoceItem
+{
+    grid-area: conoce;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sections-container hr
+{
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
+}
+.under1
+{
+    grid-area: under1;
+}
+
+.under2
+{
+    grid-area: under2;
+}
+.under3
+{
+    grid-area: under3;
+}
+
+.under4
+{
+    grid-area: under4;
+}
+
+.under5
+{
+    grid-area: under5;
+}
+
+/* barra de busqueda */
+.search-container 
+{
+    grid-column:  inicio-search / fin-search;
+    grid-row: inicio-search / fin-search ;
+    background: white;
+
+}
+.search-container form
+{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-areas: "search button";
+    width: 100%;
+    height: 100%;
+}
+.search-container input
+{
+    grid-area: search;
+    width:100%;
+    margin: 0;
+    padding-left: 7px;
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    font-size: 12px;
+    border-left: 1.5px solid #091A2B;
+    border-top: 1.5px solid #091A2B;
+    border-bottom: 1.5px solid #091A2B;
+    border-radius: 5px 0px 0px 5px;
+}
+.search-container button
+{
+    grid-area: button;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width:auto;
+    background: #29598A;
+    cursor: pointer;
+    border: none;
+    border:1.5px solid #091A2B;
+    border-radius: 0px 5px 5px 0px;
+}
+.search-container button img
+{
+    align-self: center;
+}
+
+
+/* hero */
+.hero
+{
+    grid-row: fin-header / fin-hero;
+    grid-column: 1 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.hero figure
+{
+    margin: 0;
+    height: 100%;
+}
+.hero figure img
+{
+    margin: 0;
+    height: inherit;
+}
+.hero-intro
+{
+    position: absolute;
+    text-align: center;
+}
+
+.hero-intro h1:nth-of-type(1)
+{
+    color: white;
+    font-family: 'Noto Sans SC';
+    font-size: 3.157rem;
+    font-weight: 800;
+    padding: 10px 20px 20px 0px;
+}
+.hero-intro h1:nth-of-type(1) strong
+{
+    color: #006AFF;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.hero-intro h2
+{
+    color: white;
+    font-family: 'Noto Sans SC';
+    font-size: 60px;
+    font-weight: 800;
+    padding: 0px 20px 20px 0px;
+}
+
+.hero-intro h1:nth-of-type(2)
+{
+    color: white;
+    font-family: 'Noto Sans SC';
+    font-size: 2.369rem;
+    font-weight: 800;
+    padding: 0px 20px 20px 0px;
+}
+
+
+
+
+/* 3 floats */
+.float
+{
+    grid-row: inicio-floats / fin-floats;
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr; 
+    grid-template-rows: 34px 190px 34px;
+    grid-template-areas: ". float1 . . . float3 ."
+                         ". float1 . float2 . float3 ."
+                         ". . . float2 . . ." ;
+}
+
+.float1-container
+{
+    grid-area: float1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #091A2B;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.float1-container h1
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.33rem;
+    font-weight: 700;
+}
+.float1-container p
+{
+    font-family: 'IBM Plex Sans';
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.float1-container img
+{
+    width: 100%;
+}
+.button-float
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width:108px;
+    height:30px;
+    color: white;
+    background: #006AFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.float2-container
+{
+    grid-area: float2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #091A2B;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.float2-container h1
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.33rem;
+    font-weight: 700;
+}
+.float2-container p
+{
+    font-family: 'IBM Plex Sans';
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.float2-container img
+{
+    width: 100%;
+}
+
+.float3-container
+{
+    grid-area: float3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #091A2B;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.float3-container h1
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.33rem;
+    font-weight: 700;
+}
+.float3-container p
+{
+    font-family: 'IBM Plex Sans';
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.float3-container figure
+{
+    width: 60px;
+}
+.float3-container img
+{
+    width: 100%;
+}
+
+
+/* productos */
+.productos
+{
+    display: grid;
+    grid-row: inicio-productos / fin-productos;
+    grid-template-columns: 1fr repeat(1, max-content) 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas: "titulo titulo titulo"
+                         ". linea ."
+                         ". . ."
+                         ". productos .";
+    row-gap: 10px;
+
+}
+
+.productos h1 
+{
+    grid-area: titulo;
+    font-family: 'Noto Sans JP';
+    font-size: 2.369rem;
+    font-weight: 700;
+    width: 100%;
+    color: #006AFF;
+    text-align: center;
+}
+.productos hr
+{
+    grid-area: linea;
+    width: 100%;
+    border: 4px solid  #29598A; 
+    border-radius: 2px;
+}
+
+.productos-container
+{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: 170px 170px 10px 154px 32px 154px 10px 170px 170px;
+    grid-template-rows: 225px 44px 225px 44px 225px;
+    grid-template-areas: "bombeo bombeo . motores motores motores . presion presion"
+                         ". . . . . . . . ."
+                         "elect elect . control control control . medi medi"
+                         ". . . . . . . . ."
+                         ". protec protec protec . refac refac refac ." ;
+    align-items: center;
+    justify-content: center;
+}
+
+.float-bombeo
+{
+    grid-area: bombeo;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-motores
+{
+    grid-area: motores;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-presion
+{
+    grid-area: presion;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-electricidad
+{
+    grid-area: elect;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-control
+{
+    grid-area: control;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-medicion
+{
+    grid-area: medi;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.float-proteccion
+{
+    grid-area: protec;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.float-refac
+{
+    grid-area: refac;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.producto-image
+{
+    margin: 0;
+}
+.producto-image img
+{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+
+.overlay
+{
+    display: flex;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+.overlay p
+{
+    text-align: center;
+}
+
+.categorias-name
+{
+    font-family: 'Noto Sans JP';
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/*promociones */
+.promociones
+{
+    display: grid;
+    grid-row: inicio-promociones / fin-promociones;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 50px 4px 40px repeat(1,max-content);
+    grid-template-areas: "titulo titulo titulo"
+                         ". linea ."
+                         ". . ."
+                         ". promo .";
+    row-gap: 10px;
+
+}
+.promociones h1 
+{
+    grid-area: titulo;
+    font-family: 'Noto Sans JP';
+    font-size: 2.369rem;
+    font-weight: 700;
+    color: #006AFF;
+    text-align: center;
+    width: 100%;
+}
+.promociones hr
+{
+    grid-area: linea;
+    width: 100%;
+    border: 4px solid  #29598A; 
+    border-radius: 2px;
+}
+
+.promociones-container
+{
+    grid-area: promo;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promociones-ref
+{
+    cursor: pointer;
+}
+.promociones-image
+{
+    margin:0;
+    width: 100%;
+}
+.promociones-image img
+{
+    width: inherit;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+
+
+/* seccion de la compañia */
+.company
+{
+    grid-column: 1 / span 1;
+    grid-row: inicio-compañia / fin-compañia;
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr 1fr;
+    grid-template-rows: 112px 280px;
+    align-items: center;
+    justify-content: center;
+    color: #091A2B;
+    row-gap: 15px;
+    column-gap: 30px;
+}
+
+.dimotor-container
+{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.dimotor-container p
+{
+    text-align: center;
+}
+
+.dimotor-intro
+{
+    font-family: 'Noto Sans JP';
+    font-weight: 600;
+    font-size: 2.369rem;
+   
+}
+
+.quality-image
+{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1 ;
+    width: 400px;
+    justify-self: center;
+}
+
+.quality-image img
+{
+    width: 100%;
+}
+
+.description-container
+{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #29598A;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.description-container p
+{
+    margin: 20px;
+    text-align: center;
+}
+.description-container span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 500;
+    font-size: 1.33rem;
+    color: white;
+}
+
+
+/*marcas */
+.marcas
+{
+    grid-column: 1 / span 1;
+    grid-row: inicio-marcas / fin-marcas;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 50px 4px 40px 940px;
+    grid-template-areas: "titulo titulo titulo"
+                         ". linea ."
+                         ". . ."
+                         ". marcas ." ;
+    row-gap: 10px;
+
+}
+.marcas h1 
+{
+    grid-area: titulo;
+    font-family: 'Noto Sans JP';
+    font-size: 2.369rem;
+    font-weight: 700;
+    color: #006AFF;
+    text-align: center;
+    width: 100%;
+}
+.marcas hr
+{
+    grid-area: linea;
+    width: 100%;
+    border-radius: 2px;
+    border: 4px solid  #29598A; 
+}
+.marcas-container 
+{
+    grid-area: marcas;
+    display: inline-grid;
+    grid-template-rows: [inicio] 1fr [linea1] 1fr [linea2] 1fr [linea3] 1fr [fin];
+    grid-template-columns: [inicio] 1fr [linea1] 1fr [linea2] 1fr [linea3] 1fr [fin];
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.marca-image
+{
+    justify-self: center;
+    align-self: center;
+}
+
+
+/* ajustes de contacto */
+.contacto
+{
+    grid-row: inicio-contacto / fin-contacto ;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 50px 4px 30px 537px;
+    grid-template-areas: "titulo titulo titulo"
+                         ". linea ."
+                         ". . ."
+                         ". contacto ." ;
+    row-gap: 10px;
+}
+
+.contacto h1 
+{
+    grid-area: titulo;
+    font-family: 'Noto Sans JP';
+    font-size: 2.369rem;
+    font-weight: 700;
+    color: #006AFF;
+    text-align: center;
+    width: 100%;
+}
+.contacto hr
+{
+    grid-area: linea;
+    width: 100%;
+    border-radius: 2px;
+    border: 4px solid  #29598A; 
+}
+.contacto-container
+{
+    grid-area: contacto;
+    display: grid;
+    grid-template-rows: [inicio] 1fr [linea1] 150px [linea2] 150px [linea3] 1fr [linea4] 1fr [fin];
+    grid-template-columns: [inicio] 1fr [linea1] 1fr [fin];
+}
+.phone-container
+{
+    grid-row: linea1 / linea3;
+    grid-column: inicio / linea1 ;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    color: #091A2B;
+    background: white;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+
+.telefonos-container
+{
+    grid-row: 1 / span 2 ;
+    grid-column: 1 / span 1 ;
+    margin: 20px;
+}
+.phone-title
+{
+    font-family: 'Noto Sans JP';
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+.phone-image
+{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.phone-image:nth-of-type(1)
+{
+    margin-top: 10px;
+}
+.phone-image figure img
+{
+    width: max-content;
+}
+.phone-number
+{
+    margin-left: 5px;
+    color: #091A2B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.phone-number span
+{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+}
+.correo-container
+{
+    grid-row: 1 / span 1 ;
+    grid-column: 2 / span 1 ;
+    margin-top: 20px;
+}
+.mail-title
+{
+    font-family: 'Noto Sans JP';
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+.mail-image
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.mail-image figure img
+{
+    width: max-content;
+}
+
+.mail-direction
+{
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #091A2B;
+}
+.mail-direction span
+{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+}
+.social-container
+{
+    grid-row: 2 /span 1 ;
+    grid-column: 2 / span 1 ;
+}
+.social-title
+{
+    font-family: 'Noto Sans JP';
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+
+.social-image
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;    
+}
+.social-image figure img
+{
+    width: max-content;
+}
+.social-image a
+{
+    text-decoration: none;
+    color: #091A2B;
+    margin-left: 5px;
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.map-container
+{
+    grid-row: inicio / linea4;
+    grid-column: linea1 / fin;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    height: 100%;
+}
+
+.address-container
+{
+    grid-row: linea4 / fin;
+    grid-column: linea1 / fin;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.address-container a
+{
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+.address-container span
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.333rem;
+    font-weight: 500;
+    color: #006AFF;
+    text-align: left;
+    width: 100%;
+    margin-left: 15px;
+}
+.address-container figure
+{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+footer
+{
+    display: grid;
+    grid-template-columns: 2fr 276px 1fr 203px 1fr 124px 1fr 175px 2fr;
+    grid-template-rows: 112px 55px 120px 38px;
+    grid-template-areas: ". logo . productos . contacto . nosotros ."
+                         ". direccion . productos . contacto . . ."
+                         ". telefono . productos . descargables . social ."
+                         ". correo . . . . . diseño diseño";
+    color: white;
+    background: #091A2B;
+    box-shadow: 0px -2px 8px rgba(9, 26, 43, .47);
+}
+
+.logo-footer 
+{
+    grid-area: logo;
+}
+.logo-footer a figure
+{
+    margin: 0;
+    width: 250px;
+    height: 64px;
+    align-self: center;
+}
+.logo-footer a figure img
+{
+    width: 100%;
+}
+
+.logo-footer a 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: center;
+}
+.logo-footer a span
+{
+    line-height: 22px;
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.logo-footer hr
+{
+    width: 100%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+}
+
+.address-footer
+{
+    grid-area: direccion;
+    display: flex;
+    align-items: center;
+}
+.address-footer figure
+{
+    margin-right: 10px;
+    height: 42px;
+}
+.address-footer figure img
+{
+    width: 100%;
+}
+.address-footer a
+{
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: left;
+}
+.address-footer a span
+{
+    line-height: 18px;
+    font-family: 'Noto Sans SC';
+    font-weight: 500;
+    font-size: 11px;
+}
+
+
+.phone-footer
+{
+    grid-area: telefono;
+    display: flex;
+}
+.phone-footer-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.phone-footer-container span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+}
+.phone-footer-image
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.phone-footer figure
+{
+    margin-right: 10px;
+}
+
+.mail-footer
+{
+    grid-area: correo;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mail-footer figure
+{
+    margin-right: 10px;
+    height: 23px;
+}
+.mail-footer figure img
+{
+    width: 100%;
+}
+.mail-footer a
+{
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: left;
+}
+.mail-footer a span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.productos-footer
+{
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+}
+.productos-title
+{
+    margin-top: 15px;
+}
+.productos-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.productos-title hr
+{
+    width: 60%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.productos-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.productos-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.productos-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+
+.productos-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.contacto-footer
+{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+}
+.contacto-title
+{
+    margin-top: 15px;
+}
+.contacto-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.contacto-title hr
+{
+    width: 98%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.contacto-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.contacto-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+.contacto-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.descargables-footer
+{
+    grid-area: descargables;
+    display: flex;
+    flex-direction: column;
+}
+.descargables-title
+{
+    margin-top: 0;
+}
+.descargables-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.descargables-title hr
+{
+    width: 98%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.descargables-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.descargables-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.descargables-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+
+.descargables-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.about-footer
+{
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title
+{
+    margin-top: 15px;
+}
+.about-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.about-title hr
+{
+    width: 70%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.about-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.about-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.about-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+.about-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.social-footer
+{
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-footer figure
+{
+    width: 50px;
+    height: 50px;
+}
+.social-footer figure img
+{
+    width: 100%;
+}
+.designby-footer
+{
+    grid-area: diseño;
+    display: flex;
+    align-items: center;
+}
+.designby-footer span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 400;
+    font-size: 10px;
+    margin-right: 5px;
+}

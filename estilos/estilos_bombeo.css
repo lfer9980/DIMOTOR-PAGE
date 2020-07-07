@@ -1,0 +1,888 @@
+/* sets de html y grid principal del body */
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body
+{
+    margin: 0;
+    background:white;
+}   
+
+/* propiedades de todo el header */
+header
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 120px;
+    grid-template-areas: "superior"
+                         "main";
+    background: white;
+}
+
+/* primera barra del header */
+.header-superior
+{
+    display: grid;
+    grid-area: superior;
+    grid-template-columns: 1fr 280px 1fr 160px 1fr 240px 1fr 65px 65px 65px 1fr;
+    grid-template-rows: 40px;
+    grid-template-areas: ". exchange . phone . email . fb ln wp .";
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color:white;
+    background: rgba(9,26,43,1);
+    background: -moz-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,26,43,1)), color-stop(100%, rgba(41,89,138,1)));
+    background: -webkit-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -o-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: -ms-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
+}
+.header-superior figure 
+{
+    margin:10px 6px;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+}
+.header-exchange
+{
+    grid-area: exchange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-phone
+{
+    grid-area: phone;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.header-phone a
+{
+    cursor:pointer;
+    text-decoration: none;
+    color: white;
+}
+.header-email
+{
+    grid-area: email;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-email a
+{
+    text-decoration: none;
+    color: white;
+}
+.header-fb
+{
+    grid-area: fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-ln
+{
+    grid-area: ln;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-wp
+{
+    grid-area: wp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* barra principal del header */
+.header-principal
+{
+    grid-area:main;
+    display: grid;
+    grid-template-columns: [inicio] 1fr [inicio-logo] 215px [fin-logo] 1fr 
+                           [inicio-barra] 688px [fin-barra] 1fr [inicio-search] 350px 
+                           [fin-search] 1fr [fin];
+    grid-template-rows: [inicio] 43px [inicio-search] 12px [inicio-barra] 23px
+                        [fin-search] 9.5px [fin-barra] 1fr [fin];
+    background-image:url('../fondos/fondo_header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3px 0px rgba(9,26,43, 0.47);
+}
+
+/* logo de dimotor */
+.logo-container
+{
+    grid-column:  inicio-logo / fin-logo;
+    grid-row: inicio / fin ;
+    display: block;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+.logo-container img
+{
+    width: 100%;
+    vertical-align: top;
+}
+/* Secciones del menu */
+.sections-container
+{
+    grid-column:  inicio-barra / fin-barra;
+    grid-row: inicio-barra / fin-barra;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "productos promociones contacto descargables conoce"
+                         "under1 under2 under3 under4 under5";
+    column-gap: 25px;
+    row-gap: 0;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+}
+.sections-container span
+{
+    font-family: 'Noto Sans SC';
+    font-size: 1.333rem;
+    font-weight: 500;
+    color: #091A2B;
+}
+.productosItem
+{
+    grid-area: productos;
+    text-decoration: none;
+    cursor: pointer;
+}
+.promocionesItem
+{
+    grid-area: promociones;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contactoItem
+{
+    grid-area: contacto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.descargablesItem
+{
+    grid-area: descargables;
+    text-decoration: none;
+    cursor: pointer;
+}
+.conoceItem
+{
+    grid-area: conoce;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sections-container hr
+{
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
+}
+.under1
+{
+    grid-area: under1;
+}
+
+.under2
+{
+    grid-area: under2;
+}
+.under3
+{
+    grid-area: under3;
+}
+
+.under4
+{
+    grid-area: under4;
+}
+
+.under5
+{
+    grid-area: under5;
+}
+
+/* barra de busqueda */
+.search-container 
+{
+    grid-column:  inicio-search / fin-search;
+    grid-row: inicio-search / fin-search ;
+    background: white;
+
+}
+.search-container form
+{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-areas: "search button";
+    width: 100%;
+    height: 100%;
+}
+.search-container input
+{
+    grid-area: search;
+    width:100%;
+    margin: 0;
+    padding-left: 7px;
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    font-size: 12px;
+    border-left: 1.5px solid #091A2B;
+    border-top: 1.5px solid #091A2B;
+    border-bottom: 1.5px solid #091A2B;
+    border-radius: 5px 0px 0px 5px;
+}
+.search-container button
+{
+    grid-area: button;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width:auto;
+    background: #29598A;
+    cursor: pointer;
+    border: none;
+    border:1.5px solid #091A2B;
+    border-radius: 0px 5px 5px 0px;
+}
+.search-container button img
+{
+    align-self: center;
+}
+
+/* propiedades seccion principal */
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: [inicio] 30px [fin-bread] 95px [fin-title] 420px [intro] 210px [fin-hero] 110px [fin-intro] 116px [fin-title-cat] 1fr [fin-categorias] ;
+    margin-bottom: 150px;
+}
+
+.breadcrumbs
+{
+    grid-column: 1 / 4;
+    grid-row: inicio / fin-bread;
+    background: #E5EEFC;
+}
+.breadcrumbs a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #29598A;
+}
+.breadcrumbs a span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 14px;
+}
+.breadcrumbs a:nth-of-type(1)
+{
+    margin-left: 30px;
+}
+
+.breadcrumbs a:after /* pseudoelemento que agrega simbolo span */
+{
+    content: "►";
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+.breadcrumbs a:last-child:after /* para desaparecer ultimo simbolo */
+{
+    display: none;
+}
+
+
+/* propiedades del titulo */
+.main-title
+{
+    grid-column: 2 / span 1;
+    grid-row: fin-bread / fin-title;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.main-title h1
+{
+    font-family:'Noto Sans JP';
+    font-size: 2.369rem;
+    font-weight:700;
+    color: #006AFF;
+}
+.main-title hr
+{
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid  #29598A; 
+}
+
+/* imagen principal */
+.hero
+{
+    grid-column: 2 / span 1;
+    grid-row: fin-title / fin-hero;
+}
+.hero figure
+{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero figure img
+{
+    width: max-content;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+
+/* propiedades del cuadro de introduccion */
+.main-intro
+{
+    grid-column: 2 / span 1;
+    grid-row: intro / fin-intro;
+    display: flex;
+    justify-content: flex-end;
+}
+.intro-container
+{
+    background: #091A2B;
+    width: 662px;
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.intro-container p
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.intro-container p span
+{
+    color: #006AFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+.intro-container p strong
+{
+    font-size: 20px;
+}
+
+/* propiedades titulo categorias */
+.main-categorias-title
+{
+      grid-column: 2 / span 1;
+      grid-row: fin-intro / fin-title-cat;
+      margin-top: 50px;
+      margin-bottom: 20px;
+}
+.main-categorias-title h2
+{
+    font-family:'Noto Sans JP';
+    font-size: 1.777rem;
+    font-weight:700;
+    color: #091A2B;
+    text-align: center;
+}
+
+.main-categorias-title hr
+{
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid  #29598A; 
+}
+
+/* division categorias*/
+.main-categorias
+{
+    grid-column: 2 / span 1;
+    grid-row: fin-title-cat / fin-categorias;
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+/* Contenedor de la categoria */
+.categorias-container
+{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.categoria-title
+{
+    margin-bottom: 10px;
+}
+.categoria-title span
+{
+    font-family: 'Noto Sans SC';
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    color: #006AFF;
+}
+
+.categoria-description
+{
+    margin-bottom: 20px;
+}
+.categoria-description p
+{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    font-style: italic;
+    color: #091A2B;
+}
+
+.categoria-selection
+{
+    margin-bottom: 10px;
+}
+
+.categoria-selection span
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #091A2B;
+}
+
+.categoria-options
+{
+    margin-bottom: 10px;
+}
+
+ol, ul
+{
+    list-style: none;
+    height: inherit;
+}
+li::before
+    {
+    content: "►"; 
+    padding-right: 5px; 
+    color:#29598A;
+    display: inline-block;
+    vertical-align: center;
+    }
+
+.categoria-options a
+{
+    text-decoration: none;
+    font-family: 'Noto Sans SC';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    color: #29598A;
+}
+
+.categoria-help
+{
+    display: flex;
+    justify-content: center;
+}
+.categoria-help a
+{
+    cursor: pointer;
+    color: #29598A;
+}
+
+/* footer */
+footer
+{
+    display: grid;
+    grid-template-columns: 2fr 276px 1fr 203px 1fr 124px 1fr 175px 2fr;
+    grid-template-rows: 112px 55px 120px 38px;
+    grid-template-areas: ". logo . productos . contacto . nosotros ."
+                         ". direccion . productos . contacto . . ."
+                         ". telefono . productos . descargables . social ."
+                         ". correo . . . . . diseño diseño";
+    color: white;
+    background: #091A2B;
+    box-shadow: 0px -2px 8px rgba(9, 26, 43, .47);
+}
+
+.logo-footer 
+{
+    grid-area: logo;
+}
+.logo-footer a figure
+{
+    margin: 0;
+    width: 250px;
+    height: 64px;
+    align-self: center;
+}
+.logo-footer a figure img
+{
+    width: 100%;
+}
+
+.logo-footer a 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: center;
+}
+.logo-footer a span
+{
+    line-height: 22px;
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.logo-footer hr
+{
+    width: 100%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+}
+
+.address-footer
+{
+    grid-area: direccion;
+    display: flex;
+    align-items: center;
+}
+.address-footer figure
+{
+    margin-right: 10px;
+    height: 42px;
+}
+.address-footer figure img
+{
+    width: 100%;
+}
+.address-footer a
+{
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: left;
+}
+.address-footer a span
+{
+    line-height: 18px;
+    font-family: 'Noto Sans SC';
+    font-weight: 500;
+    font-size: 11px;
+}
+
+
+.phone-footer
+{
+    grid-area: telefono;
+    display: flex;
+}
+.phone-footer-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.phone-footer-container span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+}
+.phone-footer-image
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.phone-footer figure
+{
+    margin-right: 10px;
+}
+
+.mail-footer
+{
+    grid-area: correo;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mail-footer figure
+{
+    margin-right: 10px;
+    height: 23px;
+}
+.mail-footer figure img
+{
+    width: 100%;
+}
+.mail-footer a
+{
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    text-align: left;
+}
+.mail-footer a span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.productos-footer
+{
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+}
+.productos-title
+{
+    margin-top: 15px;
+}
+.productos-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.productos-title hr
+{
+    width: 60%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.productos-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.productos-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.productos-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+
+.productos-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.contacto-footer
+{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+}
+.contacto-title
+{
+    margin-top: 15px;
+}
+.contacto-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.contacto-title hr
+{
+    width: 98%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.contacto-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.contacto-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+.contacto-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.descargables-footer
+{
+    grid-area: descargables;
+    display: flex;
+    flex-direction: column;
+}
+.descargables-title
+{
+    margin-top: 0;
+}
+.descargables-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.descargables-title hr
+{
+    width: 98%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.descargables-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.descargables-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.descargables-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+
+.descargables-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.about-footer
+{
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title
+{
+    margin-top: 15px;
+}
+.about-title span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 19px;
+}
+.about-title hr
+{
+    width: 70%;
+    border-radius: 1.5px;
+    border: 1.5px solid  #29598A;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.about-categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+.about-categorias a 
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.about-categorias a:nth-of-type(8)
+{
+    margin-bottom: 0;
+}
+.about-categorias a span
+{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.social-footer
+{
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-footer figure
+{
+    width: 50px;
+    height: 50px;
+}
+.social-footer figure img
+{
+    width: 100%;
+}
+.designby-footer
+{
+    grid-area: diseño;
+    display: flex;
+    align-items: center;
+}
+.designby-footer span
+{
+    font-family: 'Noto Sans SC';
+    font-weight: 400;
+    font-size: 10px;
+    margin-right: 5px;
+}
