@@ -17,7 +17,6 @@ body
 /* ajustes seccion principal */
 
 
-
 /* propiedades de todo el header */
 header
 {
@@ -277,25 +276,32 @@ header
 }
 
 
+.container
+{
+    max-width: 100vw;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit; 
+}
+
 /* hero */
 .hero
 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
     margin: 0;
+    width: 100vw;
 }
-.hero figure
+.hero-image
 {
-    margin: 0;
-    height: 100%;
+    width: 200px;
 }
-.hero figure img
-{
-    margin: 0;
-    height: inherit;
-}
+
 .hero-intro
 {
     position: absolute;
