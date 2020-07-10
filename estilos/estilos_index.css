@@ -639,15 +639,11 @@ header
 /*promociones */
 .promociones
 {
-    display: grid;
-    grid-row: inicio-promociones / fin-promociones;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 50px 4px 40px repeat(1,max-content);
-    grid-template-areas: "titulo titulo titulo"
-                         ". linea ."
-                         ". . ."
-                         ". promo .";
-    row-gap: 10px;
+    display:block;
+    height: auto;
+    padding: 0 40px;
+    margin-top: 130px;
+}
 
 }
 .promociones h1 
