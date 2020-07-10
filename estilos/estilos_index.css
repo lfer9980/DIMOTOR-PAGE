@@ -380,7 +380,7 @@ header
                          ". float2 ." ;
     height: auto;
     padding: 0 40px;
-    grid-column-gap: 2rem;
+    column-gap: 2rem;
 }
 
 
@@ -504,21 +504,14 @@ header
 /* productos */
 .productos
 {
-    display: grid;
-    grid-row: inicio-productos / fin-productos;
-    grid-template-columns: 1fr repeat(1, max-content) 1fr;
-    grid-template-rows: repeat(4, max-content);
-    grid-template-areas: "titulo titulo titulo"
-                         ". linea ."
-                         ". . ."
-                         ". productos .";
-    row-gap: 10px;
-
+    display:block;
+    height: auto;
+    padding: 0 40px;
+    margin-top: 130px;
 }
 
 .productos h1 
 {
-    grid-area: titulo;
     font-family: 'Noto Sans JP';
     font-size: 2.369rem;
     font-weight: 700;
@@ -528,92 +521,88 @@ header
 }
 .productos hr
 {
-    grid-area: linea;
     width: 100%;
     border: 4px solid  #29598A; 
     border-radius: 2px;
+    margin-bottom: 16px;
 }
 
 .productos-container
 {
-    grid-area: productos;
-    display: grid;
-    grid-template-columns: 170px 170px 10px 154px 32px 154px 10px 170px 170px;
-    grid-template-rows: 225px 44px 225px 44px 225px;
-    grid-template-areas: "bombeo bombeo . motores motores motores . presion presion"
-                         ". . . . . . . . ."
-                         "elect elect . control control control . medi medi"
-                         ". . . . . . . . ."
-                         ". protec protec protec . refac refac refac ." ;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .float-bombeo
 {
-    grid-area: bombeo;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-motores
 {
-    grid-area: motores;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-presion
 {
-    grid-area: presion;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-electricidad
 {
-    grid-area: elect;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-control
 {
-    grid-area: control;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-medicion
 {
-    grid-area: medi;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 .float-proteccion
 {
-    grid-area: protec;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1rem;
 }
 
 .float-refac
 {
-    grid-area: refac;
     display: block;
     cursor: pointer;
     position: relative;
+    margin: 1.3rem;
 }
 
-.producto-image
+.product-image
 {
     margin: 0;
+    max-width: 352px;
+    height: auto;
 }
-.producto-image img
+.product-image img
 {
     width: 100%;
+    height: auto;
     vertical-align: top;
     border-radius: 5px;
     box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
