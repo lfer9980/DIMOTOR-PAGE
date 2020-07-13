@@ -745,49 +745,52 @@ header
 /* seccion de la compañia */
 .company
 {
-    grid-column: 1 / span 1;
-    grid-row: inicio-compañia / fin-compañia;
-    display: grid;
-    grid-template-columns: 1fr 4fr 5fr 1fr;
-    grid-template-rows: 112px 280px;
-    align-items: center;
-    justify-content: center;
-    color: #091A2B;
-    row-gap: 15px;
-    column-gap: 30px;
+    display:block;
+    height: auto;
+    padding: 0 40px;
+    margin-top: 80px;
 }
 
-.dimotor-container
-{
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 1;
-}
-
-.dimotor-container p
-{
-    text-align: center;
-}
-
-.dimotor-intro
+.company h1
 {
     font-family: 'Noto Sans JP';
     font-weight: 600;
-    font-size: 2.369rem;
-   
+    font-size: 3rem;
+    color: #091A2B;
+    text-align: center;
 }
 
-.quality-image
+.company-des-container
 {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1 ;
-    width: 400px;
-    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.quality-image img
+.company-image
 {
-    width: 100%;
+    object-fit: cover;
+    margin: 0 2rem 2rem 2rem;
 }
+
+.company-des-container span
+{
+    max-width: 50%;
+    padding: 40px 20px;
+    font-family: 'Noto Sans SC';
+    font-weight: 500;
+    font-size: 1.33rem;
+    line-height: 3rem;
+    color: white;
+    background-color: #29598A;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+
+
 
 .description-container
 {
@@ -796,10 +799,7 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #29598A;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+
 }
 .description-container p
 {
