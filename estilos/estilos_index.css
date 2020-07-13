@@ -879,23 +879,20 @@ header
     width: 50%;
 }
 
+
+
+
 /* ajustes de contacto */
 .contacto
 {
-    grid-row: inicio-contacto / fin-contacto ;
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 50px 4px 30px 537px;
-    grid-template-areas: "titulo titulo titulo"
-                         ". linea ."
-                         ". . ."
-                         ". contacto ." ;
-    row-gap: 10px;
+    display:block;
+    height: auto;
+    padding: 0 40px;
+    margin-top: 80px;
 }
 
 .contacto h1 
 {
-    grid-area: titulo;
     font-family: 'Noto Sans JP';
     font-size: 2.369rem;
     font-weight: 700;
@@ -905,23 +902,26 @@ header
 }
 .contacto hr
 {
-    grid-area: linea;
     width: 100%;
-    border-radius: 2px;
     border: 4px solid  #29598A; 
+    border-radius: 2px;
+    margin-bottom: 16px;
 }
+
 .contacto-container
 {
-    grid-area: contacto;
-    display: grid;
-    grid-template-rows: [inicio] 1fr [linea1] 150px [linea2] 150px [linea3] 1fr [linea4] 1fr [fin];
-    grid-template-columns: [inicio] 1fr [linea1] 1fr [fin];
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
 }
+
 .phone-container
 {
-    grid-row: linea1 / linea3;
-    grid-column: inicio / linea1 ;
-    display: inline-grid;
+    width: 50%;
+    margin: 2rem;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
     color: #091A2B;
@@ -929,13 +929,12 @@ header
     align-items: center;
     border-radius: 5px;
     box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    padding: 1.25rem;
 }
-
 .telefonos-container
 {
     grid-row: 1 / span 2 ;
     grid-column: 1 / span 1 ;
-    margin: 20px;
 }
 .phone-title
 {
@@ -970,6 +969,7 @@ header
     font-size: 18px;
     font-weight: 500;
 }
+
 .correo-container
 {
     grid-row: 1 / span 1 ;
@@ -993,7 +993,6 @@ header
 {
     width: max-content;
 }
-
 .mail-direction
 {
     margin-left: 5px;
@@ -1007,6 +1006,8 @@ header
     font-size: 18px;
     font-weight: 500;
 }
+
+
 .social-container
 {
     grid-row: 2 /span 1 ;
@@ -1018,7 +1019,6 @@ header
     font-size: 1.777rem;
     font-weight: 700;
 }
-
 .social-image
 {
     margin-bottom: 10px;
@@ -1041,24 +1041,19 @@ header
     cursor: pointer;
 }
 
+
 .map-container
 {
-    grid-row: inicio / linea4;
-    grid-column: linea1 / fin;
-    align-self: center;
-    justify-self: center;
     border-radius: 5px;
     box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    height: 100%;
+    background: white;
 }
 
 .address-container
 {
-    grid-row: linea4 / fin;
-    grid-column: linea1 / fin;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .address-container a
 {
