@@ -888,7 +888,7 @@ header
     display:block;
     height: auto;
     padding: 0 40px;
-    margin-top: 80px;
+    margin: 80px 0;
 }
 
 .contacto h1 
@@ -1102,8 +1102,8 @@ footer
 .logo-footer a figure
 {
     margin: 0;
-    width: 250px;
-    height: 64px;
+    max-width: 250px;
+    height: auto;
     align-self: center;
 }
 .logo-footer a figure img
@@ -1126,7 +1126,7 @@ footer
     line-height: 22px;
     font-family: 'Noto Sans JP';
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1rem;
     margin-bottom: 2px;
 }
 .logo-footer hr
@@ -1144,8 +1144,8 @@ footer
 }
 .address-footer figure
 {
-    margin-right: 10px;
-    height: 42px;
+    margin-right: 0.625rem;
+    height: auto;
 }
 .address-footer figure img
 {
@@ -1206,8 +1206,8 @@ footer
 }
 .mail-footer figure
 {
-    margin-right: 10px;
-    height: 23px;
+    margin-right: 0.625rem;
+    height: auto;
 }
 .mail-footer figure img
 {
@@ -1236,13 +1236,13 @@ footer
 }
 .productos-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .productos-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .productos-title hr
 {
@@ -1273,7 +1273,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 
@@ -1285,13 +1285,13 @@ footer
 }
 .contacto-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .contacto-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .contacto-title hr
 {
@@ -1299,7 +1299,7 @@ footer
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .contacto-categorias
 {
@@ -1311,7 +1311,7 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .contacto-categorias a:nth-of-type(8)
 {
@@ -1321,7 +1321,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .descargables-footer
@@ -1338,7 +1338,7 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .descargables-title hr
 {
@@ -1346,7 +1346,7 @@ footer
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .descargables-categorias
 {
@@ -1358,7 +1358,7 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .descargables-categorias a:nth-of-type(8)
 {
@@ -1381,13 +1381,13 @@ footer
 
 .about-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .about-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .about-title hr
 {
@@ -1395,7 +1395,7 @@ footer
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .about-categorias
@@ -1418,7 +1418,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .social-footer
@@ -1431,7 +1431,7 @@ footer
 .social-footer figure
 {
     width: 50px;
-    height: 50px;
+    height: auto;
 }
 .social-footer figure img
 {
@@ -1447,6 +1447,6 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 400;
-    font-size: 10px;
+    font-size: 0.625rem;
     margin-right: 5px;
 }
