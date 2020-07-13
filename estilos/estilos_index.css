@@ -339,12 +339,11 @@ header
 .ref-hero-overlay p:nth-of-type(2)
 {
     display: block;
-    color: #008abd; 
+    color: #006AFF;
     padding-top: 0.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
-    font-style: italic;
     font-size: 1.5rem;
 }
 .emphasis-hero
@@ -637,18 +636,16 @@ header
 
 
 /*promociones */
-.promociones
+.promo
 {
     display:block;
     height: auto;
     padding: 0 40px;
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
-}
-.promociones h1 
+.promo h1
 {
-    grid-area: titulo;
     font-family: 'Noto Sans JP';
     font-size: 2.369rem;
     font-weight: 700;
@@ -656,36 +653,92 @@ header
     text-align: center;
     width: 100%;
 }
-.promociones hr
+.promo hr
 {
-    grid-area: linea;
     width: 100%;
     border: 4px solid  #29598A; 
     border-radius: 2px;
+    margin-bottom: 16px;
 }
 
-.promociones-container
+.promo-container
 {
-    grid-area: promo;
+    display: block;
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
-.promociones-ref
+.promo-ref
 {
     cursor: pointer;
 }
-.promociones-image
+.promo-image
 {
-    margin:0;
     width: 100%;
-}
-.promociones-image img
-{
-    width: inherit;
+    height: auto;
+    vertical-align: top;
     border-radius: 5px;
     box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+
+.ref-promo-overlay
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.ref-promo-overlay p:nth-of-type(1)
+{
+
+    color: white;
+    font-family: 'Noto Sans SC';
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 5rem 2.5rem 1.25rem 2rem;
+}
+
+.ref-promo-overlay p strong
+{
+    color:#006AFF;
+    font-size: 8rem;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ref-promo-overlay p:nth-of-type(2)
+{
+    display: block;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem 2.5rem 1.25rem 2rem;
+}
+.emphasis-promo
+{
+    color:white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.ref-promo-overlay p:nth-of-type(3)
+{
+    text-align: right;
+    font-size: 1rem;
+    padding: 0 2.5rem 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
