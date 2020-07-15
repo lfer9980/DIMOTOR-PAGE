@@ -57,7 +57,6 @@ header
     background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
     font-family: 'IBM Plex Sans',sans-serif;
-    
 }
 
 .header-icon
@@ -83,7 +82,7 @@ header
 {
     font-size: 1.5rem;
     font-weight: 700;
-    background: #006AFF;
+    background: #29598A;
     border-radius: 2px;
     border: 1px solid transparent;
     padding: 2px 5px;
@@ -99,13 +98,17 @@ header
 {
     cursor: pointer;
     text-decoration: none;
-}
-.header-phone a span
-{
     font-size: 1.2rem;
-    font-weight: 500;
-    color:white;
+    font-weight: 600;
+    color: white;
 }
+
+.header-phone a:hover
+{
+    cursor: pointer;
+    color: #006AFF;
+}
+
 
 .header-email
 {
@@ -124,6 +127,11 @@ header
     font-weight: 500;
     color:white;
 }
+.header-email a span:hover
+{
+    cursor: pointer;
+    color: #006AFF;
+}
 .social-media-header
 {
     display: flex;
@@ -135,13 +143,14 @@ header
     margin: 0 0.625rem;
 }  
 
+
 /* barra principal del header */
 .header-principal
 {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 10px;
     background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
     background-size: cover;
@@ -160,6 +169,8 @@ header
     display: flex;
     height: inherit;
     align-items: center;
+    justify-content: space-between;
+    padding: 5px;
 }
 .sections-nav ol
 {
@@ -182,13 +193,18 @@ header
     font-weight: 500;
     color: #091A2B;
 }
+
+.sections-nav a:hover
+{
+    color: #006AFF;
+}
+
 .sections-nav hr
 {
     width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;  
 }
-
 
 ol, ul
 {
@@ -243,6 +259,11 @@ ol, ul
     border:1.5px solid #091A2B;
     border-radius: 0px 5px 5px 0px;
 }
+
+.search-container button:hover
+{
+    background:#006AFF;
+}
 .search-container button img
 {
     align-self: center;
@@ -294,7 +315,7 @@ ol, ul
 {
     color:#008abd;  
     font-size: 6rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -387,11 +408,23 @@ ol, ul
     width:108px;
     height:30px;
     color: white;
-    background: #006AFF;
+    background: #29598A;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+.button-float:hover
+{
+    background: #006AFF;
+}
+
+
+.button-float span
+{
+    font-weight: 600;
 }
 
 .float2-container
@@ -489,6 +522,8 @@ ol, ul
     margin-bottom: 16px;
 }
 
+
+
 .productos-container
 {
   display: flex;
@@ -499,60 +534,692 @@ ol, ul
 
 .float-bombeo
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/Bvv8htm5/bombeo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+
+.bombeo-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bombeo-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/mkdggcf1/bombeo-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+
+.bombeo-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.bombeo-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.bombeo-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.bombeo-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+}
+.bombeo-overlay a p strong
+{
+    font-style: italic;
+}
+
+
+.float-bombeo:hover .bombeo-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .float-motores
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/ZnNvrgV1/motores-reductores.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.motores-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.motores-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/vZCDn61W/motores-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.motores-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.motores-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.motores-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.motores-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+}
+.motores-overlay a p strong
+{
+    font-style: italic;
+}
+
+
+.float-motores:hover .motores-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .float-presion
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/sgsGhTSN/presion-constante.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.presion-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presion-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/QNStbz9N/presion-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.presion-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.presion-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.presion-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.presion-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+}
+.presion-overlay a p strong
+{
+    font-style: italic;
+}
+
+
+.float-presion:hover .presion-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .float-electricidad
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/t4kZtFNC/electricidad.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.electricidad-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.electricidad-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/KYLjDvLC/electricidad-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.electricidad-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.electricidad-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.electricidad-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.electricidad-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.electricidad-overlay a p strong
+{
+    font-style: italic;
+}
+
+.float-electricidad:hover .electricidad-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .float-control
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/pXNF2Wdx/control.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.control-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/50StD7s3/control-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.control-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.control-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.control-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.control-overlay a p
+{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+    font-style: italic;
+}
+.control-overlay a p strong
+{
+  
+    font-size: 1rem;
+}
+
+.float-control:hover .control-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .float-medicion
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/t4kZtFNC/electricidad.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.medicion-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medicion-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/KYLjDvLC/electricidad-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.medicion-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.medicion-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.medicion-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.medicion-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.medicion-overlay a p strong
+{
+    font-style: italic;
+}
+
+.float-medicion:hover .medicion-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .float-proteccion
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
     margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/65dGqk7Z/proteccion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
 }
+.proteccion-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proteccion-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/JnLn6V50/proteccion-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.proteccion-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.proteccion-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.proteccion-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.proteccion-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.proteccion-overlay a p strong
+{
+    font-style: italic;
+}
+
+.float-proteccion:hover .proteccion-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .float-refac
 {
-    display: block;
+    display: flex;
     cursor: pointer;
     position: relative;
-    margin: 1.3rem;
+    margin: 1rem;
+    width: 352px;
+    height: 231px;
+    background-image:url('https://i.postimg.cc/65dGqk7Z/proteccion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+}
+.refac-normal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.refac-overlay
+{
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('https://i.postimg.cc/JnLn6V50/proteccion-over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 5px;
+}
+.refac-overlay a
+{
+    text-decoration: none;
+    color: white;
+    background: rgba(9,26,43, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.refac-overlay a span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.refac-overlay a span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.refac-overlay a p
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.refac-overlay a p strong
+{
+    font-style: italic;
+}
+
+.float-refac:hover .refac-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-image
@@ -589,11 +1256,10 @@ ol, ul
 .categorias-name
 {
     font-family: 'Noto Sans JP';
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     color: white;
     text-align: center;
-    padding: 10px;
 }
 
 
@@ -926,6 +1592,10 @@ ol, ul
     cursor: pointer;
     text-decoration: none;
 }
+.phone-number:hover
+{
+    color: #006AFF;
+}
 .phone-number span
 {
     font-family: 'IBM Plex Sans';
@@ -963,6 +1633,10 @@ ol, ul
     text-decoration: none;
     color: #091A2B;
 }
+.mail-direction:hover
+{
+    color: #006AFF;
+}
 .mail-direction span
 {
     font-family: 'IBM Plex Sans';
@@ -993,7 +1667,7 @@ ol, ul
 {
     width: max-content;
 }
-.social-image a
+.social-address
 {
     text-decoration: none;
     color: #091A2B;
@@ -1002,6 +1676,10 @@ ol, ul
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+}
+.social-address:hover
+{
+    color: #006AFF;
 }
 
 
@@ -1016,20 +1694,24 @@ ol, ul
 {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 .address-container a
 {
     text-decoration: none;
     display: flex;
     cursor: pointer;
+    color: #29598A;
+}
+.address-container a:hover
+{
+    color: #006AFF;
 }
 .address-container span
 {
     font-family: 'Noto Sans SC';
     font-size: 1.333rem;
     font-weight: 500;
-    color: #006AFF;
     text-align: left;
     width: 100%;
     margin-left: 15px;
@@ -1047,8 +1729,8 @@ ol, ul
 footer
 {
     display: grid;
-    grid-template-columns: 2fr 276px 1fr 203px 1fr 124px 1fr 175px 2fr;
-    grid-template-rows: 112px 55px 120px 38px;
+    grid-template-columns: 2fr 280px 1fr 200px 1fr 125px 1fr 175px 2fr;
+    grid-template-rows: 115px 60px 120px 40px;
     grid-template-areas: ". logo . productos . contacto . nosotros ."
                          ". direccion . productos . contacto . . ."
                          ". telefono . productos . descargables . social ."
@@ -1121,6 +1803,11 @@ footer
     color: white;
     text-align: left;
 }
+.address-footer a:hover
+{
+    color: #006AFF;
+}
+
 .address-footer a span
 {
     line-height: 18px;
@@ -1183,6 +1870,11 @@ footer
     color: white;
     text-align: left;
 }
+.mail-footer a:hover
+{
+    color:#006AFF;
+}
+
 .mail-footer a span
 {
     font-family: 'Noto Sans SC';
@@ -1226,6 +1918,10 @@ footer
     cursor: pointer;
     color: white;
     margin-bottom: 10px;
+}
+.productos-categorias a:hover
+{
+    color:#006AFF;
 }
 .productos-categorias a:nth-of-type(8)
 {
@@ -1276,6 +1972,10 @@ footer
     color: white;
     margin-bottom: 0.625rem;
 }
+.contacto-categorias a:hover
+{
+    color:#006AFF;
+}
 .contacto-categorias a:nth-of-type(8)
 {
     margin-bottom: 0;
@@ -1322,6 +2022,10 @@ footer
     cursor: pointer;
     color: white;
     margin-bottom: 0.625rem;
+}
+.descargables-categorias a:hover
+{
+    color: #006AFF;
 }
 .descargables-categorias a:nth-of-type(8)
 {
@@ -1372,6 +2076,10 @@ footer
     cursor: pointer;
     color: white;
     margin-bottom: 10px;
+}
+.about-categorias a:hover
+{
+    color: #006AFF;
 }
 .about-categorias a:nth-of-type(8)
 {
