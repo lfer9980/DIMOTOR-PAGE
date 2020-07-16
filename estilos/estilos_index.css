@@ -2131,73 +2131,214 @@ footer
 }
 
 
+
+
+
+
 @media screen and (max-width:1439px)
 {
-
-*
-{
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
+    *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .float
+    {
+        bottom: -8rem;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(150px,1fr));
+        grid-template-rows: 35px 210px 35px;
+        grid-template-areas: "float1 . float3"
+                             "float1 float2 float3"
+                             ". float2 ." ;
+        height: auto;
+    }
+    .productos
+    {
+        padding: 0 2.5rem;
+        margin-top: 13rem;
+    }
+    .company-image
+    {
+        object-fit: cover;
+        margin: 2rem;
+    }
+    .phone-container
+    {
+        width: 40%;
+    }
+    .map-container iframe
+    {
+        width:  100%;
+        height: 300px;
+    }
 }
 
-.float
-{
-    bottom: -8rem;
-    display: grid;
-    grid-template-columns: repeat(3,minmax(150px,1fr));
-    grid-template-rows: 35px 190px 35px;
-    grid-template-areas: "float1 . float3"
-                         "float1 float2 float3"
-                         ". float2 ." ;
-    height: auto;
-}
 
-.productos
-{
-    padding: 0 2.5rem;
-    margin-top: 13rem;
-}
 
-.company-image
-{
-    object-fit: cover;
-    margin: 2rem;
-}
-
-.phone-container
-{
-    width: 40%;
-}
-
-.map-container iframe
-{
-    width:  100%;
-    height: 300px;
-}
-
-}
 
 
 
 @media screen and (max-width:1280px)
 {
-
-*
-{
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
+    *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .marcas-container 
+    {
+        display: grid;
+        grid-template-rows: repeat(5,minmax(150px,1fr));
+        grid-template-columns: repeat(3,minmax(200px,1fr));
+    }
 }
-.marcas-container 
+
+
+
+
+
+
+@media screen and (max-width:1023px)
 {
-    display: grid;
-    grid-template-rows: repeat(5,minmax(150px,1fr));
-    grid-template-columns: repeat(3,minmax(200px,1fr));
-}
-
-
-
+    *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    .header-principal
+    {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 0 0.625rem 0.625rem 0.625rem;
+      /*   background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat; */
+        background: transparent;
+        box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
+        position: relative;
+    }
+    .logo-principal
+    {
+        width: 20rem;
+        height: inherit;
+    }
+    .search-container
+    {
+        position: absolute;
+        z-index: 1;
+        width: 22.5rem;
+        bottom: -3rem;
+        right: 0.5rem;
+    }
+    .search-container form
+    {
+        height: 2.5rem;
+    }
+    .sections-nav
+    {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .ref-hero-overlay
+    {
+        position: absolute;
+        left: 3rem;
+        top: 3rem;
+    }
+    .ref-hero-overlay p:nth-of-type(1)
+    {
+        font-size: 2rem;
+    }
+    .ref-hero-overlay p strong
+    {
+        font-size: 5rem;
+    }
+    .ref-hero-overlay p:nth-of-type(2)
+    {
+        font-size: 1.2rem;
+    }
+    .emphasis-hero
+    {
+        font-size: 1rem;
+    }
+    .ref-hero-overlay p:nth-of-type(3)
+    {
+        font-size: 1rem;
+    }
+    .float1-container h1
+    {
+        font-size: 1.5rem;
+    }
+    .float2-container h1
+    {
+        font-size: 1.5rem;
+    }
+    .float3-container h1
+    {
+        font-size: 1.5rem;
+    }
+    .ref-promo-overlay p:nth-of-type(1)
+    {
+        font-size: 2rem;
+        padding: 3rem 2rem 1.25rem 2rem;
+    }
+    .ref-promo-overlay p strong
+    {
+        color:#006AFF;
+        font-size: 6rem;
+        font-weight: 500;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .ref-promo-overlay p:nth-of-type(2)
+    {
+        display: block;
+        font-weight: 800;
+        color: white;
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 0 2.5rem 1.25rem 2rem;
+    }
+    .emphasis-promo
+    {
+        font-size: 1rem;
+    }
+    .company h1
+    {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .marcas-container 
+    {
+        display: grid;
+        grid-template-rows: repeat(5,minmax(150px,1fr));
+        grid-template-columns: repeat(3,minmax(200px,1fr));
+    }
+    .phone-container
+    {
+        width: 75%;
+        margin: 0 0 2rem 0;
+    }
+    .map-container
+    {
+        display: block;
+        width: 100%;
+    }
+    .map-container iframe
+    {
+        width:  inherit;
+        height: 400px;
+    }
 }
