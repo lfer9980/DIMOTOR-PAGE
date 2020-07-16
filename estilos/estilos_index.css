@@ -47,7 +47,7 @@ header
     width: 100%;
     height: auto;
     justify-content: space-evenly;
-    padding: 5px 0;
+    padding: 0.3125rem 0;
     background: rgba(9,26,43,1);
     background: -moz-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,26,43,1)), color-stop(100%, rgba(41,89,138,1)));
@@ -61,8 +61,8 @@ header
 
 .header-icon
 {
-    width: 25px;
-    margin: 0 10px;
+    width: 1.5rem;
+    margin: 0 0.625rem;
     vertical-align: top;
 }
 
@@ -85,7 +85,7 @@ header
     background: #29598A;
     border-radius: 2px;
     border: 1px solid transparent;
-    padding: 2px 5px;
+    padding: 0.125rem 0.3125rem;
 }
 
 .header-phone
@@ -151,16 +151,16 @@ header
     flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.625rem;
     background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 3px 0px rgba(9,26,43, 0.47);
+    box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
 }
 
 .logo-principal
 {
-    width: 250px;
+    width: 15.625rem;
     height: inherit;
 }
 /* Secciones del menu */
@@ -170,7 +170,7 @@ header
     height: inherit;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 .sections-nav ol
 {
@@ -187,9 +187,9 @@ header
     display: block;
     height: inherit;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     font-family: 'Noto Sans SC';
-    font-size: 1.333rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #091A2B;
 }
@@ -202,8 +202,8 @@ header
 .sections-nav hr
 {
     width: 100%;
-    border-radius: 2px;
-    border: 2px solid  #29598A;  
+    border-radius: 0.125rem;
+    border: 0.125rem solid  #29598A;  
 }
 
 ol, ul
@@ -218,7 +218,7 @@ ol, ul
 /* barra de busqueda */
 .search-container 
 {
-    width: 350px;
+    width: 21.875rem;
     height: auto;
     display: flex;
     justify-content: center;
@@ -230,21 +230,21 @@ ol, ul
     grid-template-columns: 9fr 1fr;
     grid-template-areas: "search button";
     width: 100%;
-    height: 35px;
+    height: 2.1875rem;
 }
 .search-container input
 {
     grid-area: search;
     width:100%;
     margin: 0;
-    padding-left: 7px;
+    padding-left: 0.4375rem;
     font-family: 'IBM Plex Sans';
     font-style: italic;
-    font-size: 12px;
+    font-size: 0.75rem;
     border-left: 1.5px solid #091A2B;
     border-top: 1.5px solid #091A2B;
     border-bottom: 1.5px solid #091A2B;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0.3125rem 0px 0px 0.3125rem;
 }
 .search-container button
 {
@@ -257,7 +257,7 @@ ol, ul
     cursor: pointer;
     border: none;
     border:1.5px solid #091A2B;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 0.3125rem 0.3125rem 0px;
 }
 
 .search-container button:hover
@@ -268,7 +268,6 @@ ol, ul
 {
     align-self: center;
 }
-
 
 
 
@@ -286,7 +285,7 @@ ol, ul
 {
     width: 100%;
     height: inherit;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 
 .ref-hero-overlay
@@ -357,12 +356,12 @@ ol, ul
     bottom: -5rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,1fr));
-    grid-template-rows: 34px 190px 34px;
+    grid-template-rows: 35px 230px 35px;
     grid-template-areas: "float1 . float3"
                          "float1 float2 float3"
                          ". float2 ." ;
     height: auto;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     column-gap: 2rem;
 }
 
@@ -374,18 +373,19 @@ ol, ul
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0.625rem;
     color: #091A2B;
     background: white;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     height: inherit;
 }
 .float1-container h1
 {
     font-family: 'Noto Sans SC';
-    font-size: 1.33rem;
+    font-size: 2rem;
     font-weight: 700;
+    color: #29598A;
 }
 .float1-container p
 {
@@ -393,7 +393,7 @@ ol, ul
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 0.625rem 0;
 }
 .float-container img
 {
@@ -405,15 +405,15 @@ ol, ul
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width:108px;
-    height:30px;
+    width:6.75rem;
+    height:1.875rem;
     color: white;
     background: #29598A;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
-    margin-top: 10px;
-    padding: 0 5px;
+    margin-top: 0.625rem;
+    padding: 0 0.3125rem;
 }
 
 .button-float:hover
@@ -434,17 +434,18 @@ ol, ul
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0.625rem;
     color: #091A2B;
     background: white;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .float2-container h1
 {
     font-family: 'Noto Sans SC';
-    font-size: 1.33rem;
+    font-size: 2rem;
     font-weight: 700;
+    color: #29598A;
 }
 .float2-container p
 {
@@ -452,7 +453,7 @@ ol, ul
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 0.625rem 0;
 }
 .float2-container img
 {
@@ -466,17 +467,18 @@ ol, ul
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 0.625rem;
     color: #091A2B;
     background: white;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .float3-container h1
 {
     font-family: 'Noto Sans SC';
-    font-size: 1.33rem;
+    font-size: 2rem;
     font-weight: 700;
+    color: #29598A;
 }
 .float3-container p
 {
@@ -484,11 +486,11 @@ ol, ul
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 0.625rem 0;
 }
 .float3-container figure
 {
-    width: 60px;
+    width: 3.75rem;
 }
 .float3-container img
 {
@@ -501,14 +503,14 @@ ol, ul
 {
     display:block;
     height: auto;
-    padding: 0 40px;
-    margin-top: 130px;
+    padding: 0 2.5rem;
+    margin-top: 8.125rem;
 }
 
 .productos h1 
 {
     font-family: 'Noto Sans JP';
-    font-size: 2.369rem;
+    font-size: 2.5rem;
     font-weight: 700;
     width: 100%;
     color: #006AFF;
@@ -518,8 +520,8 @@ ol, ul
 {
     width: 100%;
     border: 4px solid  #29598A; 
-    border-radius: 2px;
-    margin-bottom: 16px;
+    border-radius: 0.125rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -538,13 +540,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/Bvv8htm5/bombeo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 
 .bombeo-normal
@@ -567,8 +569,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/mkdggcf1/bombeo-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 
 .bombeo-overlay a
@@ -581,7 +583,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .bombeo-overlay a span:nth-of-type(1)
@@ -589,14 +591,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .bombeo-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .bombeo-overlay a p
@@ -626,13 +628,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/ZnNvrgV1/motores-reductores.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .motores-normal
 {
@@ -654,8 +656,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/vZCDn61W/motores-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .motores-overlay a
 {
@@ -667,7 +669,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .motores-overlay a span:nth-of-type(1)
@@ -675,14 +677,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .motores-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .motores-overlay a p
@@ -712,13 +714,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/sgsGhTSN/presion-constante.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .presion-normal
 {
@@ -740,8 +742,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/QNStbz9N/presion-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .presion-overlay a
 {
@@ -753,7 +755,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .presion-overlay a span:nth-of-type(1)
@@ -761,14 +763,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .presion-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .presion-overlay a p
@@ -797,13 +799,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/t4kZtFNC/electricidad.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .electricidad-normal
 {
@@ -825,8 +827,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/KYLjDvLC/electricidad-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .electricidad-overlay a
 {
@@ -838,7 +840,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .electricidad-overlay a span:nth-of-type(1)
@@ -846,14 +848,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .electricidad-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .electricidad-overlay a p
@@ -883,13 +885,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/pXNF2Wdx/control.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .control-normal
 {
@@ -911,8 +913,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/50StD7s3/control-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .control-overlay a
 {
@@ -924,7 +926,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .control-overlay a span:nth-of-type(1)
@@ -939,7 +941,7 @@ ol, ul
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
 }
 .control-overlay a p
 {
@@ -969,13 +971,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
-    background-image:url('https://i.postimg.cc/t4kZtFNC/electricidad.png');
+    width: 22rem;
+    height: 14.4375rem;
+    background-image:url('https://i.postimg.cc/v8xnFgb3/medicion-agricola.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .medicion-normal
 {
@@ -994,11 +996,11 @@ ol, ul
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-image: url('https://i.postimg.cc/KYLjDvLC/electricidad-over.png');
+    background-image: url('https://i.postimg.cc/Wzp4VGKP/medicion-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .medicion-overlay a
 {
@@ -1010,7 +1012,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .medicion-overlay a span:nth-of-type(1)
@@ -1018,14 +1020,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .medicion-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .medicion-overlay a p
@@ -1056,13 +1058,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
+    width: 22rem;
+    height: 14.4375rem;
     background-image:url('https://i.postimg.cc/65dGqk7Z/proteccion.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .proteccion-normal
 {
@@ -1084,8 +1086,8 @@ ol, ul
     background-image: url('https://i.postimg.cc/JnLn6V50/proteccion-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .proteccion-overlay a
 {
@@ -1097,7 +1099,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .proteccion-overlay a span:nth-of-type(1)
@@ -1105,14 +1107,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .proteccion-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .proteccion-overlay a p
@@ -1143,13 +1145,13 @@ ol, ul
     cursor: pointer;
     position: relative;
     margin: 1rem;
-    width: 352px;
-    height: 231px;
-    background-image:url('https://i.postimg.cc/65dGqk7Z/proteccion.png');
+    width: 22rem;
+    height: 14.4375rem;
+    background-image:url('https://i.postimg.cc/rpYD7cHB/refacciones.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .refac-normal
 {
@@ -1168,11 +1170,11 @@ ol, ul
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-image: url('https://i.postimg.cc/JnLn6V50/proteccion-over.png');
+    background-image: url('https://i.postimg.cc/L5yjF6xN/refacciones-over.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
-    border-radius: 5px;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
 }
 .refac-overlay a
 {
@@ -1184,7 +1186,7 @@ ol, ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .refac-overlay a span:nth-of-type(1)
@@ -1192,14 +1194,14 @@ ol, ul
     font-family: 'Noto Sans JP' sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .refac-overlay a span:nth-of-type(2)
 {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     text-align: center;
 }
 .refac-overlay a p
@@ -1225,7 +1227,7 @@ ol, ul
 .product-image
 {
     margin: 0;
-    max-width: 352px;
+    max-width: 22rem;
     height: auto;
 }
 .product-image img
@@ -1233,8 +1235,8 @@ ol, ul
     width: 100%;
     height: auto;
     vertical-align: top;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 
 .overlay
@@ -1269,14 +1271,14 @@ ol, ul
 {
     display:block;
     height: auto;
-    padding: 0 40px;
-    margin-top: 80px;
+    padding: 0 2.5rem;
+    margin-top: 5rem;
 }
 
 .promo h1
 {
     font-family: 'Noto Sans JP';
-    font-size: 2.369rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
     text-align: center;
@@ -1287,7 +1289,7 @@ ol, ul
     width: 100%;
     border: 4px solid  #29598A; 
     border-radius: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .promo-container
@@ -1306,8 +1308,8 @@ ol, ul
     width: 100%;
     height: auto;
     vertical-align: top;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 
 .ref-promo-overlay
@@ -1321,7 +1323,7 @@ ol, ul
     right: 0;
     text-align: left;
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .ref-promo-overlay p:nth-of-type(1)
@@ -1376,8 +1378,8 @@ ol, ul
 {
     display:block;
     height: auto;
-    padding: 0 40px;
-    margin-top: 80px;
+    padding: 0 2.5rem;
+    margin-top: 5rem;
 }
 
 .company h1
@@ -1407,7 +1409,7 @@ ol, ul
 .company-des-container span
 {
     max-width: 50%;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
     font-family: 'Noto Sans SC';
     font-weight: 500;
     font-size: 1.33rem;
@@ -1415,8 +1417,8 @@ ol, ul
     color: white;
     background-color: #29598A;
     height: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 
 
@@ -1432,7 +1434,7 @@ ol, ul
 }
 .description-container p
 {
-    margin: 20px;
+    margin: 1.25rem;
     text-align: center;
 }
 .description-container span
@@ -1449,13 +1451,13 @@ ol, ul
 {
     display:block;
     height: auto;
-    padding: 0 40px;
-    margin-top: 80px;
+    padding: 0 2.5rem;
+    margin-top: 5rem;
 }
 .marcas h1 
 {
     font-family: 'Noto Sans JP';
-    font-size: 2.369rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
     text-align: center;
@@ -1466,7 +1468,7 @@ ol, ul
     width: 100%;
     border: 4px solid  #29598A; 
     border-radius: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .marcas-container 
 {
@@ -1475,8 +1477,8 @@ ol, ul
     grid-template-rows: repeat(4,minmax(200px,1fr));
     grid-template-columns: repeat(4,minmax(200px,1fr));
     background: white;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     justify-content: center;
     align-items: center;
 }
@@ -1516,14 +1518,14 @@ ol, ul
 {
     display:block;
     height: auto;
-    padding: 0 40px;
-    margin: 80px 0;
+    padding: 0 2.5rem;
+    margin: 5rem 0;
 }
 
 .contacto h1 
 {
     font-family: 'Noto Sans JP';
-    font-size: 2.369rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
     text-align: center;
@@ -1534,7 +1536,7 @@ ol, ul
     width: 100%;
     border: 4px solid  #29598A; 
     border-radius: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .contacto-container
@@ -1549,15 +1551,15 @@ ol, ul
 .phone-container
 {
     width: 50%;
-    margin: 2rem;
+    margin: 2rem 3rem 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
     color: #091A2B;
     background: white;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     padding: 1.25rem;
 }
 .telefonos-container
@@ -1573,13 +1575,13 @@ ol, ul
 }
 .phone-image
 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     display: flex;
     align-items: center;
 }
 .phone-image:nth-of-type(1)
 {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .phone-image figure img
 {
@@ -1587,7 +1589,7 @@ ol, ul
 }
 .phone-number
 {
-    margin-left: 5px;
+    margin-left: 0.375rem;
     color: #091A2B;
     cursor: pointer;
     text-decoration: none;
@@ -1599,7 +1601,7 @@ ol, ul
 .phone-number span
 {
     font-family: 'IBM Plex Sans';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 
@@ -1607,7 +1609,7 @@ ol, ul
 {
     grid-row: 1 / span 1 ;
     grid-column: 2 / span 1 ;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .mail-title
 {
@@ -1617,8 +1619,8 @@ ol, ul
 }
 .mail-image
 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
     display: flex;
     align-items: center;
 }
@@ -1628,7 +1630,7 @@ ol, ul
 }
 .mail-direction
 {
-    margin-left: 5px;
+    margin-left: 0.3125rem;
     cursor: pointer;
     text-decoration: none;
     color: #091A2B;
@@ -1640,7 +1642,7 @@ ol, ul
 .mail-direction span
 {
     font-family: 'IBM Plex Sans';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 
@@ -1658,8 +1660,8 @@ ol, ul
 }
 .social-image
 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
     display: flex;
     align-items: center;    
 }
@@ -1671,9 +1673,9 @@ ol, ul
 {
     text-decoration: none;
     color: #091A2B;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
     font-family: 'IBM Plex Sans';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -1685,16 +1687,22 @@ ol, ul
 
 .map-container
 {
-    border-radius: 5px;
-    box-shadow: 0px 6px 8px rgba(9, 26, 43, .47);
+    display: block;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     background: white;
+}
+.map-container iframe
+{
+    width: 100%;
+    height: 400px;
 }
 
 .address-container
 {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 1rem 0.5rem;
 }
 .address-container a
 {
@@ -1714,7 +1722,7 @@ ol, ul
     font-weight: 500;
     text-align: left;
     width: 100%;
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 .address-container figure
 {
@@ -1729,15 +1737,15 @@ ol, ul
 footer
 {
     display: grid;
-    grid-template-columns: 2fr 280px 1fr 200px 1fr 125px 1fr 175px 2fr;
-    grid-template-rows: 115px 60px 120px 40px;
+    grid-template-columns: 2fr 17.5rem 1fr 12.5rem 1fr 7.8125rem 1fr 10.9375rem 2fr;
+    grid-template-rows: 7.1875rem 3.75rem 7.5rem 2.5rem;
     grid-template-areas: ". logo . productos . contacto . nosotros ."
                          ". direccion . productos . contacto . . ."
                          ". telefono . productos . descargables . social ."
                          ". correo . . . . . diseño diseño";
     color: white;
     background: #091A2B;
-    box-shadow: 0px -2px 8px rgba(9, 26, 43, .47);
+    box-shadow: 0 -0.125px 0.5rem rgba(9, 26, 43, .47);
 }
 
 .logo-footer 
@@ -1747,7 +1755,7 @@ footer
 .logo-footer a figure
 {
     margin: 0;
-    max-width: 250px;
+    max-width: 15.625rem;
     height: auto;
     align-self: center;
 }
@@ -1768,7 +1776,7 @@ footer
 }
 .logo-footer a span
 {
-    line-height: 22px;
+    line-height: 1.375rem;
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 1rem;
@@ -1810,10 +1818,10 @@ footer
 
 .address-footer a span
 {
-    line-height: 18px;
+    line-height: 1.125rem;
     font-family: 'Noto Sans SC';
     font-weight: 500;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 
@@ -1833,7 +1841,7 @@ footer
     font-family: 'Noto Sans SC';
     font-weight: 600;
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 .phone-footer-image
 {
@@ -1843,7 +1851,7 @@ footer
 }
 .phone-footer figure
 {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .mail-footer
@@ -1851,8 +1859,8 @@ footer
     grid-area: correo;
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
 }
 .mail-footer figure
 {
@@ -1879,7 +1887,7 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 
@@ -1904,8 +1912,8 @@ footer
     width: 60%;
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0.3125rem;
+    margin-bottom: 1rem;
 }
 .productos-categorias
 {
@@ -1917,7 +1925,7 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .productos-categorias a:hover
 {
@@ -1957,7 +1965,7 @@ footer
     width: 98%;
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
 .contacto-categorias
@@ -2036,7 +2044,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .about-footer
@@ -2075,7 +2083,7 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .about-categorias a:hover
 {
@@ -2101,7 +2109,7 @@ footer
 }
 .social-footer figure
 {
-    width: 50px;
+    width: 3.125rem;
     height: auto;
 }
 .social-footer figure img
@@ -2119,5 +2127,77 @@ footer
     font-family: 'Noto Sans SC';
     font-weight: 400;
     font-size: 0.625rem;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
+}
+
+
+@media screen and (max-width:1439px)
+{
+
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.float
+{
+    bottom: -8rem;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    grid-template-rows: 35px 190px 35px;
+    grid-template-areas: "float1 . float3"
+                         "float1 float2 float3"
+                         ". float2 ." ;
+    height: auto;
+}
+
+.productos
+{
+    padding: 0 2.5rem;
+    margin-top: 13rem;
+}
+
+.company-image
+{
+    object-fit: cover;
+    margin: 2rem;
+}
+
+.phone-container
+{
+    width: 40%;
+}
+
+.map-container iframe
+{
+    width:  100%;
+    height: 300px;
+}
+
+}
+
+
+
+@media screen and (max-width:1280px)
+{
+
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+.marcas-container 
+{
+    display: grid;
+    grid-template-rows: repeat(5,minmax(150px,1fr));
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+}
+
+
+
 }
