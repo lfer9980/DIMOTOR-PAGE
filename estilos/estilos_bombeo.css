@@ -306,6 +306,12 @@ ol, ul
 {
     display: none;
 }
+.breadcrumbs a:nth-of-type(3) span:hover
+{
+    color: #29598A;
+    cursor: initial;
+}
+
 
 
 
@@ -448,7 +454,7 @@ ol, ul
 }
 .categoria-description p
 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
     text-align: start;
     font-style: italic;
@@ -462,7 +468,7 @@ ol, ul
 
 .categoria-selection span
 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #091A2B;
 }
@@ -495,7 +501,10 @@ ol, ul
     text-align: start;
     color: #29598A;
 }
-
+.categoria-options a:hover
+{
+    color: #006AFF;
+}
 .categoria-help
 {
     display: flex;
@@ -505,6 +514,11 @@ ol, ul
 {
     cursor: pointer;
     color: #29598A;
+    font-size: 1.125rem;
+}
+.categoria-help a:hover
+{
+    color: #006AFF;
 }
 
 /* footer */
