@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name=“viewport” content=“user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi” />
     <title>Bombeo</title>
     <link rel="icon" type="icono dimotor" href="iconos/motor_icon.svg"/>
     <link rel="stylesheet" href="estilos/estilos_bombeo.css">
@@ -12,167 +13,157 @@
 </head>
 <body>
     <header> 
-        <!-- header superior -->
-        <section class="header-superior">
-           <div class="header-exchange">
-                <figure>
-                    <img src="iconos/money-bag_white-small.svg" alt="TC">
-                </figure>
-                    <p>
-                        <span>Tipo de cambio hoy: </span>
-                        <span>$</span>
-                        <span>19.70 MXN</span>
-                    </p>
-            </div> 
-
-            <div class="header-phone">
-                <figure>
-                    <img src="iconos/phone_white-small.svg" alt="PH">
-                </figure>
-                <a href="tel:+526144200151">
-                    <p>
-                        <span>(614)</span>
-                        <span>420</span>
-                        <span>01</span>
-                        <span>51</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="header-email">
-                <figure>
-                    <img src="iconos/mail_small.svg" alt="Mail">
-                </figure>
-                <p>
-                    <a href="mailto:dimotorventas@cosesa.mx">
-                        <span>dimotoventas@cosesa.mx</span>
-                    </a>
-                </p>
-            </div>
-
-            <div class="header-fb">
-                <a href="">
-                    <figure class="social-icon">
-                        <img src="iconos/facebook_small.svg" alt="FB">
-                    </figure>
-                </a>
-            </div>
-
-            <div class="header-ln">
-                <a href="">
-                    <figure class="social-icon">
-                        <img src="iconos/linkedin_small.svg" alt="LN">
-                    </figure>
-                </a>
-            </div>
-
-            <div class="header-wp">
-                <a href="https://wa.me/526144065406/?text=Hola!,%20me%20gustaría%20cotizar%20lo%20siguiente:">
-                    <figure class="social-icon">
-                        <img src="iconos/whatsapp1_small.svg" alt="WP">
-                    </figure>
-                </a>
-            </div>
-        </section>
-
-        <!-- header principal  -->
-        <section class="header-principal">
-            <div class="logo-container">
-                <a href="index.html">
+        <div class="container">
+            <section class="header-superior">
+                <div class="header-exchange">
                     <figure>
-                        <img src="iconos/dimotor_logo_1.svg" alt="DIMOTOR SA DE CV">
+                        <img class="header-icon" src="iconos/money-bag_white-small.svg" alt="TC">
                     </figure>
-                </a>    
-            </div>
+                        <p>
+                            <span>Tipo de cambio hoy:  &nbsp;</span>
+                            <span>$ 19.70 MXN</span>
+                        </p>
+                </div> 
+                <div class="header-phone">
+                    <figure>
+                        <img class="header-icon" src="iconos/phone_white-small.svg" alt="PH">
+                    </figure>
+                    <a href="tel:+526144200151">
+                            (614) 420 01 51
+                    </a>
+                </div>
+                <div class="header-email">
+                    <figure>
+                        <img class="header-icon" src="iconos/mail_small.svg" alt="Mail">
+                    </figure>
+                        <a href="mailto:dimotorventas@cosesa.mx">
+                            <span>dimotoventas@cosesa.mx</span>
+                        </a>
+                </div>
+                <div class="social-media-header">
+                    <a href="">
+                        <figure>
+                            <img class="social-icon" src="iconos/facebook_small.svg" alt="FB">
+                        </figure>
+                    </a>
+                    <a href="">
+                        <figure>
+                            <img class="social-icon" src="iconos/linkedin_small.svg" alt="LN">
+                        </figure>
+                    </a>
+                    <a href="https://wa.me/526144065406/?text=Hola!,%20me%20gustaría%20cotizar%20lo%20siguiente:">
+                        <figure>
+                            <img class="social-icon" src="iconos/whatsapp1_small.svg" alt="WP">
+                        </figure>
+                    </a>
+                </div>
+            </section>
+    
+            <section class="header-principal">
+                <figure>
+                    <img class="logo-principal" src="iconos/dimotor_logo_1.svg" alt="DIMOTOR SA DE CV">
+                </figure>
 
-            <nav class="sections-container">
-                <a href="index.html#products" class="productosItem">
-                    <span>Productos</span>
-                </a>
-                <hr class="under1">
-
-                <a href="index.html#promotions" class="promocionesItem">
-                    <span>Promociones</span>
-                </a>
-                <hr class="under2">
-
-                <a href="contacto.html" class="contactoItem">
-                    <span>Contacto</span>
-                </a>
-                <hr class="under3">
-
-                <a href="esperalo.html" class="descargablesItem">
-                    <span>Descargables</span>
-                </a>
-                <hr class="under4">
-
-                <a href="index.html#information-company" class="conoceItem">
-                    <span>Nosotros</span>
-                </a>
-                <hr class="under5">
-            </nav>
-
-<!--        <div class="search-container">
-                <form action="">
-                    <input type="text" placeholder="Busca aqui tus articulos por categoría o código...">
-                    <button>
-                        <img src="/iconos/search_white_small.svg" alt="Buscar">
-                    </button>
-                   </form>
-            </div> -->
-        </section>    
+                <nav class="sections-nav">
+                    <ol>
+                        <li>
+                            <a href="#products" class="nav-item">
+                                Productos
+                                <hr class="nav-under">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#promotions" class="nav-item">
+                                Promociones
+                                <hr class="nav-under">
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="contacto.html" class="nav-item">
+                                Contacto
+                                <hr class="nav-under">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="esperalo.html" class="nav-item">
+                                Descargables
+                                <hr class="nav-under">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#information-company" class="nav-item">
+                                Nosotros
+                                <hr class="nav-under">
+                            </a>
+                        </li>
+                    </ol>  
+                </nav>
+    
+                <div class="search-container">
+                    <form action="">
+                        <input type="text" placeholder="Busca aqui tus articulos por categoría o código...">
+                        <button>
+                            <img src="/iconos/search_white_small.svg" alt="Buscar">
+                        </button>
+                       </form>
+                </div> 
+            </section>   
+        </div>
     </header>
 
     <main>
-        <nav class="breadcrumbs">
-            <a href="index.html">
-                <span>Inicio</span>
-            </a>
-            <a href="index.html#products">
-                <span>Productos</span>
-            </a>
-            <a href="bombeo.html">
-                <span>Bombeo</span>
-            </a>
-        </nav>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">
+                    <span>Inicio</span>
+                </a>
+                <a href="index.html#products">
+                    <span>Productos</span>
+                </a>
+                <a href="#">
+                    <span>Bombeo</span>
+                </a>
+            </nav>
+        </div>
+    
 
-        <section class="main-title">
-            <h1>Bombeo</h1>
-            <hr>
-        </section>
-
-        <section class="hero">
-            <figure>
-                <img src="/imagenes/categorias-hero/bombeo.png" alt="Seccion principal de bombeo">
-            </figure>
-        </section>
-
-        <section class="main-intro">
-            <div class="intro-container">
-                <p>
-
-                    En <span>DIMOTOR</span> encontraras una amplia gama de equipos para <span>bombear 
-                    agua y líquidos especiales</span>. Cualquiera que sea tu necesidad, podemos 
-                    ayudarte a encontrar la mejor opción para ti.
-                    <br> <br>
-                    Somos distribuidores de todo tipo de bombas para agua que van desde 
-                    <span>equipos presurizadores</span> para uso residencial, hasta bombas verticales 
-                    para <span>pozo profundo</span> de grandes caudales.
-                    <br><br>
-                        <strong>
-                            Debajo encontraras todas las opciones que podemos proveerte. 
-                            ¡comunícate con nosotros! y pide tu <span><strong>cotización ya!</strong></span> 
-                        </strong>
-            </p>
+        <section class="main-title"> 
+            <div class="container">
+                <h1>Bombeo</h1>
+                <hr>
             </div>
         </section>
 
-        <section class="main-categorias-title">
-                <h2>Categorías de bombeo</h2>
-                <hr>
+        <section class="hero">
+            <div class="container">
+                <figure>
+                    <img class="hero-image" src="https://i.postimg.cc/Z59WKy72/bombeo.png" alt="Seccion principal de bombeo">
+                </figure>
+                <article class="intro-container">
+                    <p>
+    
+                        En <span>DIMOTOR</span> encontraras una amplia gama de equipos para <span>bombear 
+                        agua y líquidos especiales</span>. Cualquiera que sea tu necesidad, podemos 
+                        ayudarte a encontrar la mejor opción para ti.
+                        <br> <br>
+                        Somos distribuidores de todo tipo de bombas para agua que van desde 
+                        <span>equipos presurizadores</span> para uso residencial, hasta bombas verticales 
+                        para <span>pozo profundo</span> de grandes caudales.
+                        <br><br>
+                            <strong>
+                                Debajo encontraras todas las opciones que podemos proveerte. 
+                                ¡comunícate con nosotros! y pide tu <span><strong>cotización ya!</strong></span> 
+                            </strong>
+                    </p>
+                </article>
+            </div>
+
         </section>
 
         <section class="main-categorias">
+            <div class="container">
+            <h2>Categorías de bombeo</h2>
+            <hr>
             <article class="categorias-container">
                     <div class="categoria-title">
                         <span>Bombeo agrícola</span>
@@ -411,166 +402,166 @@
                     </a>
                 </div> 
             </article>
+            </div>
         </section>
-
     </main>
 
     <footer>
-            <section class="logo-footer">
-                <a href="index.html">
-                    <figure>
-                        <img src="iconos/dimotor-logo-footer.svg" alt="">
-                    </figure>
-                        <span>Distribuidora de Hidroneumáticos
-                            y Motores, S.A. de C.V.</span>
-                        <hr>
-                </a>
-            </section>
-
-            <section class="address-footer">
+        <section class="logo-footer">
+            <a href="index.html">
                 <figure>
-                        <img src="iconos/Location_white.svg" alt="">
+                    <img src="iconos/dimotor-logo-footer.svg" alt="">
                 </figure>
-                <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
-                    <span>Perif. V. Lombardo Toledano, No. 7803 
-                        <br>Col. Aeropuerto, Chihuahua, Chih. México
-                    </span>
-                </a>
-            </section>
+                    <span>Distribuidora de Hidroneumáticos
+                        y Motores, S.A. de C.V.</span>
+                    <hr>
+            </a>
+        </section>
 
-            <section class="phone-footer">
-                <div class="phone-footer-image">
-                    <figure>
-                        <img src="iconos/phone_color.svg" alt="">
-                    </figure>
-                </div>
-                
-                <div class="phone-footer-container">
-                    <span>(614) 420-01-51</span>
-                    <span>(614) 420-13-63</span>
-                    <span>(614) 435-27-38</span>
-                    <span>(614) 446-55-00</span>
-                </div>
-            </section>
+        <section class="address-footer">
+            <figure>
+                    <img src="iconos/Location_white.svg" alt="">
+            </figure>
+            <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
+                <span>Perif. V. Lombardo Toledano, No. 7803 
+                    <br>Col. Aeropuerto, Chihuahua, Chih. México
+                </span>
+            </a>
+        </section>
 
-            <section class="mail-footer">
+        <section class="phone-footer">
+            <div class="phone-footer-image">
                 <figure>
-                    <img src="iconos/mail_white.svg" alt="">
+                    <img src="iconos/phone_color.svg" alt="">
                 </figure>
-                <a href="mailto:dimotorventas@cosesa.mx">
-                    <span>dimotorventas@cosesa.mx</span>
-                </a>
-            </section>
-
-            <section class="productos-footer">
-                <div class="productos-title">
-                    <span>Productos</span>
-                    <hr>
-                </div>
-
-                <nav class="productos-categorias">
-                    <a href="bombeo.html">
-                        <span>Bombeo</span>
-                    </a>
-                    <a href="motores.html">
-                        <span>Motores y reductores</span>
-                    </a>
-                    <a href="presion-constante.html">
-                        <span>Presión constante residencial</span>
-                    </a>
-                    <a href="electricidad.html">
-                        <span>Electricidad</span>
-                    </a>
-                    <a href="control.html">
-                        <span>control</span>
-                    </a>
-                    <a href="proteccion.html">
-                        <span>Protección de bombas</span>
-                    </a>
-                    <a href="medicion.html">
-                        <span>Medición agricola</span>
-                    </a>
-                    <a href="refacciones.html">
-                        <span>Refacciones y repuestos</span>
-                    </a>
-                </nav>
-            </section>
-
-            <section class="contacto-footer">
-                <div class="contacto-title">
-                    <span>Contacto</span>
-                    <hr>
-                </div>
-
-                <nav class="contacto-categorias">
-                    <a href="contacto.html">
-                        <span>Contactános</span>
-                    </a>
-                    <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
-                        <span>Ubicación</span>
-                    </a>
-                    <a href="">
-                        <span>Mensajes</span>
-                    </a>  
-                </nav>
-            </section>
-
-            <section class="descargables-footer">
-                <div class="descargables-title">
-                    <span>Descargables</span>
-                    <hr>
-                </div>
-
-                <nav class="descargables-categorias">
-              <!--  <a href="">
-                        <span>Listas de precios</span>
-                    </a> -->
-                    <a href="esperalo.html">
-                        <span>Fichas tecnicas</span>
-                    </a>
-                    <a href="esperalo.html">
-                        <span>Manuales</span>
-                    </a>
-                </nav>
-            </section>
-
-            <section class="about-footer">
-                <div class="about-title">
-                    <span>Nosotros</span>
-                    <hr>
-                </div>
-
-                <nav class="about-categorias">
-                    <a href="esperalo.html">
-                        <span>Historia</span>
-                    </a>
-                    <a href="#brands">
-                        <span>Marcas</span>
-                    </a>
-                </nav>  
-            </section>
+            </div>
             
-            <nav class="social-footer">
-                <a href="">
-                    <figure>
-                        <img src="iconos/facebook_color.svg" alt="">
-                    </figure>
+            <div class="phone-footer-container">
+                <span>(614) 420-01-51</span>
+                <span>(614) 420-13-63</span>
+                <span>(614) 435-27-38</span>
+                <span>(614) 446-55-00</span>
+            </div>
+        </section>
+
+        <section class="mail-footer">
+            <figure>
+                <img src="iconos/mail_white.svg" alt="">
+            </figure>
+            <a href="mailto:dimotorventas@cosesa.mx">
+                <span>dimotorventas@cosesa.mx</span>
+            </a>
+        </section>
+
+        <section class="productos-footer">
+            <div class="productos-title">
+                <span>Productos</span>
+                <hr>
+            </div>
+
+            <nav class="productos-categorias">
+                <a href="bombeo.html">
+                    <span>Bombeo</span>
                 </a>
-                <a href="">
-                    <figure>
-                        <img src="iconos/linkedin_small.svg" alt="">
-                    </figure>
+                <a href="motores.html">
+                    <span>Motores y reductores</span>
                 </a>
-                <a href="">
-                    <figure>
-                        <img src="iconos/whatsapp1_small.svg" alt="">
-                    </figure>
+                <a href="presion-constante.html">
+                    <span>Presión constante residencial</span>
+                </a>
+                <a href="electricidad.html">
+                    <span>Electricidad</span>
+                </a>
+                <a href="control.html">
+                    <span>control</span>
+                </a>
+                <a href="proteccion.html">
+                    <span>Protección de bombas</span>
+                </a>
+                <a href="medicion.html">
+                    <span>Medición agricola</span>
+                </a>
+                <a href="refacciones.html">
+                    <span>Refacciones y repuestos</span>
                 </a>
             </nav>
-            
-            <div class="designby-footer">
-                <span>Diseñado desde Distribuidora de Hidroneumáticos y motores S.A de C.V.</span>
+        </section>
+
+        <section class="contacto-footer">
+            <div class="contacto-title">
+                <span>Contacto</span>
+                <hr>
             </div>
-    </footer>
+
+            <nav class="contacto-categorias">
+                <a href="contacto.html">
+                    <span>Contactános</span>
+                </a>
+                <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
+                    <span>Ubicación</span>
+                </a>
+                <a href="">
+                    <span>Mensajes</span>
+                </a>  
+            </nav>
+        </section>
+
+        <section class="descargables-footer">
+            <div class="descargables-title">
+                <span>Descargables</span>
+                <hr>
+            </div>
+
+            <nav class="descargables-categorias">
+            <a href="">
+                    <span>Listas de precios</span>
+                </a> 
+                <a href="esperalo.html">
+                    <span>Fichas tecnicas</span>
+                </a>
+                <a href="esperalo.html">
+                    <span>Manuales</span>
+                </a>
+            </nav>
+        </section>
+
+        <section class="about-footer">
+            <div class="about-title">
+                <span>Nosotros</span>
+                <hr>
+            </div>
+
+            <nav class="about-categorias">
+                <a href="esperalo.html">
+                    <span>Historia</span>
+                </a>
+                <a href="#brands">
+                    <span>Marcas</span>
+                </a>
+            </nav>  
+        </section>
+        
+        <nav class="social-footer">
+            <a href="">
+                <figure>
+                    <img src="iconos/facebook_color.svg" alt="">
+                </figure>
+            </a>
+            <a href="">
+                <figure>
+                    <img src="iconos/linkedin_small.svg" alt="">
+                </figure>
+            </a>
+            <a href="">
+                <figure>
+                    <img src="iconos/whatsapp1_small.svg" alt="">
+                </figure>
+            </a>
+        </nav>
+        
+        <div class="designby-footer">
+            <span>Diseñado desde Distribuidora de Hidroneumáticos y motores S.A de C.V.</span>
+        </div>
+</footer>
 </body>
 </html>
