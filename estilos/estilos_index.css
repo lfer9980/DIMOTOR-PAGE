@@ -168,13 +168,16 @@ header
 {
     display: flex;
     height: inherit;
+    max-width: 50%;
     align-items: center;
     justify-content: space-between;
     padding: 0.3125rem;
 }
 .sections-nav ol
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,minmax(1fr,40px));
     height: inherit;
 }
 .sections-nav ol li
@@ -183,6 +186,7 @@ header
 }
 .sections-nav a
 {
+
     text-decoration: none;
     display: block;
     height: inherit;
