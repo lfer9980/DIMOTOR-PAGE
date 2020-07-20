@@ -9,7 +9,7 @@
 body
 {
     margin: 0;
-    background-image:url('../fondos/fondo_landing.png');
+    background-image:url('https://i.postimg.cc/k5RZ8PDL/fondo-landing.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -206,7 +206,7 @@ header
     border: 0.125rem solid  #29598A;  
 }
 
-ol, ul
+.sections-nav ol, ul
 {
     margin: 0;
     padding: 0;
@@ -269,7 +269,7 @@ ol, ul
 }
 
 
-
+/* miga de pan */
 .breadcrumbs
 {
     background: #E5EEFC;
