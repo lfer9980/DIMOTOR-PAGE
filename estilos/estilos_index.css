@@ -360,7 +360,7 @@ ol, ul
     bottom: -5rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,1fr));
-    grid-template-rows: 35px 230px 35px;
+    grid-template-rows: 40px 230px 40px;
     grid-template-areas: "float1 . float3"
                          "float1 float2 float3"
                          ". float2 ." ;
@@ -410,7 +410,7 @@ ol, ul
     justify-content: center;
     text-decoration: none;
     width:6.75rem;
-    height:1.875rem;
+    height:2rem;
     color: white;
     background: #29598A;
     border: none;
