@@ -6,37 +6,45 @@
     padding: 0;
     font-size: 16px;
 }
-
 body
 {
     margin: 0;
     background: white;
 }   
+/* ajustes seccion principal */
 
+.container
+{
+    max-width: 100vw;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit; 
+}
 
 /* propiedades de todo el header */
 header
 {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 120px;
-    grid-template-areas: "superior"
-                         "main";
-    background: white;
+    display: block;
+    max-width: 100vw;
+    margin: 0;
+    height: auto;
+    position: relative;
+    justify-content: space-evenly;
 }
 
 /* primera barra del header */
 .header-superior
 {
-    display: grid;
-    grid-area: superior;
-    grid-template-columns: 1fr 280px 1fr 160px 1fr 240px 1fr 65px 65px 65px 1fr;
-    grid-template-rows: 40px;
-    grid-template-areas: ". exchange . phone . email . fb ln wp .";
-    font-family: 'IBM Plex Sans',sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 0.3125rem 0;
     background: rgba(9,26,43,1);
     background: -moz-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,26,43,1)), color-stop(100%, rgba(41,89,138,1)));
@@ -45,191 +53,172 @@ header
     background: -ms-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
+    font-family: 'IBM Plex Sans',sans-serif;
 }
-.header-superior figure 
+
+.header-icon
 {
-    margin:10px 6px;
-    width: auto;
-    align-content: center;
-    justify-content: center;
+    width: 1.5rem;
+    margin: 0 0.625rem;
+    vertical-align: top;
 }
+
 .header-exchange
 {
-    grid-area: exchange;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.header-exchange p span
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:white;
+}
+.header-exchange p span:nth-of-type(2)
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: #29598A;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 0.125rem 0.3125rem;
+}
+
 .header-phone
 {
-    grid-area: phone;
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: space-evenly;
 }
 .header-phone a
 {
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: white;
 }
+
+.header-phone a:hover
+{
+    cursor: pointer;
+    color: #006AFF;
+}
+
+
 .header-email
 {
-    grid-area: email;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-email a
 {
+    cursor: pointer;
     text-decoration: none;
-    color: white;
 }
-.header-fb
+.header-email a span
 {
-    grid-area: fb;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:white;
+}
+.header-email a span:hover
+{
+    cursor: pointer;
+    color: #006AFF;
+}
+.social-media-header
+{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.header-ln
+.social-icon
 {
-    grid-area: ln;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header-wp
-{
-    grid-area: wp;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    margin: 0 0.625rem;
+}  
+
 
 /* barra principal del header */
 .header-principal
 {
-    grid-area:main;
-    display: grid;
-    grid-template-columns: [inicio] 1fr [inicio-logo] 215px [fin-logo] 1fr 
-                           [inicio-barra] 688px [fin-barra] 1fr [inicio-search] 350px 
-                           [fin-search] 1fr [fin];
-    grid-template-rows: [inicio] 43px [inicio-search] 12px [inicio-barra] 23px
-                        [fin-search] 9.5px [fin-barra] 1fr [fin];
-    background-image:url('../fondos/fondo_header.png');
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    padding: 0.625rem;
+    background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 3px 0px rgba(9,26,43, 0.47);
+    box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
 }
 
-/* logo de dimotor */
-.logo-container
+.logo-principal
 {
-    grid-column:  inicio-logo / fin-logo;
-    grid-row: inicio / fin ;
-    display: block;
-    position: relative;
-    align-self: center;
-    justify-self: center;
-}
-.logo-container img
-{
-    width: 100%;
-    vertical-align: top;
+    width: 15.625rem;
+    height: inherit;
 }
 /* Secciones del menu */
-.sections-container
+.sections-nav
 {
-    grid-column:  inicio-barra / fin-barra;
-    grid-row: inicio-barra / fin-barra;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "productos promociones contacto descargables conoce"
-                         "under1 under2 under3 under4 under5";
-    column-gap: 25px;
-    row-gap: 0;
-    width: 100%;
-    justify-self: center;
+    display: flex;
+    height: inherit;
     align-items: center;
-    justify-items: center;
+    justify-content: space-between;
+    padding: 0.3125rem;
 }
-.sections-container span
+.sections-nav ol
 {
+    display: flex;
+    height: inherit;
+}
+.sections-nav ol li
+{
+    height: inherit;
+}
+.sections-nav a
+{
+    text-decoration: none;
+    display: block;
+    height: inherit;
+    align-items: center;
+    padding: 0 0.625rem;
     font-family: 'Noto Sans SC';
-    font-size: 1.333rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #091A2B;
 }
-.productosItem
+
+.sections-nav a:hover
 {
-    grid-area: productos;
-    text-decoration: none;
-    cursor: pointer;
+    color: #006AFF;
 }
-.promocionesItem
-{
-    grid-area: promociones;
-    text-decoration: none;
-    cursor: pointer;
-}
-.contactoItem
-{
-    grid-area: contacto;
-    text-decoration: none;
-    cursor: pointer;
-}
-.descargablesItem
-{
-    grid-area: descargables;
-    text-decoration: none;
-    cursor: pointer;
-}
-.conoceItem
-{
-    grid-area: conoce;
-    text-decoration: none;
-    cursor: pointer;
-}
-.sections-container hr
+
+.sections-nav hr
 {
     width: 100%;
-    border-radius: 2px;
-    border: 2px solid  #29598A;
-}
-.under1
-{
-    grid-area: under1;
+    border-radius: 0.125rem;
+    border: 0.125rem solid  #29598A;  
 }
 
-.under2
+.sections-nav ol, ul
 {
-    grid-area: under2;
-}
-.under3
-{
-    grid-area: under3;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.under4
-{
-    grid-area: under4;
-}
-
-.under5
-{
-    grid-area: under5;
-}
 
 /* barra de busqueda */
 .search-container 
 {
-    grid-column:  inicio-search / fin-search;
-    grid-row: inicio-search / fin-search ;
-    background: white;
-
+    width: 21.875rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search-container form
 {
@@ -237,21 +226,21 @@ header
     grid-template-columns: 9fr 1fr;
     grid-template-areas: "search button";
     width: 100%;
-    height: 100%;
+    height: 2.1875rem;
 }
 .search-container input
 {
     grid-area: search;
     width:100%;
     margin: 0;
-    padding-left: 7px;
+    padding-left: 0.4375rem;
     font-family: 'IBM Plex Sans';
     font-style: italic;
-    font-size: 12px;
+    font-size: 0.75rem;
     border-left: 1.5px solid #091A2B;
     border-top: 1.5px solid #091A2B;
     border-bottom: 1.5px solid #091A2B;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0.3125rem 0px 0px 0.3125rem;
 }
 .search-container button
 {
@@ -264,26 +253,23 @@ header
     cursor: pointer;
     border: none;
     border:1.5px solid #091A2B;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 0.3125rem 0.3125rem 0px;
+}
+
+.search-container button:hover
+{
+    background:#006AFF;
 }
 .search-container button img
 {
     align-self: center;
 }
 
-main
-{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 30px 90px 400px 90px;
-    grid-template-areas: "bread bread bread"
-                         ". . ."
-                         ". esperalo ."
-                         ". . .";
-}
+
+
+/* miga de pan */
 .breadcrumbs
 {
-    grid-area: bread;
     background: #E5EEFC;
 }
 .breadcrumbs a
@@ -297,6 +283,10 @@ main
     font-family: 'Noto Sans SC';
     font-weight: 600;
     font-size: 14px;
+}
+.breadcrumbs a span:hover
+{
+    color: #006AFF;
 }
 .breadcrumbs a:nth-of-type(1)
 {
@@ -314,54 +304,47 @@ main
 {
     display: none;
 }
+.breadcrumbs a:nth-of-type(2) span:hover
+{
+    color: #29598A;
+    cursor: initial;
+}
+
+
 
 .esperalo
 {
-    grid-area: esperalo;
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: repeat(6,1fr);
-}
-.esperalo figure
-{
-    grid-row: 1 / span 6;
-    grid-column: 1 / span 1;
-    width: 400px;
-    height: 400px;
-    margin: 0;
-    align-self: center;
-}
-.esperalo figure img
-{
-    width: 100%;
-}
-
-.title-1
-{
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
     display: flex;
+    height: auto;
     justify-content: center;
     align-items: center;
+    padding: 0 40px;
+    margin: 3.75rem 0;   
 }
-.title-1 span
+.main-image
 {
-    text-align: center;
-    font-family: 'Noto Sans JP';
-    font-weight: 800;
-    font-size: 2.369rem;
-    color: #006AFF;
+    width: 450px;
+    height: auto;
+    margin: 2rem;
+    align-self: center;
 }
 
 .content
 {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+    line-height: 2rem;
 }
-.content span
+
+.content span:nth-of-type(1)
+{
+    font-family: 'Noto Sans JP';
+    font-weight: 800;
+    font-size: 3rem;
+    color: #006AFF;
+}
+
+.content span:nth-of-type(2)
 {
     text-align: center;
     font-family: 'Noto Sans SC';
@@ -370,42 +353,27 @@ main
     color: #29598A;
 }
 
-.content-1 
+.content span:nth-of-type(3)
 {
-    grid-row: 4 / span 1;
-    grid-column: 2 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content-1 span
-{
-    text-align: center;
     font-family: 'Noto Sans SC';
     font-weight: 700;
     font-size: 1.333rem;
     color: #091A2B;
 }
 
-.seguir-navegando
-{
-    grid-row: 5 / span 1;
-    grid-column: 2 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.seguir-navegando a
+.content a
 {
     cursor: pointer;
-    color: #006AFF;
-}
-.seguir-navegando a span
-{
+    color: #29598A;
     text-align: center;
     font-family: 'Noto Sans SC';
     font-weight: 700;
     font-size: 18px;
+}
+
+.content a:hover
+{
+    color: #006AFF;
 }
 
 
@@ -413,15 +381,15 @@ main
 footer
 {
     display: grid;
-    grid-template-columns: 2fr 276px 1fr 203px 1fr 124px 1fr 175px 2fr;
-    grid-template-rows: 112px 55px 120px 38px;
+    grid-template-columns: 2fr 17.5rem 1fr 12.5rem 1fr 7.8125rem 1fr 10.9375rem 2fr;
+    grid-template-rows: 7.1875rem 3.75rem 7.5rem 2.5rem;
     grid-template-areas: ". logo . productos . contacto . nosotros ."
                          ". direccion . productos . contacto . . ."
                          ". telefono . productos . descargables . social ."
                          ". correo . . . . . diseño diseño";
     color: white;
     background: #091A2B;
-    box-shadow: 0px -2px 8px rgba(9, 26, 43, .47);
+    box-shadow: 0 -0.125px 0.5rem rgba(9, 26, 43, .47);
 }
 
 .logo-footer 
@@ -431,8 +399,8 @@ footer
 .logo-footer a figure
 {
     margin: 0;
-    width: 250px;
-    height: 64px;
+    max-width: 15.625rem;
+    height: auto;
     align-self: center;
 }
 .logo-footer a figure img
@@ -452,10 +420,10 @@ footer
 }
 .logo-footer a span
 {
-    line-height: 22px;
+    line-height: 1.375rem;
     font-family: 'Noto Sans JP';
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1rem;
     margin-bottom: 2px;
 }
 .logo-footer hr
@@ -473,8 +441,8 @@ footer
 }
 .address-footer figure
 {
-    margin-right: 10px;
-    height: 42px;
+    margin-right: 0.625rem;
+    height: auto;
 }
 .address-footer figure img
 {
@@ -487,12 +455,17 @@ footer
     color: white;
     text-align: left;
 }
+.address-footer a:hover
+{
+    color: #006AFF;
+}
+
 .address-footer a span
 {
-    line-height: 18px;
+    line-height: 1.125rem;
     font-family: 'Noto Sans SC';
     font-weight: 500;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 
@@ -512,7 +485,7 @@ footer
     font-family: 'Noto Sans SC';
     font-weight: 600;
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 .phone-footer-image
 {
@@ -522,7 +495,7 @@ footer
 }
 .phone-footer figure
 {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .mail-footer
@@ -530,13 +503,13 @@ footer
     grid-area: correo;
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
 }
 .mail-footer figure
 {
-    margin-right: 10px;
-    height: 23px;
+    margin-right: 0.625rem;
+    height: auto;
 }
 .mail-footer figure img
 {
@@ -549,11 +522,16 @@ footer
     color: white;
     text-align: left;
 }
+.mail-footer a:hover
+{
+    color:#006AFF;
+}
+
 .mail-footer a span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 
@@ -565,21 +543,21 @@ footer
 }
 .productos-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .productos-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .productos-title hr
 {
     width: 60%;
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0.3125rem;
+    margin-bottom: 1rem;
 }
 .productos-categorias
 {
@@ -591,7 +569,11 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+}
+.productos-categorias a:hover
+{
+    color:#006AFF;
 }
 .productos-categorias a:nth-of-type(8)
 {
@@ -602,7 +584,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 
@@ -614,21 +596,21 @@ footer
 }
 .contacto-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .contacto-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .contacto-title hr
 {
     width: 98%;
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0.3125rem;
+    margin-bottom: 1rem;
 }
 .contacto-categorias
 {
@@ -640,7 +622,11 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+}
+.contacto-categorias a:hover
+{
+    color:#006AFF;
 }
 .contacto-categorias a:nth-of-type(8)
 {
@@ -650,7 +636,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .descargables-footer
@@ -667,7 +653,7 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .descargables-title hr
 {
@@ -675,7 +661,7 @@ footer
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .descargables-categorias
 {
@@ -687,7 +673,11 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+}
+.descargables-categorias a:hover
+{
+    color: #006AFF;
 }
 .descargables-categorias a:nth-of-type(8)
 {
@@ -698,7 +688,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .about-footer
@@ -710,13 +700,13 @@ footer
 
 .about-title
 {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .about-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 .about-title hr
 {
@@ -724,7 +714,7 @@ footer
     border-radius: 1.5px;
     border: 1.5px solid  #29598A;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .about-categorias
@@ -737,7 +727,11 @@ footer
     text-decoration: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+}
+.about-categorias a:hover
+{
+    color: #006AFF;
 }
 .about-categorias a:nth-of-type(8)
 {
@@ -747,7 +741,7 @@ footer
 {
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .social-footer
@@ -759,8 +753,8 @@ footer
 }
 .social-footer figure
 {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: auto;
 }
 .social-footer figure img
 {
@@ -776,6 +770,155 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 400;
-    font-size: 10px;
-    margin-right: 5px;
+    font-size: 0.625rem;
+    margin-right: 0.3125rem;
 }
+
+
+@media screen and (max-width:1439px)
+{
+ *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    } 
+}
+
+@media screen and (max-width:1280px)
+{
+  *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .main-image
+    {
+        width: 400px;
+        height: auto;
+        margin: 2rem;
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width:1023px)
+{
+ *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    .header-principal
+    {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 0 0.625rem 0.625rem 0.625rem;
+      /*   background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat; */
+        background: white;
+        box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
+        position: relative;
+    }
+    .logo-principal
+    {
+        width: 20rem;
+        height: inherit;
+    }
+    .search-container
+    {
+        position: absolute;
+        z-index: 1;
+        bottom: 0.625rem;
+        right: 2rem;
+        width: 22.5rem;
+    }
+    .search-container form
+    {
+        height: 2.5rem;
+    }
+    .sections-nav
+    {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.5rem;
+    }
+
+
+    .esperalo
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2.5rem;
+        margin: 3.75rem 0;   
+    }
+    .main-image
+    {
+        width: 300px;
+        height: auto;
+        margin: 2rem;
+        align-self: center;
+    }
+    
+    .content
+    {
+        display: block;
+        text-align: center;
+        line-height: 2rem;
+    }
+    
+    .content span:nth-of-type(1)
+    {
+        font-family: 'Noto Sans JP';
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: #006AFF;
+    }
+    
+    .content span:nth-of-type(2)
+    {
+        text-align: center;
+        font-family: 'Noto Sans SC';
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #29598A;
+    }
+    
+    .content span:nth-of-type(3)
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 700;
+        font-size: 1.333rem;
+        color: #091A2B;
+    }
+    
+    .content a
+    {
+        cursor: pointer;
+        color: #29598A;
+        text-align: center;
+        font-family: 'Noto Sans SC';
+        font-weight: 700;
+        font-size: 1.333rem;
+    }
+    
+    .content a:hover
+    {
+        color: #006AFF;
+    }
+
+}
+
