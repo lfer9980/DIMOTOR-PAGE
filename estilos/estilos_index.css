@@ -28,6 +28,60 @@ body
     flex-wrap: inherit; 
 }
 
+.float-contact
+{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1;
+}
+.float-contact-wp
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 0.3125rem 0.3125rem 0 0;
+    text-decoration: none;
+}
+.float-contact-wp:hover
+{
+    background: rgba(13,170,72, 1);
+    cursor: pointer;
+}
+.float-info
+{
+    color: white;
+    font-family: 'Noto Sans SC';
+    font-weight: 600;
+    font-size: 1.33rem;
+    margin-right: 0.8125rem;
+}
+.float-icon-wp
+{
+    margin: 0.5rem 0.8125rem;
+}
+.float-contact-msn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0078FF;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    text-decoration: none;
+}
+.float-contact-msn:hover
+{
+    background: rgba(6,90,184, 1);
+    cursor: pointer;
+}
+.float-icon-msn
+{
+    margin: 0.5rem 0.8125rem;
+}
+
+
+
 /* propiedades de todo el header */
 header
 {
