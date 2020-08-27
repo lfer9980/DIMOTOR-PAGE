@@ -9,7 +9,7 @@
 body
 {
     margin: 0;
-    background-image:url('../fondos/fondo_landing.png');
+    background-image:url('https://i.postimg.cc/k5RZ8PDL/fondo-landing.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -222,8 +222,8 @@ header
 {
     display: flex;
     height: inherit;
-    max-width: 50%;
     align-items: center;
+    max-width: 50%;
     justify-content: space-between;
     padding: 0.3125rem;
 }
@@ -233,21 +233,24 @@ header
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(1,minmax(1fr,40px));
     height: inherit;
+    width: inherit;
 }
 .sections-nav ol li
 {
+    display: flex;
     height: inherit;
+    justify-content: center;
 }
-.sections-nav a
+.nav-item
 {
 
     text-decoration: none;
     display: block;
     height: inherit;
     align-items: center;
-    padding: 0 0.625rem;
+    padding: 0 0.4rem;
     font-family: 'Noto Sans SC';
-    font-size: 1.5rem;
+    font-size: 1.33rem;
     font-weight: 500;
     color: #091A2B;
 }
@@ -260,8 +263,8 @@ header
 .sections-nav hr
 {
     width: 100%;
-    border-radius: 0.125rem;
-    border: 0.125rem solid  #29598A;  
+    border-radius: 2px;
+    border: 2px solid  #29598A;  
 }
 
 ol, ul
@@ -299,9 +302,9 @@ ol, ul
     font-family: 'IBM Plex Sans';
     font-style: italic;
     font-size: 0.75rem;
-    border-left: 1.5px solid #091A2B;
-    border-top: 1.5px solid #091A2B;
-    border-bottom: 1.5px solid #091A2B;
+    border-left: 2px solid #091A2B;
+    border-top: 2px solid #091A2B;
+    border-bottom: 2px solid #091A2B;
     border-radius: 0.3125rem 0px 0px 0.3125rem;
 }
 .search-container button
@@ -1843,8 +1846,8 @@ footer
 .logo-footer hr
 {
     width: 100%;
-    border-radius: 1.5px;
-    border: 1.5px solid  #29598A;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
 }
 
 .address-footer
@@ -1968,8 +1971,8 @@ footer
 .productos-title hr
 {
     width: 60%;
-    border-radius: 1.5px;
-    border: 1.5px solid  #29598A;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -2021,8 +2024,8 @@ footer
 .contacto-title hr
 {
     width: 98%;
-    border-radius: 1.5px;
-    border: 1.5px solid  #29598A;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -2072,8 +2075,8 @@ footer
 .descargables-title hr
 {
     width: 98%;
-    border-radius: 1.5px;
-    border: 1.5px solid  #29598A;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -2125,8 +2128,8 @@ footer
 .about-title hr
 {
     width: 70%;
-    border-radius: 1.5px;
-    border: 1.5px solid  #29598A;
+    border-radius: 2px;
+    border: 2px solid  #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -2235,10 +2238,6 @@ footer
 }
 
 
-
-
-
-
 @media screen and (max-width:1280px)
 {
     *
@@ -2257,10 +2256,6 @@ footer
 }
 
 
-
-
-
-
 @media screen and (max-width:1023px)
 {
     *
@@ -2276,6 +2271,7 @@ footer
         height: auto;
         text-align: center;
         padding: 0 0.625rem 0.625rem 0.625rem;
+        border: 1px solid transparent;
       /*   background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
         background-size: cover;
         background-position: right;
@@ -2305,9 +2301,10 @@ footer
     {
         display: flex;
         height: inherit;
+        max-width: 100%;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        margin: 0;
     }
     .ref-hero-overlay
     {
@@ -2400,3 +2397,5 @@ footer
         height: 400px;
     }
 }
+
+@media screen and (max-width:)
