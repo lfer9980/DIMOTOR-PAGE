@@ -14,7 +14,39 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
 }   
+
 /* ajustes seccion principal */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?n9yn1h');
+    src:  url('../fonts/icomoon.eot?n9yn1h#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?n9yn1h') format('truetype'),
+      url('../fonts/icomoon.woff?n9yn1h') format('woff'),
+      url('../fonts/icomoon.svg?n9yn1h#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9ba";
+  }
+
 
 .container
 {
@@ -80,6 +112,24 @@ body
     margin: 0.5rem 0.8125rem;
 }
 
+.burger-button
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    position: fixed;
+    top: 17px;
+    left: 10px;
+    z-index: 4;
+    display: none;
+}
+
 
 
 /* propiedades de todo el header */
@@ -111,6 +161,10 @@ header
     background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
     font-family: 'IBM Plex Sans',sans-serif;
+}
+
+.logo-head-container .sup {
+    display: none;
 }
 
 .header-icon
@@ -2196,6 +2250,7 @@ footer
 
 
 
+/* media queries: 1439px, 1280px, 1023px, 768px, 767px, 424px,  360px  */
 @media screen and (max-width:1439px)
 {
     *
@@ -2265,6 +2320,26 @@ footer
         padding: 0;
         font-size: 14px;
     }
+
+    .header-superior
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    .social-media-header
+    {
+        position: absolute;
+        bottom: -4rem;
+        right: 1rem;
+        padding: 0.5rem 0;
+    }
+
     .header-principal
     {
         display: block;
@@ -2396,6 +2471,136 @@ footer
         width:  inherit;
         height: 400px;
     }
+
+    .float-contact {
+    
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 1;
+    }
+    .float-contact-wp
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #25D366;
+        border-radius: 0.3125rem 0.3125rem 0 0;
+        text-decoration: none;
+    }
+    .float-contact-wp:hover
+    {
+        background: rgba(13,170,72, 1);
+        cursor: pointer;
+    }
+    .float-info
+    {
+        color: white;
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 1.33rem;
+        margin-right: 0.8125rem;
+    }
+    .float-icon-wp
+    {
+        margin: 0.5rem 0.8125rem;
+    }
+    .float-contact-msn
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0078FF;
+        border-radius: 0 0 0.3125rem 0.3125rem;
+        text-decoration: none;
+    }
+    .float-contact-msn:hover
+    {
+        background: rgba(6,90,184, 1);
+        cursor: pointer;
+    }
+    .float-icon-msn
+    {
+        margin: 0.5rem 0.8125rem;
+    }
+    
 }
 
-@media screen and (max-width:)
+@media screen and (max-width:768px)
+{
+    *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .float-info
+    {
+      display: none;
+    }
+
+}
+
+@media screen and (max-width:767px)
+{
+    .header-principal {
+        display: none;
+    }
+
+    .header-superior {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    .logo-head-container .sup {
+        display: block;
+        width: auto;
+        height: 6rem;
+    }
+
+    .logo-principal .sup {
+        width: inherit;
+        height: auto;
+    }
+
+    .header-exchange {
+        display: none;
+    }
+    
+    .header-email {
+        display: none;
+    }
+    
+    .header-phone {
+        display: none;
+    }
+    
+    .social-media-header {
+        display: none;
+    }
+
+    .burger-button {
+
+    }
+}
+
+@media screen and (max-width:424px)
+{
+    *
+    {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .float-info
+    {
+      display: none;
+    }
+
+}
