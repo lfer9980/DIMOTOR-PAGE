@@ -1584,45 +1584,26 @@ ol, ul
 }
 .marcas-container 
 {
-    grid-area: marcas;
     display: grid;
     grid-template-rows: repeat(4,minmax(200px,1fr));
     grid-template-columns: repeat(4,minmax(200px,1fr));
     background: white;
     border-radius: 0.3125rem;
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
-    justify-content: center;
     align-items: center;
-}
-
-.marcas-container figure
-{
-    text-align: center;
+    justify-items: center;
 }
 
 .marca-image 
 {
-    width: 75%;
+    width: 250px;
     height: auto;
 }
 
-.marcas-container figure:nth-of-type(8) img
+.marca-image:nth-of-type(8), .marca-image:nth-of-type(10), .marca-image:nth-of-type(15) 
 {
-    width: 50%;
+    width: 150px;
 }
-
-
-.marcas-container figure:nth-of-type(10) img
-{
-    width: 50%;
-}
-
-.marcas-container figure:nth-of-type(15) img
-{
-    width: 50%;
-}
-
-
 
 
 /* ajustes de contacto */
@@ -1833,6 +1814,7 @@ ol, ul
     font-size: 1.333rem;
     font-weight: 500;
     text-align: left;
+    align-self: center;
     width: 100%;
     margin-left: 1rem;
 }
@@ -2245,8 +2227,6 @@ footer
 
 
 
-
-
 /* media queries: 1439px, 1280px, 1023px, 768px, 767px, 424px,  360px  */
 @media screen and (max-width:1439px)
 {
@@ -2443,12 +2423,7 @@ footer
         font-size: 2rem;
         padding-bottom: 2rem;
     }
-    .marcas-container 
-    {
-        display: grid;
-        grid-template-rows: repeat(5,minmax(150px,1fr));
-        grid-template-columns: repeat(3,minmax(200px,1fr));
-    }
+
     .phone-container
     {
         width: 75%;
@@ -2516,6 +2491,29 @@ footer
     {
         margin: 0.5rem 0.8125rem;
     }
+
+    .company-des-container span
+    {
+        max-width: 100%;
+    }
+
+    .marcas-container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .marca-image
+    {
+        width: 250px;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 0 1rem;
+    }
     
 }
 
@@ -2531,6 +2529,10 @@ footer
     .float-info
     {
       display: none;
+    }
+    .company-des-container span
+    {
+        max-width: 100%;
     }
 
 }
@@ -2720,9 +2722,9 @@ footer
         background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: initial;
         background-position-y: bottom;
-        background-position-x: 30%;
+        background-position-x: left;
         width: 100%;
         height: 300px;
     }
@@ -2753,9 +2755,353 @@ footer
       
         font-size: 1rem;
     }
-    
-    
+      
+    .company-des-container span
+    {
+        max-width: 100%;
+    }
 
+    .marcas h1 
+    {
+        font-size: 1.5rem;
+    }
+ 
+    .phone-container
+    {
+        width: 100%;
+    }
+
+    
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-footer 
+    {
+        width: 250px;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    .logo-footer a figure
+    {
+        margin: 0;
+        max-width: 300px;
+        height: auto;
+        align-self: center;
+    }
+    
+    .logo-footer a span
+    {
+        margin-bottom: 5px;
+    }
+
+    .address-footer 
+    {
+        margin-bottom: 1.5rem;
+    }
+    
+    .address-footer a span
+    {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    
+    .phone-footer
+    {
+        margin-bottom: 1.5rem;
+    }
+
+    .phone-footer-container span
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    
+    .mail-footer
+    {
+        grid-area: correo;
+        display: flex;
+        align-items: center;
+        margin-top: 0.3125rem;
+        margin-bottom: 0.625rem;
+    }
+    .mail-footer figure
+    {
+        margin-right: 0.625rem;
+        height: auto;
+    }
+    .mail-footer figure img
+    {
+        width: 100%;
+    }
+    .mail-footer a
+    {
+        text-decoration: none;
+        cursor:pointer;
+        color: white;
+        text-align: left;
+    }
+    .mail-footer a:hover
+    {
+        color:#006AFF;
+    }
+    
+    .mail-footer a span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 0.75rem;
+    }
+    
+    
+    .productos-footer
+    {
+        grid-area: productos;
+        display: flex;
+        flex-direction: column;
+    }
+    .productos-title
+    {
+        margin-top: 1rem;
+    }
+    .productos-title span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .productos-title hr
+    {
+        width: 60%;
+        border-radius: 2px;
+        border: 2px solid  #29598A;
+        margin-top: 0.3125rem;
+        margin-bottom: 1rem;
+    }
+    .productos-categorias
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .productos-categorias a 
+    {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 0.625rem;
+    }
+    .productos-categorias a:hover
+    {
+        color:#006AFF;
+    }
+    .productos-categorias a:nth-of-type(8)
+    {
+        margin-bottom: 0;
+    }
+    
+    .productos-categorias a span
+    {
+        font-family: 'IBM Plex Sans';
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    
+    .contacto-footer
+    {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-title
+    {
+        margin-top: 1rem;
+    }
+    .contacto-title span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .contacto-title hr
+    {
+        width: 98%;
+        border-radius: 2px;
+        border: 2px solid  #29598A;
+        margin-top: 0.3125rem;
+        margin-bottom: 1rem;
+    }
+    .contacto-categorias
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-categorias a 
+    {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 0.625rem;
+    }
+    .contacto-categorias a:hover
+    {
+        color:#006AFF;
+    }
+    .contacto-categorias a:nth-of-type(8)
+    {
+        margin-bottom: 0;
+    }
+    .contacto-categorias a span
+    {
+        font-family: 'IBM Plex Sans';
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .descargables-footer
+    {
+        grid-area: descargables;
+        display: flex;
+        flex-direction: column;
+    }
+    .descargables-title
+    {
+        margin-top: 0;
+    }
+    .descargables-title span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .descargables-title hr
+    {
+        width: 98%;
+        border-radius: 2px;
+        border: 2px solid  #29598A;
+        margin-top: 5px;
+        margin-bottom: 1rem;
+    }
+    .descargables-categorias
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .descargables-categorias a 
+    {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 0.625rem;
+    }
+    .descargables-categorias a:hover
+    {
+        color: #006AFF;
+    }
+    .descargables-categorias a:nth-of-type(8)
+    {
+        margin-bottom: 0;
+    }
+    
+    .descargables-categorias a span
+    {
+        font-family: 'IBM Plex Sans';
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .about-footer
+    {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-title
+    {
+        margin-top: 1rem;
+    }
+    .about-title span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .about-title hr
+    {
+        width: 70%;
+        border-radius: 2px;
+        border: 2px solid  #29598A;
+        margin-top: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    .about-categorias
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-categorias a 
+    {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 0.625rem;
+    }
+    .about-categorias a:hover
+    {
+        color: #006AFF;
+    }
+    .about-categorias a:nth-of-type(8)
+    {
+        margin-bottom: 0;
+    }
+    .about-categorias a span
+    {
+        font-family: 'IBM Plex Sans';
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .social-footer
+    {
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .social-footer figure
+    {
+        width: 3.125rem;
+        height: auto;
+    }
+    .social-footer figure img
+    {
+        width: 100%;
+    }
+    .designby-footer
+    {
+        grid-area: diseño;
+        display: flex;
+        align-items: center;
+    }
+    .designby-footer span
+    {
+        font-family: 'Noto Sans SC';
+        font-weight: 400;
+        font-size: 0.625rem;
+        margin-right: 0.3125rem;
+    }
+        
+
+    
 }
 
 @media screen and (max-width:424px)
