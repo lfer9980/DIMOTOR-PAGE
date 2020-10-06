@@ -2777,9 +2777,10 @@ footer
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .logo-footer 
     {
@@ -2808,9 +2809,8 @@ footer
     .address-footer a span
     {
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-    
     
     .phone-footer
     {
@@ -2823,285 +2823,60 @@ footer
         margin-bottom: 1rem;
     }
 
-    
-    .mail-footer
+    .mail-footer 
     {
-        grid-area: correo;
-        display: flex;
-        align-items: center;
-        margin-top: 0.3125rem;
-        margin-bottom: 0.625rem;
+        margin: 0 0 1.5rem 0;
     }
-    .mail-footer figure
-    {
-        margin-right: 0.625rem;
-        height: auto;
-    }
-    .mail-footer figure img
-    {
-        width: 100%;
-    }
-    .mail-footer a
-    {
-        text-decoration: none;
-        cursor:pointer;
-        color: white;
-        text-align: left;
-    }
-    .mail-footer a:hover
-    {
-        color:#006AFF;
-    }
-    
+
     .mail-footer a span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 1.4rem;
+        font-weight: 500;
     }
-    
     
     .productos-footer
     {
-        grid-area: productos;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .productos-title
-    {
-        margin-top: 1rem;
-    }
-    .productos-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .productos-title hr
-    {
-        width: 60%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .productos-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .productos-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .productos-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .productos-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .productos-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     
     .contacto-footer
     {
-        grid-area: contacto;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .contacto-title
-    {
-        margin-top: 1rem;
-    }
-    .contacto-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .contacto-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .contacto-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .contacto-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .contacto-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .contacto-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .contacto-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
+  
     .descargables-footer
     {
-        grid-area: descargables;
-        display: flex;
-        flex-direction: column;
-    }
-    .descargables-title
-    {
-        margin-top: 0;
-    }
-    .descargables-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .descargables-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    .descargables-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .descargables-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .descargables-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .descargables-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .descargables-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
+        display: none;
     }
     
     .about-footer
     {
-        grid-area: nosotros;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .about-title
-    {
-        margin-top: 1rem;
-    }
-    .about-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .about-title hr
-    {
-        width: 70%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    
-    .about-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .about-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .about-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .about-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
+        display: none;
     }
     
     .social-footer
     {
-        grid-area: social;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 4rem;
     }
     .social-footer figure
     {
-        width: 3.125rem;
-        height: auto;
+        width: 50px;
+        margin: 0 2.5rem;
     }
-    .social-footer figure img
-    {
-        width: 100%;
-    }
+
     .designby-footer
     {
-        grid-area: diseño;
-        display: flex;
-        align-items: center;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
     }
     .designby-footer span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 400;
-        font-size: 0.625rem;
-        margin-right: 0.3125rem;
+        font-weight: 500;
+        font-size: 0.8rem;
     }
         
-
-    
 }
 
 @media screen and (max-width:424px)
