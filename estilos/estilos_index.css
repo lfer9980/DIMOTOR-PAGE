@@ -281,6 +281,12 @@ header
     justify-content: space-between;
     padding: 0.3125rem;
 }
+.social-des {
+    display: none;
+}
+.tc-des {
+    display:none;
+}
 .sections-nav ol
 {
     display: grid;
@@ -2553,11 +2559,6 @@ footer
 
 @media screen and (max-width:767px)
 {
-
-    .header-principal {
-        display: none;
-    }
-
     .header-superior {
         display: flex;
         justify-content: flex-end;
@@ -2578,21 +2579,52 @@ footer
         height: auto;
     }
 
-    .header-exchange {
-        display: none;
+    /* desplegable del burguer button */
+    .header-principal, .logo-head-container, .nav-item hr, .header-exchange, .header-email, .header-phone,  .social-media-header, .search-container {
+        display:none;
     }
     
-    .header-email {
-        display: none;
+    .header-principal.is-active 
+    {
+        display: block;
+        background: rgba(9,26,43, 1);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 75vw;
+    }
+    .nav-item
+    {
+        color: white;
+    }
+    .social-des.is-active 
+    {
+        display: block;
+        height: auto;
+    }
+
+    .tc-des.is-active
+    {
+        display:block;
+    }
+    .header-exchange p span
+    {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color:white;
+    }
+    .header-exchange p span:nth-of-type(2)
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+        background: #29598A;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        padding: 0.125rem 0.3125rem;
     }
     
-    .header-phone {
-        display: none;
-    }
-    
-    .social-media-header {
-        display: none;
-    }
 
     .hero {
         display: block;
