@@ -407,7 +407,7 @@ ol, ul
     flex-direction: column;
     position: absolute;
     left: 3rem;
-    top: 3rem;
+    top: 1.5rem;
     text-align: center;
     max-width: 100%;
     /* background: rgba(9,26,43,0.8); */
@@ -466,7 +466,7 @@ ol, ul
 .float
 {
     position: absolute;
-    bottom: -5rem;
+    bottom: -7rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,1fr));
     grid-template-rows: 40px 230px 40px;
@@ -2237,6 +2237,8 @@ footer
         padding: 0;
         font-size: 15px;
     }
+    
+
     .float
     {
         bottom: -8rem;
@@ -2279,6 +2281,12 @@ footer
         padding: 0;
         font-size: 12px;
     }
+
+    .float
+    {
+        bottom: -9rem;
+    }
+   
     .marcas-container 
     {
         display: grid;
@@ -2384,6 +2392,12 @@ footer
     {
         font-size: 1rem;
     }
+
+    .float
+    {
+        bottom: -4rem;
+    }
+
     .float1-container h1
     {
         font-size: 1.5rem;
