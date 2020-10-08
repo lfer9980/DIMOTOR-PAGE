@@ -12,6 +12,13 @@ NodeList.prototype.addEventListener = function (event_name, callback, useCapture
         this[i].addEventListener(event_name, callback, useCapture)
     }
 }
+NodeList.prototype.removeEventListener = function (event_name, callback, useCapture)
+{
+    for (var i = 0; i <this.length; i++)
+    {
+        this[i].removeEventListener(event_name, callback, useCapture)
+    }
+}
 
 
 function validation (event)
