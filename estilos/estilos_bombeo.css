@@ -45,6 +45,8 @@ body
 {
     content: "\e9ba";
 }
+
+
 .burger-button
 {
     width: 50px;
@@ -486,22 +488,54 @@ ol, ul
     background: white; 
     flex-direction: column;
     padding: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem;
     border-radius: 0.3125rem;
     box-shadow: 0px 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
 .categoria-title
 {
-    margin-bottom: 0.625rem;
-}
-.categoria-title span
-{
+    display:flex;
     font-family: 'Noto Sans SC';
     font-size: 1.5rem;
     font-weight: 600;
     text-align: start;
-    color: #006AFF;
+    color: #29598A;
+    align-items: center;
+    justify-content: space-between;
 }
+.categoria-title::-webkit-details-marker
+{
+    display:none;
+}
+.categoria-title::after
+{
+   content: url('/iconos/plus_dark.svg');
+}
+.categoria-title:hover
+{
+    color: #006AFF;
+    cursor: pointer;
+}
+.categorias-container[open] summary
+{
+    color: #006AFF;
+    text-align: center;
+}
+.categorias-container[open] summary::after
+{
+    content: url('/iconos/less_dark.svg')
+}
+
+
+
+
+
+
+
+
+
+
+
 .categoria-description
 {
     margin-bottom: 1.25rem;
@@ -1067,162 +1101,7 @@ footer
         justify-content: center;
         margin: 0;
     }
-    .ref-hero-overlay
-    {
-        position: absolute;
-        left: 3rem;
-        top: 3rem;
-    }
-    .ref-hero-overlay p:nth-of-type(1)
-    {
-        font-size: 2rem;
-    }
-    .ref-hero-overlay p strong
-    {
-        font-size: 5rem;
-    }
-    .ref-hero-overlay p:nth-of-type(2)
-    {
-        font-size: 1.2rem;
-    }
-    .emphasis-hero
-    {
-        font-size: 1rem;
-    }
-    .ref-hero-overlay p:nth-of-type(3)
-    {
-        font-size: 1rem;
-    }
-    .float
-    {
-        bottom: -4rem;
-    }
-    .float1-container h1
-    {
-        font-size: 1.5rem;
-    }
-    .float2-container h1
-    {
-        font-size: 1.5rem;
-    }
-    .float3-container h1
-    {
-        font-size: 1.5rem;
-    }
-    .ref-promo-overlay p:nth-of-type(1)
-    {
-        font-size: 2rem;
-        padding: 3rem 2rem 1.25rem 2rem;
-    }
-    .ref-promo-overlay p strong
-    {
-        font-size: 6rem;
-    }
-    .ref-promo-overlay p:nth-of-type(2)
-    {
-        display: block;
-        font-weight: 800;
-        color: white;
-        text-align: left;
-        font-size: 1.5rem;
-        padding: 0 2.5rem 1.25rem 2rem;
-    }
-    .emphasis-promo
-    {
-        font-size: 1rem;
-    }
-    .company h1
-    {
-        font-size: 2rem;
-        padding-bottom: 2rem;
-    }
-    .phone-container
-    {
-        width: 75%;
-        margin: 0 0 2rem 0;
-    }
-    .map-container
-    {
-        display: block;
-        width: 100%;
-    }
-    .map-container iframe
-    {
-        width:  inherit;
-        height: 400px;
-    }
-
-    .float-contact {
-    
-        position: fixed;
-        right: 1rem;
-        bottom: 1rem;
-        z-index: 1;
-    }
-    .float-contact-wp
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #25D366;
-        border-radius: 0.3125rem 0.3125rem 0 0;
-        text-decoration: none;
-    }
-    .float-contact-wp:hover
-    {
-        background: rgba(13,170,72, 1);
-        cursor: pointer;
-    }
-    .float-info
-    {
-        color: white;
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.33rem;
-        margin-right: 0.8125rem;
-    }
-    .float-icon-wp
-    {
-        margin: 0.5rem 0.8125rem;
-    }
-    .float-contact-msn
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #0078FF;
-        border-radius: 0 0 0.3125rem 0.3125rem;
-        text-decoration: none;
-    }
-    .float-contact-msn:hover
-    {
-        background: rgba(6,90,184, 1);
-        cursor: pointer;
-    }
-    .float-icon-msn
-    {
-        margin: 0.5rem 0.8125rem;
-    }
-    .company-des-container span
-    {
-        max-width: 100%;
-    }
-    .marcas-container 
-    {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        padding: 1rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .marca-image
-    {
-        width: 250px;
-        height: auto;
-        padding: 2rem 1rem;
-        margin: 0 1rem;
-    }
+   
 }
 /* TABLET */
 @media screen and (max-width:768px)
@@ -1373,170 +1252,31 @@ footer
         margin: 0;
         height: 580px;
         position: relative;
-        background-image: url('https://i.postimg.cc/fLHwRBC9/hero-v3.png');
+        background-image: url('https://i.postimg.cc/Z59WKy72/bombeo.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position-y: bottom;
-        background-position-x: 100%;
+        background-position-x: 50%;
     }
-    .ref-hero-overlay
+    /* propiedades del cuadro de introduccion */
+    .intro-container
     {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-    }
-    .ref-hero-overlay p:nth-of-type(1)
-    {
-        padding-top: 2rem;
-        font-size: 2.16rem;
-    }
-    .ref-hero-overlay p strong
-    {
-        color:#006AFF;  
-        font-size: 7rem;
-    }
-    .ref-hero-overlay p:nth-of-type(2)
-    {
-        display: block;
-        color: white;
-        font-size: 2rem;
-        padding: 0.5rem 2rem;
-    }
-    .emphasis-hero
-    {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 800;
-        font-style: italic;
-    }
-    .ref-hero-overlay p:nth-of-type(3)
-    {
-        font-size: 1.5rem;
-    }
-    .float 
-    {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 29.5rem;
-        left: 0;
-        right: 0;
-        padding: 0 4rem;
-    }
-    .float1-container 
-    {
-        height: 200px;
-    }
-    .float1-container h1
-    {
-        font-size: 2rem;
-    }
-    .float1-container p
-    {
-        font-size: 1.2rem;
-    }
-    .float2-container 
-    {
-        margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float2-container h1
-    {
-        font-size: 2rem;
-    }
-    .float2-container p
-    {
-        font-size: 1.2rem;
-    }
-    .float3-container 
-    {
-        margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float3-container h1
-    {
-        font-size: 2rem;
-    }
-    .float3-container p
-    {
-        font-size: 1.2rem;
-    }
-    .float2-container img
-    {
-        height: 60px;
-    }
-    .button-float
-    {
-        width:8rem;
-        height:2.5rem;
-        font-size: 1.25rem;
-    }
-    .productos
-    {
-        display:block;
+        max-width: 80vw;
+        margin: 0;
         height: auto;
-        padding: 0 2.5rem;
-        margin-top: 40rem;
+        position: absolute;
+        bottom: -3rem;
+        left: 3rem;
+        right:0;
+        background: #091A2B;
+        height: auto;
+        padding: 1.25rem;
+        border-radius: 0.3125rem;
     }
-    .productos h1 
-    {
-        font-size: 1.8rem;
-    }   
-    .promo-container
-    {
-        display: block;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: initial;
-        background-position-y: bottom;
-        background-position-x: left;
-        width: 100%;
-        height: 300px;
-    }
-    .promo h1
-    {
-        font-size: 2rem;
-    }
-    .ref-promo-overlay p:nth-of-type(1)
-    {
-        font-size: 1.5rem;
-        padding: 5rem 2.5rem 1rem 1rem;
-    }
-    .ref-promo-overlay p strong
-    {
-        font-size: 4rem;
-    }
-    .ref-promo-overlay p:nth-of-type(2)
-    {
-        font-size: 1.5rem;
-        padding: 0 2.5rem 1rem 1rem;
-    }
-    .emphasis-promo
-    {
-      
-        font-size: 1rem;
-    }
-    .company-des-container span
-    {
-        max-width: 100%;
-    }
-    .marcas h1 
-    {
-        font-size: 1.5rem;
-    }
-    .phone-container
-    {
-        width: 100%;
-    }
+
+
+
     footer
     {
         display: flex;
