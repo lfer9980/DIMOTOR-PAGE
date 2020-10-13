@@ -12,8 +12,14 @@
 </head>
 <body>
     <header> 
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <div class="container">
             <section class="header-superior">
+                <div class="logo-head-container-sup">
+                    <figure>
+                        <img class="logo-principal-sup" src="iconos/dimotor_logo_w.svg" alt="DIMOTOR SA DE CV">
+                    </figure>
+                </div>
                 <div class="header-exchange">
                     <figure>
                         <img class="header-icon" src="iconos/money-bag_white-small.svg" alt="TC">
@@ -59,11 +65,39 @@
             </section>
     
             <section class="header-principal">
-                <a href="index.html">
+                <div class="social-des">
+                    <a href="https://www.facebook.com/dimotormx">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/facebook_small.svg" alt="FB">
+                        </figure>
+                    </a>
+                    <a href="">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/linkedin_small.svg" alt="LN">
+                        </figure>
+                    </a>
+                    <a href="https://wa.me/526144065406/?text=Hola!,%20me%20gustaría%20cotizar%20lo%20siguiente:">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/whatsapp1_small.svg" alt="WP">
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="tc-des">
+                    <figure>
+                        <img class="tc-icon-des" src="iconos/money-bag_white-small.svg" alt="TC">
+                    </figure>
+                        <p>
+                            <span>Tipo de cambio hoy:  &nbsp;</span>
+                            <span>$ 19.70 MXN</span>
+                        </p>
+                </div>
+
+                <div class="logo-head-container">
                     <figure>
                         <img class="logo-principal" src="iconos/dimotor_logo_1.svg" alt="DIMOTOR SA DE CV">
                     </figure>
-                </a>
+                </div>
 
                 <nav class="sections-nav">
                     <ol>
@@ -136,9 +170,6 @@
 
         <section class="hero">
             <div class="container">
-                <figure>
-                    <img class="hero-image" src="https://i.postimg.cc/wvYyrTkP/motores.png" alt="Seccion principal de bombeo">
-                </figure>
                 <article class="intro-container">
                     <p>        
                         En <span>DIMOTOR</span> suministramos motores para la industria desde hace casi 
@@ -164,10 +195,10 @@
             <div class="container">
                 <h2>Categorías de motores y reductores</h2>
                 <hr>
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Motores horizontales WEG</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Motores horizontales WEG
+                    </summary>
                     <div class="categoria-description">
                         <p>
                             Los motores horizontales WEG, son lideres en el mercado global y satisfacen diariamente las necesidades de movimiento del mundo entero.En este apartado encontraras la ultima generación de motores WEG.
@@ -195,12 +226,12 @@
                             <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                         </a>
                     </div> 
-                </article>
+                </details>
 
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Motores sumergibles</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Motores sumergibles
+                    </summary>
                 <div class="categoria-description">
                     <p>
                         Los motores sumergibles que encontraras en DIMOTOR son fabricados con la mas alta calidad en materiales y pertenecen a las marcas 
@@ -229,12 +260,12 @@
                         <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                     </a>
                 </div> 
-                </article>
+                </details>
 
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Motores verticales flecha hueca</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Motores verticales flecha hueca
+                    </summary>
                     <div class="categoria-description">
                         <p>
                             Los motores verticales tipo flecha hueca son una gran solución para abastecer la gran demanda de agua que se necesita en cualquier
@@ -262,12 +293,12 @@
                             <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                         </a>
                     </div> 
-                </article>
+                </details>
 
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Reductores de velocidad</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Reductores de velocidad
+                    </summary>
                     <div class="categoria-description">
                         <p>
                             Los reductores de velocidad que suministramos en DIMOTOR pueden ser utilizados para cualquier tipo de aplicación de uso rudo.
@@ -301,7 +332,7 @@
                             <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                         </a>
                     </div> 
-                </article>
+                </details>
             </div>    
         </section>
     </main>
@@ -464,4 +495,5 @@
         </div>
     </footer>
 </body>
+<script src="js/burgerButton.js"></script>
 </html>
