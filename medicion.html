@@ -12,8 +12,14 @@
 </head>
 <body>
     <header> 
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <div class="container">
             <section class="header-superior">
+                <div class="logo-head-container-sup">
+                    <figure>
+                        <img class="logo-principal-sup" src="iconos/dimotor_logo_w.svg" alt="DIMOTOR SA DE CV">
+                    </figure>
+                </div>
                 <div class="header-exchange">
                     <figure>
                         <img class="header-icon" src="iconos/money-bag_white-small.svg" alt="TC">
@@ -59,11 +65,39 @@
             </section>
     
             <section class="header-principal">
-                <a href="index.html">
+                <div class="social-des">
+                    <a href="https://www.facebook.com/dimotormx">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/facebook_small.svg" alt="FB">
+                        </figure>
+                    </a>
+                    <a href="">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/linkedin_small.svg" alt="LN">
+                        </figure>
+                    </a>
+                    <a href="https://wa.me/526144065406/?text=Hola!,%20me%20gustaría%20cotizar%20lo%20siguiente:">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/whatsapp1_small.svg" alt="WP">
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="tc-des">
+                    <figure>
+                        <img class="tc-icon-des" src="iconos/money-bag_white-small.svg" alt="TC">
+                    </figure>
+                        <p>
+                            <span>Tipo de cambio hoy:  &nbsp;</span>
+                            <span>$ 19.70 MXN</span>
+                        </p>
+                </div>
+
+                <div class="logo-head-container">
                     <figure>
                         <img class="logo-principal" src="iconos/dimotor_logo_1.svg" alt="DIMOTOR SA DE CV">
                     </figure>
-                </a>
+                </div>
 
                 <nav class="sections-nav">
                     <ol>
@@ -136,9 +170,6 @@
 
         <section class="hero">
             <div class="container">
-                <figure>
-                    <img class="hero-image" src="/imagenes/categorias-hero/medicion.png" alt="Seccion principal de bombeo">
-                </figure>
                 <div class="intro-container">
                     <p>        
                         Si te dedicas al sector agrícola y necesitas <span>equipo de medición</span> para llevar 
@@ -163,10 +194,10 @@
             <div class="container">
                 <h2>Categorías de medición agricola</h2>
                 <hr>
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Medidores para agua</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Medidores para agua
+                    </summary>
                     <div class="categoria-description">
                         <p>
                             En este apartado encontraras medidores para agua bridados. 
@@ -189,12 +220,12 @@
                             <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                         </a>
                     </div> 
-                </article>
+                </details>
 
-                <article class="categorias-container">
-                    <div class="categoria-title">
-                        <span>Sondas para nivel de agua.</span>
-                    </div>
+                <details class="categorias-container">
+                    <summary class="categoria-title">
+                        Sondas para nivel de agua.
+                    </summary>
                     <div class="categoria-description">
                         <p>
                             En este apartado encontraras sondas para medir la profundidad a la que se encuentra el agua en tu pozo o noria.
@@ -217,7 +248,7 @@
                             <span>¿No encuentras lo que estas buscando? déjanos ayudarte</span>
                         </a>
                     </div> 
-                </article>
+                </details>
             </div>
         </section>
 
@@ -381,4 +412,5 @@
         </div>
     </footer>
 </body>
+<script src="js/burgerButton.js"></script>
 </html>
