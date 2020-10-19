@@ -13,8 +13,14 @@
 </head>
 <body>
     <header> 
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <div class="container">
             <section class="header-superior">
+                <div class="logo-head-container-sup">
+                    <figure>
+                        <img class="logo-principal-sup" src="iconos/dimotor_logo_w.svg" alt="DIMOTOR SA DE CV">
+                    </figure>
+                </div>
                 <div class="header-exchange">
                     <figure>
                         <img class="header-icon" src="iconos/money-bag_white-small.svg" alt="TC">
@@ -60,11 +66,39 @@
             </section>
     
             <section class="header-principal">
-                <a href="index.html">
+                <div class="social-des">
+                    <a href="https://www.facebook.com/dimotormx">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/facebook_small.svg" alt="FB">
+                        </figure>
+                    </a>
+                    <a href="">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/linkedin_small.svg" alt="LN">
+                        </figure>
+                    </a>
+                    <a href="https://wa.me/526144065406/?text=Hola!,%20me%20gustaría%20cotizar%20lo%20siguiente:">
+                        <figure>
+                            <img class="social-icon-des" src="iconos/whatsapp1_small.svg" alt="WP">
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="tc-des">
+                    <figure>
+                        <img class="tc-icon-des" src="iconos/money-bag_white-small.svg" alt="TC">
+                    </figure>
+                        <p>
+                            <span>Tipo de cambio hoy:  &nbsp;</span>
+                            <span>$ 19.70 MXN</span>
+                        </p>
+                </div>
+
+                <div class="logo-head-container">
                     <figure>
                         <img class="logo-principal" src="iconos/dimotor_logo_1.svg" alt="DIMOTOR SA DE CV">
                     </figure>
-                </a>
+                </div>
 
                 <nav class="sections-nav">
                     <ol>
@@ -137,7 +171,7 @@
     
                 <div class="logo-main-title">
                     <figure>
-                        <img class="logo-image" src="imagenes/dim_logo_azul_hor.svg" alt="">
+                        <img class="logo-image" src="iconos/dim_logo_azul_hor.svg" alt="">
                     </figure>
                     <h2>  
                         Distribuidora de Hidroneumáticos y <br>
@@ -148,10 +182,10 @@
                 <div class="comunicate-container">
                     <span>¡Comunícate con nosotros!</span>
                 </div>
-    
+
                 <div class="contacto-container">    
                     <figure>
-                        <img class="assistant-figure" src="imagenes/assitant_vector.svg" alt="">
+                        <img class="assistant-figure" src="iconos/assitant_vector_color.svg" alt="">
                     </figure>          
                     <div class="contacto-box">
                         <div class="contacto-box-title">
@@ -197,17 +231,19 @@
                             </div> 
                         </div> 
                     </div>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14005.800061403199!2d-106.0166596!3d28.6462413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96a2de93cb54af06!2sDimotor%20S.A%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1589484309237!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        <div class="address-container">
-                            <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
-                                <figure>
-                                    <img src="iconos/location_dark.svg" alt="">
-                                </figure>
-                                    <span>Perif. V. Lombardo Toledano No. 7803 <br>Col. Aeropuerto Chihuahua, Chih. México</span>
-                            </a>
-                        </div>   
-                    </div>
+
+                </div>   
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14005.800061403199!2d-106.0166596!3d28.6462413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96a2de93cb54af06!2sDimotor%20S.A%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1589484309237!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="address-container">
+                        <a href="https://goo.gl/maps/BjEBSrgV47qMpzVP8">
+                            <figure>
+                                <img src="iconos/location_dark.svg" alt="">
+                            </figure>
+                                <span>Perif. V. Lombardo Toledano No. 7803 <br>Col. Aeropuerto Chihuahua, Chih. México</span>
+                        </a>
+                    </div>   
                 </div>
 
                 <div class="contacto-button-main">
@@ -268,7 +304,7 @@
         <section class="productos-footer">
             <div class="productos-title">
                 <span>Productos</span>
-                <hr>
+                <hr class="title-hr">
             </div>
 
             <nav class="productos-categorias">
@@ -302,7 +338,7 @@
         <section class="contacto-footer">
             <div class="contacto-title">
                 <span>Contacto</span>
-                <hr>
+                <hr class="title-hr">
             </div>
 
             <nav class="contacto-categorias">
@@ -321,7 +357,7 @@
         <section class="descargables-footer">
             <div class="descargables-title">
                 <span>Descargables</span>
-                <hr>
+                <hr class="title-hr">
             </div>
 
             <nav class="descargables-categorias">
@@ -340,7 +376,7 @@
         <section class="about-footer">
             <div class="about-title">
                 <span>Nosotros</span>
-                <hr>
+                <hr class="title-hr">
             </div>
 
             <nav class="about-categorias">
@@ -354,7 +390,7 @@
         </section>
         
         <nav class="social-footer">
-            <a href="https://www.facebook.com/dimotormx"">
+            <a href="https://www.facebook.com/dimotormx">
                 <figure>
                     <img src="iconos/facebook_color.svg" alt="">
                 </figure>
@@ -377,4 +413,5 @@
     </footer>
 
 </body>
+<script src="js/burgerButton.js"></script>
 </html>
