@@ -510,7 +510,7 @@ ol, ul
 }
 .categoria-title::after
 {
-    content: url('/iconos/plus_dark.svg');
+    content: url('../iconos/plus_dark.svg');
 }
 .categoria-title:hover
 {
@@ -524,7 +524,7 @@ ol, ul
 }
 .categorias-container[open] summary::after
 {
-    content: url('/iconos/less_dark.svg');
+    content: url('../iconos/less_dark.svg');
 }
 .categoria-description
 {
