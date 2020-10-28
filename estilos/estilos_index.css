@@ -256,7 +256,7 @@ header
     flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
-    padding: 0.625rem;
+    padding: 0.625rem 1rem;
     background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,7 +394,7 @@ ol, ul
     background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .ref-hero-overlay
 {
@@ -1355,7 +1355,7 @@ ol, ul
     background-image: url('https://i.postimg.cc/fLHwRBC9/hero-v3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     width: 100%;
     height: 607px;
 }
@@ -1760,10 +1760,14 @@ footer
     color: white;
     background: #091A2B;
     box-shadow: 0 -0.125px 0.5rem rgba(9, 26, 43, .47);
+    padding: 0.625rem 0;
 }
 .logo-footer 
 {
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo-footer a figure
 {
@@ -2140,7 +2144,7 @@ footer
         font-family: 'IBM Plex Sans', sans-serif;
         margin: 0;
         padding: 0;
-        font-size: 15px;
+        font-size: 16px;
     }
     .float
     {
