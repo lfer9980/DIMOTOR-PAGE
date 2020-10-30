@@ -383,6 +383,7 @@ ol, ul
 }
 .search-container button img
 {
+    display:block;
     align-self: center;
 }
 
@@ -529,6 +530,10 @@ ol, ul
 .float-figure
 {
     width: 4rem;
+}
+.float-figure.money
+{
+    width: 6rem;
 }
 .float-image
 {
@@ -1522,7 +1527,6 @@ ol, ul
     grid-template-rows: 1fr 2fr;
     color: #091A2B;
     background: white;
-    align-items: center;
     border-radius: 0.3125rem;
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     padding: 1.25rem;
@@ -1573,12 +1577,11 @@ ol, ul
 .correo-container
 {
     grid-row: 1 / span 1 ;
-    grid-column: 2 / span 1 ;
-    margin-top: 1.25rem;
+    grid-column: 2 / span 1;
 }
 .mail-image
 {
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 0;
     display: flex;
     align-items: center;
 }
@@ -2171,12 +2174,29 @@ footer
     {
         width: 300px;
     }
-    
     .marcas-container 
     {
         display: grid;
         grid-template-rows: repeat(5,minmax(150px,1fr));
         grid-template-columns: repeat(3,minmax(200px,1fr));
+    }
+    .correo-container
+    {
+        margin-top: 0;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .map-container
+    {
+        display: block;
+        width: 100%;
+    }
+    .map-container iframe
+    {
+        width:  inherit;
+        height: 500px;
     }
     .designby-footer span
     {
@@ -2227,10 +2247,12 @@ footer
         box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
         position: relative;
     }
+
     .logo-principal
     {
         width: 20rem;
         height: inherit;
+        margin-top: 1rem;
     }
     .search-container
     {
@@ -2239,10 +2261,6 @@ footer
         width: 22.5rem;
         bottom: -3rem;
         right: 0.5rem;
-    }
-    .search-container form
-    {
-        height: 2.5rem;
     }
     .sections-nav
     {
@@ -2253,15 +2271,19 @@ footer
         justify-content: center;
         margin: 0;
     }
+    .nav-item
+    {
+      font-size: 1.563rem;  
+    }
     .ref-hero-overlay
     {
         position: absolute;
         left: 3rem;
-        top: 3rem;
+        top: 2rem;
     }
     .ref-hero-overlay p:nth-of-type(1)
     {
-        font-size: 2rem;
+        font-size: 1.953rem;
     }
     .ref-hero-overlay p strong
     {
@@ -2282,19 +2304,17 @@ footer
     .float
     {
         bottom: -4rem;
+        grid-template-rows: 20px 210px 20px;
     }
-    .float1-container h1
+    .float1-container h1, .float2-container h1, .float3-container h1
     {
-        font-size: 1.5rem;
+        font-size: 1.563rem;
     }
-    .float2-container h1
+    .productos
     {
-        font-size: 1.5rem;
+        margin-top: 7rem;
     }
-    .float3-container h1
-    {
-        font-size: 1.5rem;
-    }
+
     .ref-promo-overlay p:nth-of-type(1)
     {
         font-size: 2rem;
@@ -2320,22 +2340,11 @@ footer
     .company h1
     {
         font-size: 2rem;
-        padding-bottom: 2rem;
     }
     .phone-container
     {
         width: 75%;
         margin: 0 0 2rem 0;
-    }
-    .map-container
-    {
-        display: block;
-        width: 100%;
-    }
-    .map-container iframe
-    {
-        width:  inherit;
-        height: 400px;
     }
 
     .float-contact {
@@ -2389,9 +2398,15 @@ footer
     {
         margin: 0.5rem 0.8125rem;
     }
+    .company-image
+    {
+        object-fit: cover;
+        width: 400px; 
+        margin: 0 1rem;
+    }
     .company-des-container span
     {
-        max-width: 100%;
+        max-width: 50%;
     }
     .marcas-container 
     {
@@ -2410,6 +2425,14 @@ footer
         padding: 2rem 1rem;
         margin: 0 1rem;
     }
+    .phone-number span, .mail-direction span
+    {
+        font-size: 1.563rem;
+    }
+    .social-address span
+    {
+        font-size: 1.25rem;
+    }
     
 }
 /* TABLET */
@@ -2417,9 +2440,6 @@ footer
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
         font-size: 12px;
     }
     .float-info
@@ -2430,6 +2450,24 @@ footer
     {
         max-width: 100%;
     }
+    .float
+    {
+        bottom: -4rem;
+        grid-template-rows: 25px 190px 25px;
+    }
+    .company-image
+    {
+        width: 300px;
+        margin: 1rem 0;
+    }
+    .marca-image
+    {
+        width: 150px;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 0 1rem;
+    }
+
 }
 /* TABLET PEQUEÑA */
 @media screen and (max-width:767px)
