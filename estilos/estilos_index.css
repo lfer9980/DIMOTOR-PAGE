@@ -58,8 +58,8 @@ body
     color: white;
     font-size: 2.5em;
     position: fixed;
-    top: 22px;
-    left: 10px;
+    top: 1.83rem;
+    left: 1rem;
     z-index: 4;
     display: none;
 }
@@ -456,8 +456,8 @@ ol, ul
 /* hero's floats */
 .float
 {
-    position: absolute;
-    bottom: -7rem;
+    position: relative;
+    top: -13rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,1fr));
     grid-template-rows: 40px 230px 40px;
@@ -490,6 +490,7 @@ ol, ul
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     padding: 0.625rem;
     color: #091A2B;
     background: white;
@@ -503,6 +504,7 @@ ol, ul
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     padding: 0.625rem;
     color: #091A2B;
     background: white;
@@ -2473,8 +2475,20 @@ footer
 @media screen and (max-width:767px)
 {
     .header-superior {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .logo-head-container-sup {
         display: block;
-        text-align: right;
+        width: max-content;
+        height: auto;
+        margin-right: 1rem;
+    }
+    .logo-principal-sup {
+        width: inherit;
+        height: auto;
     }
     .burger-button {
         display: block;
@@ -2487,14 +2501,6 @@ footer
     .burger-button.is-active
     {
         background: #006AFF;
-    }
-    .logo-head-container-sup {
-        display: block;
-        height: auto;
-    }
-    .logo-principal-sup {
-        width: auto;
-        height: 6rem;
     }
     /* desplegable del burguer button */
     .logo-head-container,.nav-item hr, .header-exchange, .header-email, .header-phone,  .social-media-header, .search-container {
@@ -2619,7 +2625,7 @@ footer
     .ref-hero-overlay p:nth-of-type(1)
     {
         padding-top: 2rem;
-        font-size: 2.16rem;
+        font-size: 2.887rem;
     }
     .ref-hero-overlay p strong
     {
@@ -2649,49 +2655,30 @@ footer
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 29.5rem;
+        height: auto;
+        top: 26.5rem;
         left: 0;
         right: 0;
         padding: 0 4rem;
     }
     .float1-container 
     {
-        height: 200px;
+        height: 230px;
     }
-    .float1-container h1
-    {
-        font-size: 2rem;
-    }
-    .float1-container p
-    {
-        font-size: 1.2rem;
-    }
-    .float2-container 
+    .float2-container, .float3-container 
     {
         margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float2-container h1
+        height: 230px;
+    }   
+    .float1-container h1, .float2-container h1, .float3-container h1
     {
-        font-size: 2rem;
+        font-size: 1.953rem;
     }
-    .float2-container p
+    .float1-container p, .float2-container p, .float3-container p
     {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
-    .float3-container 
-    {
-        margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float3-container h1
-    {
-        font-size: 2rem;
-    }
-    .float3-container p
-    {
-        font-size: 1.2rem;
-    }
+ 
     .float2-container img
     {
         height: 60px;
@@ -2707,7 +2694,7 @@ footer
         display:block;
         height: auto;
         padding: 0 2.5rem;
-        margin-top: 40rem;
+        margin-top: 48rem;
     }
     .productos h1 
     {
@@ -2765,16 +2752,15 @@ footer
     {
         width: 100%;
     }
-
-    
     footer
     {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .logo-footer 
     {
@@ -2789,7 +2775,6 @@ footer
         height: auto;
         align-self: center;
     }
-    
     .logo-footer a span
     {
         margin-bottom: 5px;
@@ -2798,14 +2783,11 @@ footer
     {
         margin-bottom: 1.5rem;
     }
-    
     .address-footer a span
     {
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-    
-    
     .phone-footer
     {
         margin-bottom: 1.5rem;
@@ -2815,304 +2797,242 @@ footer
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
-    
-    .mail-footer
+    .mail-footer 
     {
-        grid-area: correo;
-        display: flex;
-        align-items: center;
-        margin-top: 0.3125rem;
-        margin-bottom: 0.625rem;
+        margin: 0 0 1.5rem 0;
     }
-    .mail-footer figure
-    {
-        margin-right: 0.625rem;
-        height: auto;
-    }
-    .mail-footer figure img
-    {
-        width: 100%;
-    }
-    .mail-footer a
-    {
-        text-decoration: none;
-        cursor:pointer;
-        color: white;
-        text-align: left;
-    }
-    .mail-footer a:hover
-    {
-        color:#006AFF;
-    }
-    
     .mail-footer a span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 1.4rem;
+        font-weight: 500;
     }
-    
-    
     .productos-footer
     {
-        grid-area: productos;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .productos-title
-    {
-        margin-top: 1rem;
-    }
-    .productos-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .productos-title hr
-    {
-        width: 60%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .productos-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .productos-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .productos-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .productos-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .productos-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
-    
     .contacto-footer
     {
-        grid-area: contacto;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .contacto-title
-    {
-        margin-top: 1rem;
-    }
-    .contacto-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .contacto-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .contacto-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .contacto-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .contacto-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .contacto-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .contacto-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .descargables-footer
     {
-        grid-area: descargables;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .descargables-title
-    {
-        margin-top: 0;
-    }
-    .descargables-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .descargables-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    .descargables-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .descargables-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .descargables-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .descargables-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .descargables-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .about-footer
     {
-        grid-area: nosotros;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    
-    .about-title
-    {
-        margin-top: 1rem;
-    }
-    .about-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .about-title hr
-    {
-        width: 70%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    
-    .about-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .about-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .about-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .about-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .social-footer
     {
-        grid-area: social;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 4rem;
     }
     .social-footer figure
     {
-        width: 3.125rem;
-        height: auto;
-    }
-    .social-footer figure img
-    {
-        width: 100%;
+        width: 50px;
+        margin: 0 2.5rem;
     }
     .designby-footer
     {
-        grid-area: diseño;
-        display: flex;
-        align-items: center;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
     }
     .designby-footer span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 400;
-        font-size: 0.625rem;
-        margin-right: 0.3125rem;
-    }
-        
-
-    
+        font-weight: 500;
+        font-size: 0.8rem;
+    }  
 }
 /* MOVIL GRANDE */
-@media screen and (max-width:424px)
+@media screen and (max-width:425px)
 {
-    *
+    .tc-des p span:nth-of-type(2)
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        font-size: 1.953rem;
+    }
+    .social-des
+    {
+        margin-bottom: 2.441rem;
+    }
+    .social-icon-des
+    {
+        width: 3.052rem;
+    }
+    .nav-item
+    {
+        font-size: 1.953rem;
     }
     .float-info
     {
       display: none;
     }
-}
-/* MOVIL PEQUEÑO */
-@media screen and (max-width:360px)
-{
+    .ref-hero-overlay p:nth-of-type(1)
+    {
+        font-size: 2.441rem;
+    }
+    .ref-hero-overlay p strong
+    {
+        font-size: 5.96rem;
+    }
+    .ref-hero-overlay p:nth-of-type(2)
+    {
+        font-size: 1.563rem;
+    }
+    .ref-hero-overlay p:nth-of-type(3)
+    {
+        font-size: 1.25rem;
+    }
+    .productos hr, .promo hr, .marcas hr, .contacto hr
+    {
+        border: 2px solid  #29598A; 
+    }
+    .marcas h1 
+    {
+        font-size: 1.7rem;
+    }
+    .contact-subtitle
+    {
+        font-size: 1.563rem;
+    }
+    .phone-image figure img, .mail-image figure img
+    {
+        width: 1.953rem;
+    }
+    .phone-number span
+    {
+        font-size: 1.25rem;
+    }
+    .mail-image span, .social-image span
+    {
+       font-size: 1rem;
+    }
+    .social-image figure img
+    {
+        width: 2.441rem;
+    }
 
+}
+/* MOVIL MEDIANO */
+@media screen and (max-width:375px)
+{
+    .productos h1, .promo h1, .contacto h1
+    {
+        font-size: 1.563rem;
+    }
+    .marcas h1
+    {
+        font-size: 1.5rem;
+    }
+    .ref-promo-overlay p:nth-of-type(1)
+    {
+        text-align: center;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+    .ref-promo-overlay p:nth-of-type(3) span
+    {
+        font-size: 0.8rem;
+    }
+    .company-image
+    {
+        width: 250px;
+    }
+    .company-des-container span
+    {
+        font-size: 1.25rem;
+        line-height: 2.441rem;
+        padding: 1.25rem;
+    }
+    .phone-container
+    {
+        display: block;
+        text-align: center;
+    }
+    .contact-subtitle
+    {
+        font-size: 1.953rem;
+    }
+    .telefonos-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center; 
+    }
+    .phone-image figure img, .mail-image figure img
+    {
+        width: 2.441rem;
+    }
+    .phone-number span, .mail-image span
+    {
+        font-size: 1.563rem;
+    }
+    .correo-container
+    {
+        display: block;
+        margin-top: 0.8rem;
+    }
+    .social-container
+    {
+        margin-top: 1.6rem;
+    }
+    .social-image span
+    {
+       font-size: 1.25rem;
+    }
+    .social-image figure img
+    {
+        width: 2.441rem;
+    }
+    .address-container span
+    {
+        font-size: 1.2rem;
+    }
+}
+
+/* MOVIL PEQUEÑO*/
+@media screen and (max-width:320px)
+{
+    .logo-principal-sup {
+        width: 150px;
+        height: auto;
+    }
+    .burger-button
+    {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.953rem;
+        top: 1.3rem;
+        left: 1.5rem;
+    }
+    .nav-item
+    {
+        font-size: 1.563rem;
+    }
+    .tc-des p span:nth-of-type(1)
+    {
+        font-size: 1rem;
+    }
+    .tc-des p span:nth-of-type(2)
+    {
+        font-size: 1.25rem;
+    }
+
+    .ref-hero-overlay p:nth-of-type(1)
+    {
+        font-size: 1.953rem;
+    }
+    .ref-hero-overlay p strong
+    {
+        font-size: 4.768rem;
+    }
+    .ref-hero-overlay p:nth-of-type(2)
+    {
+        font-size: 1.563rem;
+    }
+    .ref-hero-overlay p:nth-of-type(3)
+    {
+        font-size: 1.25rem;
+    }
 }
