@@ -1,7 +1,7 @@
-/* sets de html y grid principal del body */
+/* html set up*/
 *
 {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', 'Segoe UI';
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -15,7 +15,7 @@ body
     background-attachment: fixed;
 }   
 
-/* icono del burguer button */
+/* burger button icon */
 @font-face 
 {
     font-family: 'icomoon';
@@ -58,13 +58,13 @@ body
     color: white;
     font-size: 2.5em;
     position: fixed;
-    top: 22px;
-    left: 10px;
+    top: 1.83rem;
+    left: 1rem;
     z-index: 4;
     display: none;
 }
 
-/* presets para el elemento contenedor */
+/* coantainer presets setup */
 .container
 {
     max-width: 100vw;
@@ -77,7 +77,7 @@ body
     flex-wrap: inherit; 
 }
 
-/* ajustes para el contacto flotante de WP y Fb  */
+/* FB and WP float divs  */
 .float-contact
 {
     position: fixed;
@@ -104,12 +104,12 @@ body
     color: white;
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 1.33rem;
-    margin-right: 0.8125rem;
+    font-size: 1.25rem;
+    margin-right: 0.8rem;
 }
 .float-icon-wp
 {
-    margin: 0.5rem 0.8125rem;
+    margin: 0.64rem 0.8rem;
 }
 .float-contact-msn
 {
@@ -117,7 +117,7 @@ body
     align-items: center;
     justify-content: center;
     background-color: #0078FF;
-    border-radius: 0 0 0.3125rem 0.3125rem;
+    border-radius: 0 0 5px 5px;
     text-decoration: none;
 }
 .float-contact-msn:hover
@@ -127,11 +127,11 @@ body
 }
 .float-icon-msn
 {
-    margin: 0.5rem 0.8125rem;
+    margin: 0.64rem 0.8rem;
 }
 
 
-/* propiedades de todo el header */
+/* header properties */
 header
 {
     display: block;
@@ -142,7 +142,7 @@ header
     justify-content: space-evenly;
 }
 
-/* primera barra del header */
+/* top head adjustment */
 .header-superior
 {
     display: flex;
@@ -150,7 +150,7 @@ header
     width: 100%;
     height: auto;
     justify-content: space-evenly;
-    padding: 0.3125rem 0;
+    padding: 5px 0;
     background: rgba(9,26,43,1);
     background: -moz-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,26,43,1)), color-stop(100%, rgba(41,89,138,1)));
@@ -167,8 +167,8 @@ header
 }
 .header-icon
 {
-    width: 1.5rem;
-    margin: 0 0.625rem;
+    width: 1.563rem;
+    margin: 0 0.64rem;
     vertical-align: top;
 }
 
@@ -178,13 +178,13 @@ header
     align-items: center;
     justify-content: center;
 }
-.header-exchange p span
+.date
 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color:white;
 }
-.header-exchange p span:nth-of-type(2)
+.TC
 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -192,6 +192,7 @@ header
     border-radius: 2px;
     border: 1px solid transparent;
     padding: 0.125rem 0.3125rem;
+    color:white;
 }
 
 .header-phone
@@ -204,7 +205,7 @@ header
 {
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: white;
 }
@@ -221,18 +222,24 @@ header
     align-items: center;
     justify-content: center;
 }
+.header-email figure
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header-email a
 {
     cursor: pointer;
     text-decoration: none;
 }
-.header-email a span
+.mail-address-header
 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color:white;
 }
-.header-email a span:hover
+.mail-address-header:hover
 {
     cursor: pointer;
     color: #006AFF;
@@ -245,45 +252,48 @@ header
 }
 .social-icon
 {
-    margin: 0 0.625rem;
+    margin: 0 0.64rem;
 }  
 
-
-/* barra principal del header */
+/* main head adjustent */
 .header-principal
 {
     display: flex;
     flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
-    padding: 0.625rem;
+    padding: 0.64rem 1rem;
     background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
 }
 
-.logo-principal
-{
-    width: 15.625rem;
-    height: inherit;
-}
-/* Secciones del menu */
-.sections-nav
-{
-    display: flex;
-    height: inherit;
-    align-items: center;
-    max-width: 50%;
-    justify-content: space-between;
-    padding: 0.3125rem;
-}
+/* hidden elements on big size screen */
 .social-des {
     display: none;
 }
 .tc-des {
     display:none;
 }
+
+/* main header sections */
+.logo-principal
+{
+    width: 15.625rem;
+    height: inherit;
+}
+
+.sections-nav
+{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    max-width: 50%;
+    justify-content: center;
+    padding: 0.64rem 0;
+}
+
 .sections-nav ol
 {
     display: grid;
@@ -304,9 +314,9 @@ header
     display: block;
     height: inherit;
     align-items: center;
-    padding: 0 0.4rem;
+    padding: 0 0.64rem;
     font-family: 'Noto Sans SC';
-    font-size: 1.5rem;
+    font-size: 1.563rem;
     font-weight: 500;
     color: #091A2B;
 }
@@ -329,10 +339,10 @@ ol, ul
     list-style: none;
 }
 
-/* barra de busqueda */
+/* search bar */
 .search-container 
 {
-    width: 21.875rem;
+    width: 19.875rem;
     height: auto;
     display: flex;
     justify-content: center;
@@ -340,37 +350,31 @@ ol, ul
 }
 .search-container form
 {
-    display: grid;
-    grid-template-columns: 9fr 1fr;
-    grid-template-areas: "search button";
+    display: flex;
     width: 100%;
     height: 2.1875rem;
 }
 .search-container input
 {
-    grid-area: search;
     width:100%;
     margin: 0;
     padding-left: 0.4375rem;
     font-family: 'IBM Plex Sans';
     font-style: italic;
     font-size: 0.75rem;
-    border-left: 2px solid #091A2B;
-    border-top: 2px solid #091A2B;
-    border-bottom: 2px solid #091A2B;
     border-radius: 0.3125rem 0px 0px 0.3125rem;
+    border: 1.5px solid #091A2B;
 }
 .search-container button
 {
-    grid-area: button;
     display: flex;
     align-content: center;
     justify-content: center;
-    width:auto;
+    width: 2rem;
+    height: inherit;
     background: #29598A;
     cursor: pointer;
     border: none;
-    border:1.5px solid #091A2B;
     border-radius: 0px 0.3125rem 0.3125rem 0px;
 }
 .search-container button:hover
@@ -379,9 +383,9 @@ ol, ul
 }
 .search-container button img
 {
+    display:block;
     align-self: center;
 }
-
 
 /* hero */
 .hero
@@ -394,7 +398,7 @@ ol, ul
     background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .ref-hero-overlay
 {
@@ -411,13 +415,13 @@ ol, ul
 {
     color: white;
     font-family: 'Noto Sans SC';
-    font-size: 3rem;
+    font-size: 3.052rem;
     font-weight: 500;
 }
 .ref-hero-overlay p strong
 {
     color:#008abd;  
-    font-size: 6rem;
+    font-size: 5.96rem;
     font-weight: 600;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -426,16 +430,16 @@ ol, ul
 {
     display: block;
     color: #006AFF;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.563rem;
 }
 .emphasis-hero
 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 800;
     font-style: italic;
 
@@ -449,11 +453,11 @@ ol, ul
     font-size: 1rem;
 }
 
-/* flotantes del incio */
+/* hero's floats */
 .float
 {
-    position: absolute;
-    bottom: -7rem;
+    position: relative;
+    top: -13rem;
     display: grid;
     grid-template-columns: repeat(3,minmax(150px,1fr));
     grid-template-rows: 40px 230px 40px;
@@ -461,8 +465,8 @@ ol, ul
                          "float1 float2 float3"
                          ". float2 ." ;
     height: auto;
-    padding: 0 2.5rem;
-    column-gap: 2rem;
+    padding: 0 2.441rem;
+    column-gap: 1.953rem;
 }
 .float1-container
 {
@@ -479,24 +483,64 @@ ol, ul
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     height: inherit;
 }
-.float1-container h1
+.float2-container
+{
+    grid-area: float2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0.625rem;
+    color: #091A2B;
+    background: white;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+}
+.float3-container
+{
+    grid-area: float3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0.625rem;
+    color: #091A2B;
+    background: white;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
+}
+
+.float1-container h1, .float2-container h1, .float3-container h1
 {
     font-family: 'Noto Sans SC';
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
     color: #29598A;
 }
-.float1-container p
+.float1-container p, .float2-container p, .float3-container p
 {
     font-family: 'IBM Plex Sans';
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
     padding: 0.625rem 0;
 }
-.float-container img
+
+.float-figure
+{
+    width: 4rem;
+}
+.float-figure.money
+{
+    width: 6rem;
+}
+.float-image
 {
     width: 100%;
+    height: inherit;
 }
 .button-float
 {
@@ -514,83 +558,15 @@ ol, ul
     margin-top: 0.625rem;
     padding: 0 0.3125rem;
 }
+.button-float span
+{
+    font-weight: 600;
+}
 .button-float:hover
 {
     background: #006AFF;
 }
 
-.button-float span
-{
-    font-weight: 600;
-}
-.float2-container
-{
-    grid-area: float2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.625rem;
-    color: #091A2B;
-    background: white;
-    border-radius: 0.3125rem;
-    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
-}
-.float2-container h1
-{
-    font-family: 'Noto Sans SC';
-    font-size: 2rem;
-    font-weight: 700;
-    color: #29598A;
-}
-.float2-container p
-{
-    font-family: 'IBM Plex Sans';
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 0.625rem 0;
-}
-.float2-container img
-{
-    width: 100%;
-}
-.float3-container
-{
-    grid-area: float3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.625rem;
-    color: #091A2B;
-    background: white;
-    border-radius: 0.3125rem;
-    box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
-}
-.float3-container h1
-{
-    font-family: 'Noto Sans SC';
-    font-size: 2rem;
-    font-weight: 700;
-    color: #29598A;
-}
-.float3-container p
-{
-    font-family: 'IBM Plex Sans';
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 0.625rem 0;
-}
-.float3-container figure
-{
-    width: 3.75rem;
-}
-.float3-container img
-{
-    width: 100%;
-}
 
 /* seccion de productos */
 .productos
@@ -598,7 +574,7 @@ ol, ul
     display:block;
     height: auto;
     padding: 0 2.5rem;
-    margin-top: 8.125rem;
+    margin-top: 9.313rem;
 }
 
 .productos h1 
@@ -624,6 +600,7 @@ ol, ul
   align-items: center;
   justify-content: center;
 }
+
 .float-bombeo
 {
     display: flex;
@@ -1322,13 +1299,13 @@ ol, ul
     text-align: center;
 }
 
-/* seccion de promociones */
+/* promotions section */
 .promo
 {
     display:block;
     height: auto;
     padding: 0 2.5rem;
-    margin-top: 5rem;
+    margin-top: 4.768rem;
 }
 .promo h1
 {
@@ -1355,7 +1332,7 @@ ol, ul
     background-image: url('https://i.postimg.cc/fLHwRBC9/hero-v3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     width: 100%;
     height: 607px;
 }
@@ -1420,13 +1397,13 @@ ol, ul
 }
 
 
-/* seccion de info de la  compañia */
+/* company information section */
 .company
 {
     display:block;
     height: auto;
     padding: 0 2.5rem;
-    margin-top: 5rem;
+    margin-top: 4.768rem;
 }
 .company h1
 {
@@ -1435,7 +1412,7 @@ ol, ul
     font-size: 3rem;
     color: #091A2B;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 .company-des-container
 {
@@ -1448,7 +1425,7 @@ ol, ul
 .company-image
 {
     object-fit: cover;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem;
 }
 .company-des-container span
 {
@@ -1464,37 +1441,14 @@ ol, ul
     border-radius: 0.3125rem;
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
 }
-.description-container
-{
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-.description-container p
-{
-    margin: 1.25rem;
-    text-align: center;
-}
-.description-container span
-{
-    font-family: 'Noto Sans SC';
-    font-weight: 500;
-    font-size: 1.33rem;
-    color: white;
-}
-
-
-
-/*seccion de marcas */
+/*trade marks sections */
 .marcas
 {
     display:block;
     height: auto;
     padding: 0 2.5rem;
-    margin-top: 5rem;
+    margin-top: 4.768rem;
 }
 .marcas h1 
 {
@@ -1534,13 +1488,13 @@ ol, ul
 }
 
 
-/* ajustes de contacto */
+/* contact section */
 .contacto
 {
     display:block;
     height: auto;
     padding: 0 2.5rem;
-    margin: 5rem 0;
+    margin: 4.768rem 0;
 }
 .contacto h1 
 {
@@ -1575,7 +1529,6 @@ ol, ul
     grid-template-rows: 1fr 2fr;
     color: #091A2B;
     background: white;
-    align-items: center;
     border-radius: 0.3125rem;
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
     padding: 1.25rem;
@@ -1585,21 +1538,21 @@ ol, ul
     grid-row: 1 / span 2 ;
     grid-column: 1 / span 1 ;
 }
-.phone-title
+.contact-subtitle
 {
     font-family: 'Noto Sans JP';
-    font-size: 1.777rem;
+    font-size: 1.953rem;
     font-weight: 700;
 }
 .phone-image
 {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
 }
 .phone-image:nth-of-type(1)
 {
-    margin-top: 0.625rem;
+    margin-top: 0.8rem;
 }
 .phone-image figure img
 {
@@ -1607,7 +1560,7 @@ ol, ul
 }
 .phone-number
 {
-    margin-left: 0.375rem;
+    margin-left: 0.8rem;
     color: #091A2B;
     cursor: pointer;
     text-decoration: none;
@@ -1619,35 +1572,24 @@ ol, ul
 .phone-number span
 {
     font-family: 'IBM Plex Sans';
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
+
 .correo-container
 {
     grid-row: 1 / span 1 ;
-    grid-column: 2 / span 1 ;
-    margin-top: 1.25rem;
-}
-.mail-title
-{
-    font-family: 'Noto Sans JP';
-    font-size: 1.777rem;
-    font-weight: 700;
+    grid-column: 2 / span 1;
 }
 .mail-image
 {
-    margin-bottom: 0.625rem;
-    margin-top: 0.625rem;
+    margin: 0.8rem 0;
     display: flex;
     align-items: center;
 }
-.mail-image figure img
-{
-    width: max-content;
-}
 .mail-direction
 {
-    margin-left: 0.3125rem;
+    margin-left: 0.8rem;
     cursor: pointer;
     text-decoration: none;
     color: #091A2B;
@@ -1659,7 +1601,7 @@ ol, ul
 .mail-direction span
 {
     font-family: 'IBM Plex Sans';
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 .social-container
@@ -1667,30 +1609,20 @@ ol, ul
     grid-row: 2 /span 1 ;
     grid-column: 2 / span 1 ;
 }
-.social-title
-{
-    font-family: 'Noto Sans JP';
-    font-size: 1.777rem;
-    font-weight: 700;
-}
+
 .social-image
 {
-    margin-bottom: 0.625rem;
-    margin-top: 0.625rem;
+    margin: 0.8rem 0;
     display: flex;
     align-items: center;    
-}
-.social-image figure img
-{
-    width: max-content;
 }
 .social-address
 {
     text-decoration: none;
     color: #091A2B;
-    margin-left: 0.3125rem;
+    margin-left: 0.8rem;
     font-family: 'IBM Plex Sans';
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -1760,10 +1692,14 @@ footer
     color: white;
     background: #091A2B;
     box-shadow: 0 -0.125px 0.5rem rgba(9, 26, 43, .47);
+    padding: 0.8rem 0;
 }
 .logo-footer 
 {
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo-footer a figure
 {
@@ -1792,7 +1728,7 @@ footer
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 2px;
+    margin: 4px 0;
 }
 .logo-footer hr
 {
@@ -1808,7 +1744,7 @@ footer
 }
 .address-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
     height: auto;
 }
 .address-footer figure img
@@ -1831,7 +1767,7 @@ footer
     line-height: 1.125rem;
     font-family: 'Noto Sans SC';
     font-weight: 500;
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
 }
 .phone-footer
 {
@@ -1859,7 +1795,7 @@ footer
 }
 .phone-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
 }
 .mail-footer
 {
@@ -1871,7 +1807,7 @@ footer
 }
 .mail-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
     height: auto;
 }
 .mail-footer figure img
@@ -1894,7 +1830,7 @@ footer
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 .productos-footer
 {
@@ -1902,15 +1838,12 @@ footer
     display: flex;
     flex-direction: column;
 }
-.productos-title
-{
-    margin-top: 1rem;
-}
+
 .productos-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 .productos-title hr
 {
@@ -1944,7 +1877,7 @@ footer
 .productos-categorias a span
 {
     font-family: 'IBM Plex Sans';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 .contacto-footer
@@ -1953,15 +1886,11 @@ footer
     display: flex;
     flex-direction: column;
 }
-.contacto-title
-{
-    margin-top: 1rem;
-}
 .contacto-title span
 {
     font-family: 'Noto Sans SC';
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 .contacto-title hr
 {
@@ -1994,7 +1923,7 @@ footer
 .contacto-categorias a span
 {
     font-family: 'IBM Plex Sans';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 .descargables-footer
@@ -2044,7 +1973,7 @@ footer
 .descargables-categorias a span
 {
     font-family: 'IBM Plex Sans';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 .about-footer
@@ -2053,10 +1982,7 @@ footer
     display: flex;
     flex-direction: column;
 }
-.about-title
-{
-    margin-top: 1rem;
-}
+
 .about-title span
 {
     font-family: 'Noto Sans SC';
@@ -2094,7 +2020,7 @@ footer
 .about-categorias a span
 {
     font-family: 'IBM Plex Sans';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 .social-footer
@@ -2129,34 +2055,22 @@ footer
 
 
 
-
 /* media queries: 1439px, 1280px, 1023px, 768px, 767px, 424px,  360px  */
 
 /* PANTALLA GRANDE */
 @media screen and (max-width:1439px)
 {
-    *
+    .nav-item
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
+        font-size: 1.25rem;
     }
     .float
     {
         bottom: -8rem;
-        display: grid;
-        grid-template-columns: repeat(3,minmax(150px,1fr));
-        grid-template-rows: 35px 210px 35px;
-        grid-template-areas: "float1 . float3"
-                             "float1 float2 float3"
-                             ". float2 ." ;
-        height: auto;
     }
     .productos
     {
-        padding: 0 2.5rem;
-        margin-top: 13rem;
+        margin-top: 11rem;
     }
     .company-image
     {
@@ -2165,7 +2079,7 @@ footer
     }
     .phone-container
     {
-        width: 40%;
+        width: 50%;
     }
     .map-container iframe
     {
@@ -2173,19 +2087,94 @@ footer
         height: 300px;
     }
 }
+
 /* PANTALLA MEDIANA */
-@media screen and (max-width:1280px)
+@media screen and (max-width:1279px)
+{
+    .nav-item
+    {
+        font-size: 1.2rem;
+    } 
+    .float1-container p, .float2-container p, .float3-container p
+    {
+        font-size: 1rem;
+    }
+    
+    .marcas-container 
+    {
+        display: grid;
+        grid-template-rows: repeat(5,minmax(150px,1fr));
+        grid-template-columns: repeat(3,minmax(200px,1fr));
+    }
+    .designby-footer span
+    {
+        font-size: 0.512rem;
+    }
+
+}
+
+/* PANTALLA PEQUEÑA */
+@media screen and (max-width:1024px)
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
-    }
-    .float
+        font-size: 14px;
+    }   
+    .header-icon
     {
-        bottom: -9rem;
+        width: 1.25rem;
+    }
+    .date
+    {
+        font-size: 1rem;
+    }
+    .TC
+    {
+        font-size: 1.25rem;
+    }
+    .header-phone a
+    {
+        font-size: 1.2rem;
+    }
+    .mail-address-header
+    {
+        font-size: 1.2rem;
+    }
+    .logo-principal
+    {
+        width: 13rem;
+    }
+    .nav-item
+    {
+        font-size: 1.2rem;
+    } 
+    .search-container 
+    {
+        width: 16.875rem;
+    }
+    .search-container input
+    {
+        font-size: 0.64rem;
+    }
+    .search-container button img
+    {
+        width: 1rem;
+    }
+    .float1-container h1, .float2-container h1, .float3-container h1
+    {
+        font-size: 1.563rem;
+    } 
+    .float1-container p, .float2-container p, .float3-container p
+    {
+        font-size: 1rem;
+    }
+    .company h1
+    {
+        font-size: 2.441rem;
+    }
+    .company-image
+    {
+        width: 300px;
     }
     .marcas-container 
     {
@@ -2193,7 +2182,31 @@ footer
         grid-template-rows: repeat(5,minmax(150px,1fr));
         grid-template-columns: repeat(3,minmax(200px,1fr));
     }
+    .correo-container
+    {
+        margin-top: 0;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .map-container
+    {
+        display: block;
+        width: 100%;
+    }
+    .map-container iframe
+    {
+        width:  inherit;
+        height: 500px;
+    }
+    .designby-footer span
+    {
+        font-size: 0.512rem;
+    }
+
 }
+
 /* PANTALLA PEQUEÑA */
 @media screen and (max-width:1023px)
 {
@@ -2236,10 +2249,12 @@ footer
         box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
         position: relative;
     }
+
     .logo-principal
     {
         width: 20rem;
         height: inherit;
+        margin-top: 1rem;
     }
     .search-container
     {
@@ -2248,10 +2263,6 @@ footer
         width: 22.5rem;
         bottom: -3rem;
         right: 0.5rem;
-    }
-    .search-container form
-    {
-        height: 2.5rem;
     }
     .sections-nav
     {
@@ -2262,15 +2273,19 @@ footer
         justify-content: center;
         margin: 0;
     }
+    .nav-item
+    {
+      font-size: 1.563rem;  
+    }
     .ref-hero-overlay
     {
         position: absolute;
         left: 3rem;
-        top: 3rem;
+        top: 2rem;
     }
     .ref-hero-overlay p:nth-of-type(1)
     {
-        font-size: 2rem;
+        font-size: 1.953rem;
     }
     .ref-hero-overlay p strong
     {
@@ -2291,19 +2306,17 @@ footer
     .float
     {
         bottom: -4rem;
+        grid-template-rows: 20px 210px 20px;
     }
-    .float1-container h1
+    .float1-container h1, .float2-container h1, .float3-container h1
     {
-        font-size: 1.5rem;
+        font-size: 1.563rem;
     }
-    .float2-container h1
+    .productos
     {
-        font-size: 1.5rem;
+        margin-top: 7rem;
     }
-    .float3-container h1
-    {
-        font-size: 1.5rem;
-    }
+
     .ref-promo-overlay p:nth-of-type(1)
     {
         font-size: 2rem;
@@ -2329,22 +2342,11 @@ footer
     .company h1
     {
         font-size: 2rem;
-        padding-bottom: 2rem;
     }
     .phone-container
     {
         width: 75%;
         margin: 0 0 2rem 0;
-    }
-    .map-container
-    {
-        display: block;
-        width: 100%;
-    }
-    .map-container iframe
-    {
-        width:  inherit;
-        height: 400px;
     }
 
     .float-contact {
@@ -2398,9 +2400,15 @@ footer
     {
         margin: 0.5rem 0.8125rem;
     }
+    .company-image
+    {
+        object-fit: cover;
+        width: 400px; 
+        margin: 0 1rem;
+    }
     .company-des-container span
     {
-        max-width: 100%;
+        max-width: 50%;
     }
     .marcas-container 
     {
@@ -2419,6 +2427,14 @@ footer
         padding: 2rem 1rem;
         margin: 0 1rem;
     }
+    .phone-number span, .mail-direction span
+    {
+        font-size: 1.563rem;
+    }
+    .social-address span
+    {
+        font-size: 1.25rem;
+    }
     
 }
 /* TABLET */
@@ -2426,9 +2442,6 @@ footer
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
         font-size: 12px;
     }
     .float-info
@@ -2439,13 +2452,43 @@ footer
     {
         max-width: 100%;
     }
+    .float
+    {
+        bottom: -4rem;
+        grid-template-rows: 25px 190px 25px;
+    }
+    .company-image
+    {
+        width: 300px;
+        margin: 1rem 0;
+    }
+    .marca-image
+    {
+        width: 150px;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 0 1rem;
+    }
+
 }
 /* TABLET PEQUEÑA */
 @media screen and (max-width:767px)
 {
     .header-superior {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .logo-head-container-sup {
         display: block;
-        text-align: right;
+        width: max-content;
+        height: auto;
+        margin-right: 1rem;
+    }
+    .logo-principal-sup {
+        width: inherit;
+        height: auto;
     }
     .burger-button {
         display: block;
@@ -2458,14 +2501,6 @@ footer
     .burger-button.is-active
     {
         background: #006AFF;
-    }
-    .logo-head-container-sup {
-        display: block;
-        height: auto;
-    }
-    .logo-principal-sup {
-        width: auto;
-        height: 6rem;
     }
     /* desplegable del burguer button */
     .logo-head-container,.nav-item hr, .header-exchange, .header-email, .header-phone,  .social-media-header, .search-container {
@@ -2590,7 +2625,7 @@ footer
     .ref-hero-overlay p:nth-of-type(1)
     {
         padding-top: 2rem;
-        font-size: 2.16rem;
+        font-size: 2.887rem;
     }
     .ref-hero-overlay p strong
     {
@@ -2620,49 +2655,30 @@ footer
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 29.5rem;
+        height: auto;
+        top: 26.5rem;
         left: 0;
         right: 0;
         padding: 0 4rem;
     }
     .float1-container 
     {
-        height: 200px;
+        height: 230px;
     }
-    .float1-container h1
-    {
-        font-size: 2rem;
-    }
-    .float1-container p
-    {
-        font-size: 1.2rem;
-    }
-    .float2-container 
+    .float2-container, .float3-container 
     {
         margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float2-container h1
+        height: 230px;
+    }   
+    .float1-container h1, .float2-container h1, .float3-container h1
     {
-        font-size: 2rem;
+        font-size: 1.953rem;
     }
-    .float2-container p
+    .float1-container p, .float2-container p, .float3-container p
     {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
-    .float3-container 
-    {
-        margin-top: 2.1875rem;
-        height: 200px;
-    }
-    .float3-container h1
-    {
-        font-size: 2rem;
-    }
-    .float3-container p
-    {
-        font-size: 1.2rem;
-    }
+ 
     .float2-container img
     {
         height: 60px;
@@ -2678,7 +2694,7 @@ footer
         display:block;
         height: auto;
         padding: 0 2.5rem;
-        margin-top: 40rem;
+        margin-top: 48rem;
     }
     .productos h1 
     {
@@ -2736,16 +2752,15 @@ footer
     {
         width: 100%;
     }
-
-    
     footer
     {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .logo-footer 
     {
@@ -2760,7 +2775,6 @@ footer
         height: auto;
         align-self: center;
     }
-    
     .logo-footer a span
     {
         margin-bottom: 5px;
@@ -2769,14 +2783,11 @@ footer
     {
         margin-bottom: 1.5rem;
     }
-    
     .address-footer a span
     {
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-    
-    
     .phone-footer
     {
         margin-bottom: 1.5rem;
@@ -2786,304 +2797,336 @@ footer
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
-    
-    .mail-footer
+    .mail-footer 
     {
-        grid-area: correo;
-        display: flex;
-        align-items: center;
-        margin-top: 0.3125rem;
-        margin-bottom: 0.625rem;
+        margin: 0 0 1.5rem 0;
     }
-    .mail-footer figure
-    {
-        margin-right: 0.625rem;
-        height: auto;
-    }
-    .mail-footer figure img
-    {
-        width: 100%;
-    }
-    .mail-footer a
-    {
-        text-decoration: none;
-        cursor:pointer;
-        color: white;
-        text-align: left;
-    }
-    .mail-footer a:hover
-    {
-        color:#006AFF;
-    }
-    
     .mail-footer a span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 0.75rem;
+        font-size: 1.4rem;
+        font-weight: 500;
     }
-    
-    
     .productos-footer
     {
-        grid-area: productos;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .productos-title
-    {
-        margin-top: 1rem;
-    }
-    .productos-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .productos-title hr
-    {
-        width: 60%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .productos-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .productos-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .productos-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .productos-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .productos-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
-    
     .contacto-footer
     {
-        grid-area: contacto;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .contacto-title
-    {
-        margin-top: 1rem;
-    }
-    .contacto-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .contacto-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 0.3125rem;
-        margin-bottom: 1rem;
-    }
-    .contacto-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .contacto-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .contacto-categorias a:hover
-    {
-        color:#006AFF;
-    }
-    .contacto-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .contacto-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .descargables-footer
     {
-        grid-area: descargables;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    .descargables-title
-    {
-        margin-top: 0;
-    }
-    .descargables-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .descargables-title hr
-    {
-        width: 98%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    .descargables-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .descargables-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .descargables-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .descargables-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    
-    .descargables-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .about-footer
     {
-        grid-area: nosotros;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    
-    .about-title
-    {
-        margin-top: 1rem;
-    }
-    .about-title span
-    {
-        font-family: 'Noto Sans SC';
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-    .about-title hr
-    {
-        width: 70%;
-        border-radius: 2px;
-        border: 2px solid  #29598A;
-        margin-top: 5px;
-        margin-bottom: 1rem;
-    }
-    
-    .about-categorias
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-categorias a 
-    {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        margin-bottom: 0.625rem;
-    }
-    .about-categorias a:hover
-    {
-        color: #006AFF;
-    }
-    .about-categorias a:nth-of-type(8)
-    {
-        margin-bottom: 0;
-    }
-    .about-categorias a span
-    {
-        font-family: 'IBM Plex Sans';
-        font-weight: 500;
-        font-size: 1rem;
-    }
-    
     .social-footer
     {
-        grid-area: social;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 4rem;
     }
     .social-footer figure
     {
-        width: 3.125rem;
-        height: auto;
-    }
-    .social-footer figure img
-    {
-        width: 100%;
+        width: 50px;
+        margin: 0 2.5rem;
     }
     .designby-footer
     {
-        grid-area: diseño;
-        display: flex;
-        align-items: center;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
     }
     .designby-footer span
     {
-        font-family: 'Noto Sans SC';
-        font-weight: 400;
-        font-size: 0.625rem;
-        margin-right: 0.3125rem;
-    }
-        
-
-    
+        font-weight: 500;
+        font-size: 0.8rem;
+    }  
 }
 /* MOVIL GRANDE */
-@media screen and (max-width:424px)
+@media screen and (max-width:425px)
 {
-    *
+    .tc-des p span:nth-of-type(2)
     {
-        font-family: 'IBM Plex Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        font-size: 1.953rem;
+    }
+    .social-des
+    {
+        margin-bottom: 2.441rem;
+    }
+    .social-icon-des
+    {
+        width: 3.052rem;
+    }
+    .nav-item
+    {
+        font-size: 1.953rem;
     }
     .float-info
     {
       display: none;
     }
-}
-/* MOVIL PEQUEÑO */
-@media screen and (max-width:360px)
-{
+    .ref-hero-overlay p:nth-of-type(1)
+    {
+        font-size: 2.441rem;
+    }
+    .ref-hero-overlay p strong
+    {
+        font-size: 5.96rem;
+    }
+    .ref-hero-overlay p:nth-of-type(2)
+    {
+        font-size: 1.563rem;
+    }
+    .ref-hero-overlay p:nth-of-type(3)
+    {
+        font-size: 1.25rem;
+    }
+    .productos hr, .promo hr, .marcas hr, .contacto hr
+    {
+        border: 2px solid  #29598A; 
+    }
+    .marcas h1 
+    {
+        font-size: 1.7rem;
+    }
+    .contact-subtitle
+    {
+        font-size: 1.563rem;
+    }
+    .phone-image figure img, .mail-image figure img
+    {
+        width: 1.953rem;
+    }
+    .phone-number span
+    {
+        font-size: 1.25rem;
+    }
+    .mail-image span, .social-image span
+    {
+       font-size: 1rem;
+    }
+    .social-image figure img
+    {
+        width: 2.441rem;
+    }
 
+}
+/* MOVIL MEDIANO */
+@media screen and (max-width:375px)
+{
+    .productos h1, .promo h1, .contacto h1
+    {
+        font-size: 1.563rem;
+    }
+    .marcas h1
+    {
+        font-size: 1.5rem;
+    }
+    .ref-promo-overlay p:nth-of-type(1)
+    {
+        text-align: center;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+    .ref-promo-overlay p:nth-of-type(3) span
+    {
+        font-size: 0.8rem;
+    }
+    .company-image
+    {
+        width: 250px;
+    }
+    .company-des-container span
+    {
+        font-size: 1.25rem;
+        line-height: 2.441rem;
+        padding: 1.25rem;
+    }
+    .phone-container
+    {
+        display: block;
+        text-align: center;
+    }
+    .contact-subtitle
+    {
+        font-size: 1.953rem;
+    }
+    .telefonos-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center; 
+    }
+    .phone-image figure img, .mail-image figure img
+    {
+        width: 2.441rem;
+    }
+    .phone-number span, .mail-image span
+    {
+        font-size: 1.563rem;
+    }
+    .correo-container
+    {
+        display: block;
+        margin-top: 0.8rem;
+    }
+    .social-container
+    {
+        margin-top: 1.6rem;
+    }
+    .social-image span
+    {
+       font-size: 1.25rem;
+    }
+    .social-image figure img
+    {
+        width: 2.441rem;
+    }
+    .address-container span
+    {
+        font-size: 1.2rem;
+    }
+    .logo-footer
+    {
+        width: 175px;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    .logo-footer a span
+    {
+        line-height: 1.375rem;
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .logo-footer hr
+    {
+        border-radius: 1px;
+        border: 1px solid  #29598A;
+    }
+}
+
+/* MOVIL PEQUEÑO*/
+@media screen and (max-width:320px)
+{
+    .logo-principal-sup {
+        width: 150px;
+        height: auto;
+    }
+    .burger-button
+    {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.953rem;
+        top: 1.3rem;
+        left: 1.5rem;
+    }
+    .nav-item
+    {
+        font-size: 1.563rem;
+    }
+    .tc-des p span:nth-of-type(1)
+    {
+        font-size: 1rem;
+    }
+    .tc-des p span:nth-of-type(2)
+    {
+        font-size: 1.25rem;
+    }
+
+    .ref-hero-overlay p:nth-of-type(1)
+    {
+        font-size: 1.953rem;
+    }
+    .ref-hero-overlay p strong
+    {
+        font-size: 4.768rem;
+    }
+    .ref-hero-overlay p:nth-of-type(2)
+    {
+        font-size: 1.3rem;
+    }
+    .ref-hero-overlay p:nth-of-type(3)
+    {
+        font-size: 1rem;
+    }
+    .float
+    {
+        padding: 0 1rem;
+    }
+    .productos h1, .promo h1, .contacto h1, .marcas h1
+    {
+        font-size: 1.953rem;
+    }
+    .promo
+    {
+        padding: 1rem;
+    }
+    .productos
+    {
+        padding: 0 1rem;
+    }
+    .categorias-name
+    {
+        font-size: 1.953rem;
+    }
+    .ref-promo-overlay p:nth-of-type(1)
+    {
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+    .ref-promo-overlay p:nth-of-type(1) strong
+    {
+        text-align: center;
+        font-size: 3.8rem;
+        padding: 0;
+    }
+
+    .ref-promo-overlay p:nth-of-type(3)
+    {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+    .company, .promo, .marcas, .contacto
+    {
+        margin-top: 3.052rem;
+        padding: 0 1rem;
+    }
+    .company h1
+    {
+        font-size: 1.563rem;
+    }
+    .address-container span
+    {
+        font-size: 1rem;
+    }
+    .address-container figure img
+    {
+        width: 25px;
+    }
+
+    .address-footer a span
+    {
+        font-size: 1rem;
+    }
+    .phone-footer-container span
+    {
+        font-size:1.25rem;
+    }
+    .mail-footer a span
+    {
+        font-size: 1rem;
+    }
+    .social-footer figure
+    {
+        width:40px;
+        margin: 0 1.953rem;
+    }
+    .designby-footer span
+    {
+        font-size: 0.64rem;
+    }
 }
