@@ -1,7 +1,7 @@
 /* sets de html y grid principal del body */
 *
 {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica';
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -58,8 +58,8 @@ body
     color: white;
     font-size: 2.5em;
     position: fixed;
-    top: 22px;
-    left: 10px;
+    top: 1.2rem;
+    left: 0.625rem;
     z-index: 4;
     display: none;
 }
@@ -104,7 +104,7 @@ header
     background: -ms-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica';
 }
 
 .logo-head-container-sup 
@@ -246,7 +246,7 @@ header
     height: inherit;
     align-items: center;
     padding: 0 0.625rem;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 1.5rem;
     font-weight: 500;
     color: #091A2B;
@@ -295,7 +295,7 @@ ol, ul
     width:100%;
     margin: 0;
     padding-left: 0.4375rem;
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-style: italic;
     font-size: 0.75rem;
     border-left: 1.5px solid #091A2B;
@@ -349,7 +349,7 @@ ol, ul
 }
 .breadcrumbs a span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 14px;
 }
@@ -408,7 +408,7 @@ ol, ul
 
 .content span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 800;
     font-size: 3rem;
     color: #006AFF;
@@ -417,7 +417,7 @@ ol, ul
 .content span:nth-of-type(2)
 {
     text-align: center;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 800;
     font-size: 1.333rem;
     color: #29598A;
@@ -425,7 +425,7 @@ ol, ul
 
 .content span:nth-of-type(3)
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 700;
     font-size: 1.333rem;
     color: #091A2B;
@@ -436,7 +436,7 @@ ol, ul
     cursor: pointer;
     color: #29598A;
     text-align: center;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 700;
     font-size: 18px;
 }
@@ -490,7 +490,7 @@ footer
 .logo-footer a span
 {
     line-height: 1.375rem;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 700;
     font-size: 1rem;
     margin-bottom: 2px;
@@ -532,7 +532,7 @@ footer
 .address-footer a span
 {
     line-height: 1.125rem;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 500;
     font-size: 0.6875rem;
 }
@@ -549,7 +549,7 @@ footer
 }
 .phone-footer-container span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -596,7 +596,7 @@ footer
 
 .mail-footer a span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 0.75rem;
 }
@@ -612,7 +612,7 @@ footer
 }
 .productos-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -647,7 +647,7 @@ footer
 
 .productos-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 500;
     font-size: 1rem;
 }
@@ -664,7 +664,7 @@ footer
 }
 .contacto-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -698,7 +698,7 @@ footer
 }
 .contacto-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 500;
     font-size: 1rem;
 }
@@ -715,7 +715,7 @@ footer
 }
 .descargables-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -750,7 +750,7 @@ footer
 
 .descargables-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 500;
     font-size: 1rem;
 }
@@ -768,7 +768,7 @@ footer
 }
 .about-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -803,7 +803,7 @@ footer
 }
 .about-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 500;
     font-size: 1rem;
 }
@@ -832,7 +832,7 @@ footer
 }
 .designby-footer span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 400;
     font-size: 0.625rem;
     margin-right: 0.3125rem;
@@ -844,7 +844,7 @@ footer
 {
   *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'IBM Plex Sans', 'Helvetica';
         margin: 0;
         padding: 0;
         font-size: 12px;
@@ -863,7 +863,7 @@ footer
 {
  *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'IBM Plex Sans', 'Helvetica';
         margin: 0;
         padding: 0;
         font-size: 14px;
@@ -953,7 +953,7 @@ footer
     
     .content span:nth-of-type(1)
     {
-        font-family: 'Noto Sans JP';
+        font-family: 'Noto Sans SC', 'Helvetica';
         font-weight: 800;
         font-size: 2.5rem;
         color: #006AFF;
@@ -962,7 +962,7 @@ footer
     .content span:nth-of-type(2)
     {
         text-align: center;
-        font-family: 'Noto Sans SC';
+        font-family: 'Noto Sans SC', 'Helvetica';
         font-weight: 800;
         font-size: 1.5rem;
         color: #29598A;
@@ -970,7 +970,7 @@ footer
     
     .content span:nth-of-type(3)
     {
-        font-family: 'Noto Sans SC';
+        font-family: 'Noto Sans SC', 'Helvetica';
         font-weight: 700;
         font-size: 1.333rem;
         color: #091A2B;
@@ -981,7 +981,7 @@ footer
         cursor: pointer;
         color: #29598A;
         text-align: center;
-        font-family: 'Noto Sans SC';
+        font-family: 'Noto Sans SC', 'Helvetica';
         font-weight: 700;
         font-size: 1.333rem;
     }
@@ -997,7 +997,7 @@ footer
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'IBM Plex Sans', 'Helvetica';
         margin: 0;
         padding: 0;
         font-size: 12px;
@@ -1007,8 +1007,9 @@ footer
 @media screen and (max-width:767px)
 {
     .header-superior {
-        display: block;
-        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
     .burger-button {
         display: block;
@@ -1024,11 +1025,13 @@ footer
     }
     .logo-head-container-sup {
         display: block;
+        width: 40%;
         height: auto;
+        margin: 0.5rem;
     }
     .logo-principal-sup {
-        width: auto;
-        height: 6rem;
+        width: inherit;
+        height: auto;
     }
     /* desplegable del burguer button */
     .logo-head-container,.nav-item hr, .header-exchange, .header-email, .header-phone,  .social-media-header, .search-container {
@@ -1225,7 +1228,7 @@ footer
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'IBM Plex Sans', 'Helvetica';
         margin: 0;
         padding: 0;
         font-size: 12px;
