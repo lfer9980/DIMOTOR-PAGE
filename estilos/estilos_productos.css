@@ -131,6 +131,12 @@ header
     font-weight: 500;
     color:white;
 }
+.date-today
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
 .TC
 {
     font-size: 1.5rem;
@@ -276,9 +282,9 @@ header
 }
 .sections-nav hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;  
+    background-color: #29598A;
 }
 
 ol, ul
@@ -409,9 +415,9 @@ ol, ul
 }
 .main-title hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A; 
+    background-color: #29598A;
 }
 
 /* intro container propieties */
@@ -466,9 +472,9 @@ ol, ul
 }
 .main-categorias hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A; 
+    background-color: #29598A;
     margin-bottom: 1rem;
 }
 
@@ -648,9 +654,9 @@ footer
 }
 .logo-footer hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
 }
 .address-footer
 {
@@ -766,6 +772,7 @@ footer
     width: 60%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -813,6 +820,7 @@ footer
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -863,6 +871,7 @@ footer
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -910,6 +919,7 @@ footer
     width: 70%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -1240,24 +1250,26 @@ footer
     }
     .tc-icon-des
     {
-        width:25px;
-        margin-right:5px;
+        width:1.563rem;
+        margin-right:1rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-des p
     {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 600;
+        text-align: right;
+        margin-left:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
+    .date
     {
-        color: white;
-        font-size: 2.3rem;
-        font-weight: 700;
-        background: #006AFF;
-        border-radius: 2px;
-        border: 1px solid transparent;
-        padding: 0.125rem 0.3125rem;
+        font-size: 1.25rem;
+    }
+    .date-today
+    {
+        font-size:1.563rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.953rem;
     }
     .sections-nav
     {
@@ -1302,7 +1314,6 @@ footer
         cursor: pointer;
     }
 
-
     .intro-container
     {
         max-width: 80vw;
@@ -1317,7 +1328,10 @@ footer
         padding: 1.25rem;
         border-radius: 0.3125rem;
     }
-
+    .main-categorias
+    {
+        padding: 0 1rem;
+    }
     footer
     {
         display: flex;
@@ -1413,10 +1427,6 @@ footer
 /* MOVIL GRANDE */
 @media screen and (max-width:425px)
 {  
-    .tc-des p span:nth-of-type(2)
-    {
-        font-size: 1.953rem;
-    }
     .social-des
     {
         margin-bottom: 2.441rem;
@@ -1462,6 +1472,29 @@ footer
 /* MOVIL MEDIANO */
 @media screen and (max-width:375px)
 {
+    .tc-icon-des
+    {
+        width:1.25rem;
+        margin-right:0.8rem;
+    }
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 1rem;
+    }
+    .date-today
+    {
+        font-size:1.25rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.563rem;
+    }
     .breadcrumbs a span
     {
         font-size: 0.8rem;
@@ -1469,7 +1502,7 @@ footer
     .main-categorias
     {
         margin-top: 7.451rem;
-        padding: 0 1.953rem;
+        padding: 0 1rem;
     }
     .categoria-help a span
     {
@@ -1491,6 +1524,7 @@ footer
     {
         border-radius: 1px;
         border: 1px solid  #29598A;
+        background-color: #29598A;
     }
 }
 /* MOVIL PEQUEÑO */
@@ -1509,14 +1543,29 @@ footer
     {
         font-size: 1.563rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-icon-des
     {
-        font-size: 1rem;
+        width:1rem;
+        margin-right:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 0.8rem;
+    }
+    .date-today
+    {
+        font-size:1rem;
+        margin: 0.5rem 0;
+    }
+    .TC
     {
         font-size: 1.25rem;
-    }
+    } 
     .intro-container
     {
        width: 100%;
@@ -1533,7 +1582,6 @@ footer
         margin: 4.768rem 0;
     }
         
-
     .address-footer a span
     {
         font-size: 1rem;

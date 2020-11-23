@@ -58,12 +58,12 @@ body
     color: white;
     font-size: 2.5em;
     position: fixed;
-    top: 1.2rem;
-    left: 0.625rem;
+    top: 22px;
+    left: 10px;
     z-index: 4;
     display: none;
 }
-/* presets para el elemento contenedor */
+/* container presets setup */
 .container
 {
     max-width: 100vw;
@@ -76,7 +76,7 @@ body
     flex-wrap: inherit; 
 }
 
-/* propiedades de todo el header */
+/* header properties */
 header
 {
     display: block;
@@ -87,7 +87,7 @@ header
     justify-content: space-evenly;
 }
 
-/* primera barra del header */
+/* top head adjustment */
 .header-superior
 {
     display: flex;
@@ -124,13 +124,19 @@ header
     align-items: center;
     justify-content: center;
 }
-.header-exchange p span
+.date
 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color:white;
 }
-.header-exchange p span:nth-of-type(2)
+.date-today
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+.TC
 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -138,6 +144,7 @@ header
     border-radius: 2px;
     border: 1px solid transparent;
     padding: 0.125rem 0.3125rem;
+    color:white;
 }
 
 .header-phone
@@ -168,18 +175,24 @@ header
     align-items: center;
     justify-content: center;
 }
+.header-email figure
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header-email a
 {
     cursor: pointer;
     text-decoration: none;
 }
-.header-email a span
+.mail-address-header
 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color:white;
 }
-.header-email a span:hover
+.mail-address-header:hover
 {
     cursor: pointer;
     color: #006AFF;
@@ -196,7 +209,7 @@ header
 }  
 
 
-/* barra principal del header */
+/* main head adjustment */
 .header-principal
 {
     display: flex;
@@ -210,34 +223,45 @@ header
     box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
 }
 
-.logo-principal
-{
-    width: 15.625rem;
-    height: inherit;
-}
-/* Secciones del menu */
-.sections-nav
-{
-    display: flex;
-    height: inherit;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.3125rem;
-}
+/* hidden elements on big size screen */
 .social-des {
     display: none;
 }
 .tc-des {
     display:none;
 }
-.sections-nav ol
+
+/* main header sections */
+.logo-principal
+{
+    width: 15.625rem;
+    height: inherit;
+}
+
+.sections-nav
 {
     display: flex;
     height: inherit;
+    align-items: center;
+    max-width: 50%;
+    justify-content: center;
+    padding: 0.64rem 0;
 }
+
+.sections-nav ol
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,minmax(1fr,40px));
+    height: inherit;
+    width: inherit;
+}
+
 .sections-nav ol li
 {
+    display: flex;
     height: inherit;
+    justify-content: center;
 }
 .nav-item
 {
@@ -245,23 +269,21 @@ header
     display: block;
     height: inherit;
     align-items: center;
-    padding: 0 0.625rem;
+    padding: 0 0.64rem;
     font-family: 'Noto Sans SC', 'Helvetica';
-    font-size: 1.5rem;
+    font-size: 1.563rem;
     font-weight: 500;
     color: #091A2B;
 }
-
 .nav-item:hover
 {
     color: #006AFF;
 }
-
 .sections-nav hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;  
+    background-color: #29598A;
 }
 
 ol, ul
@@ -272,10 +294,10 @@ ol, ul
 }
 
 
-/* barra de busqueda */
+/* search bar */
 .search-container 
 {
-    width: 21.875rem;
+    width: 19.875rem;
     height: auto;
     display: flex;
     justify-content: center;
@@ -283,52 +305,45 @@ ol, ul
 }
 .search-container form
 {
-    display: grid;
-    grid-template-columns: 9fr 1fr;
-    grid-template-areas: "search button";
+    display: flex;
     width: 100%;
     height: 2.1875rem;
 }
 .search-container input
 {
-    grid-area: search;
     width:100%;
     margin: 0;
     padding-left: 0.4375rem;
     font-family: 'IBM Plex Sans', 'Helvetica';
     font-style: italic;
     font-size: 0.75rem;
-    border-left: 1.5px solid #091A2B;
-    border-top: 1.5px solid #091A2B;
-    border-bottom: 1.5px solid #091A2B;
     border-radius: 0.3125rem 0px 0px 0.3125rem;
+    border: 1.5px solid #091A2B;
 }
 .search-container button
 {
-    grid-area: button;
     display: flex;
     align-content: center;
     justify-content: center;
-    width:auto;
+    width: 2rem;
+    height: inherit;
     background: #29598A;
     cursor: pointer;
     border: none;
-    border:1.5px solid #091A2B;
     border-radius: 0px 0.3125rem 0.3125rem 0px;
 }
-
 .search-container button:hover
 {
     background:#006AFF;
 }
 .search-container button img
 {
+    display:block;
     align-self: center;
 }
 
 
-
-/* miga de pan */
+/* breadcrumbs section */
 .breadcrumbs
 {
     background: #E5EEFC;
@@ -359,7 +374,7 @@ ol, ul
 }
 .breadcrumbs a:nth-of-type(1)
 {
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 .breadcrumbs a:after /* pseudoelemento que agrega simbolo span */
@@ -374,12 +389,11 @@ ol, ul
 {
     display: none;
 }
-.breadcrumbs a:nth-of-type(2) span:hover
+.breadcrumbs a:nth-of-type(3) span:hover
 {
     color: #29598A;
     cursor: initial;
 }
-
 
 
 .esperalo
@@ -446,7 +460,8 @@ ol, ul
     color: #006AFF;
 }
 
-/* footer */
+
+/*seccion del footer */
 footer
 {
     display: grid;
@@ -459,11 +474,14 @@ footer
     color: white;
     background: #091A2B;
     box-shadow: 0 -0.125px 0.5rem rgba(9, 26, 43, .47);
+    padding: 0.8rem 0;
 }
-
 .logo-footer 
 {
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo-footer a figure
 {
@@ -476,7 +494,6 @@ footer
 {
     width: 100%;
 }
-
 .logo-footer a 
 {
     display: flex;
@@ -493,15 +510,14 @@ footer
     font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 2px;
+    margin: 4px 0;
 }
 .logo-footer hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
 }
-
 .address-footer
 {
     grid-area: direccion;
@@ -510,7 +526,7 @@ footer
 }
 .address-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
     height: auto;
 }
 .address-footer figure img
@@ -528,13 +544,12 @@ footer
 {
     color: #006AFF;
 }
-
 .address-footer a span
 {
     line-height: 1.125rem;
     font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 500;
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
 }
 .phone-footer
 {
@@ -562,9 +577,8 @@ footer
 }
 .phone-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
 }
-
 .mail-footer
 {
     grid-area: correo;
@@ -575,7 +589,7 @@ footer
 }
 .mail-footer figure
 {
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
     height: auto;
 }
 .mail-footer figure img
@@ -598,7 +612,7 @@ footer
 {
     font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 .productos-footer
 {
@@ -606,21 +620,19 @@ footer
     display: flex;
     flex-direction: column;
 }
-.productos-title
-{
-    margin-top: 1rem;
-}
+
 .productos-title span
 {
     font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 .productos-title hr
 {
     width: 60%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -648,31 +660,27 @@ footer
 .productos-categorias a span
 {
     font-family: 'IBM Plex Sans', 'Helvetica';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
-
 .contacto-footer
 {
     grid-area: contacto;
     display: flex;
     flex-direction: column;
 }
-.contacto-title
-{
-    margin-top: 1rem;
-}
 .contacto-title span
 {
     font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 .contacto-title hr
 {
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -699,10 +707,9 @@ footer
 .contacto-categorias a span
 {
     font-family: 'IBM Plex Sans', 'Helvetica';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
-
 .descargables-footer
 {
     grid-area: descargables;
@@ -724,6 +731,7 @@ footer
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -747,14 +755,12 @@ footer
 {
     margin-bottom: 0;
 }
-
 .descargables-categorias a span
 {
     font-family: 'IBM Plex Sans', 'Helvetica';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
-
 .about-footer
 {
     grid-area: nosotros;
@@ -762,10 +768,6 @@ footer
     flex-direction: column;
 }
 
-.about-title
-{
-    margin-top: 1rem;
-}
 .about-title span
 {
     font-family: 'Noto Sans SC', 'Helvetica';
@@ -777,10 +779,10 @@ footer
     width: 70%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
-
 .about-categorias
 {
     display: flex;
@@ -804,10 +806,9 @@ footer
 .about-categorias a span
 {
     font-family: 'IBM Plex Sans', 'Helvetica';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
-
 .social-footer
 {
     grid-area: social;
@@ -838,93 +839,111 @@ footer
     margin-right: 0.3125rem;
 }
 
-/* media queries: 1280px, 1023px, 768px, 767px, 424px,  360px  */
+/* media queries: 1439px, 1280px, 1023px, 768px, 767px, 424px,  360px  */
 
-@media screen and (max-width:1280px)
+/* PANTALLA GRANDE */
+@media screen and (max-width:1439px)
 {
-  *
+    .nav-item
     {
-        font-family: 'IBM Plex Sans', 'Helvetica';
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        font-size: 1.25rem;
     }
-    .main-image
+    .float
     {
-        width: 400px;
-        height: auto;
+        bottom: -8rem;
+    }
+    .productos
+    {
+        margin-top: 11rem;
+    }
+    .company-image
+    {
+        object-fit: cover;
         margin: 2rem;
-        align-self: center;
+    }
+    .phone-container
+    {
+        width: 50%;
+    }
+    .map-container iframe
+    {
+        width:  100%;
+        height: 300px;
     }
 }
 
-
-@media screen and (max-width:1023px)
+/* PANTALLA MEDIANA */
+@media screen and (max-width:1279px)
 {
- *
+    .nav-item
     {
-        font-family: 'IBM Plex Sans', 'Helvetica';
-        margin: 0;
-        padding: 0;
+        font-size: 1.2rem;
+    } 
+    .float1-container p, .float2-container p, .float3-container p
+    {
+        font-size: 1rem;
+    }
+    
+    .marcas-container 
+    {
+        display: grid;
+        grid-template-rows: repeat(5,minmax(150px,1fr));
+        grid-template-columns: repeat(3,minmax(200px,1fr));
+    }
+    .designby-footer span
+    {
+        font-size: 0.512rem;
+    }
+}
+
+/* PANTALLA PEQUEÑA */
+@media screen and (max-width:1024px)
+{
+    *
+    {
+
         font-size: 14px;
     }
-    .header-superior
+    .header-icon
     {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-        justify-content: space-evenly;
-        position: relative;
-        padding: 0.5rem 0;
+        width: 1.25rem;
     }
-    .social-media-header
+    .date
     {
-        position: absolute;
-        bottom: -4rem;
-        right: 1rem;
-        padding: 0.5rem 0;
+        font-size: 1rem;
     }
-    .header-principal
+    .TC
     {
-        display: block;
-        height: auto;
-        text-align: center;
-        padding: 0 0.625rem 0.625rem 0.625rem;
-      /*   background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
-        background-size: cover;
-        background-position: right;
-        background-repeat: no-repeat; */
-        background: white;
-        box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
-        position: relative;
+        font-size: 1.25rem;
+    }
+    .header-phone a
+    {
+        font-size: 1.2rem;
+    }
+    .mail-address-header
+    {
+        font-size: 1.2rem;
     }
     .logo-principal
     {
-        width: 20rem;
-        height: inherit;
+        width: 13rem;
     }
-    .search-container
+    .nav-item
     {
-        position: absolute;
-        z-index: 1;
-        bottom: 0.625rem;
-        right: 2rem;
-        width: 22.5rem;
-    }
-    .search-container form
+        font-size: 1.2rem;
+    } 
+    .search-container 
     {
-        height: 2.5rem;
+        width: 16.875rem;
     }
-    .sections-nav
+    .search-container input
     {
-        display: flex;
-        height: inherit;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 3.5rem;
+        font-size: 0.64rem;
     }
-
+    .search-container button img
+    {
+        width: 1rem;
+    }
 
     .esperalo
     {
@@ -933,7 +952,7 @@ footer
         height: auto;
         justify-content: center;
         align-items: center;
-        padding: 0 2.5rem;
+        padding: 0 1rem;
         margin: 3.75rem 0;   
     }
     .main-image
@@ -990,19 +1009,92 @@ footer
     {
         color: #006AFF;
     }
-
+    .designby-footer span
+    {
+        font-size: 0.512rem;
+    }
 }
+
+
+/* PANTALLA PEQUEÑA */
+@media screen and (max-width:1023px)
+{
+    .header-superior
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        position: relative;
+        padding: 0.5rem 0;
+    }
+    .social-media-header
+    {
+        position: absolute;
+        bottom: -4rem;
+        right: 1rem;
+        padding: 0.5rem 0;
+    }
+    .header-principal
+    {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 0 0.625rem 0.625rem 0.625rem;
+        border: 1px solid transparent;
+      /*   background-image:url('https://i.postimg.cc/Jz2vGz7b/fondo-header.png');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat; */
+        background: transparent;
+        box-shadow: 0 0 0.18rem 0 rgba(9,26,43, 0.47);
+        position: relative;
+    }
+
+    .logo-principal
+    {
+        width: 20rem;
+        height: inherit;
+        margin-top: 1rem;
+    }
+    .search-container
+    {
+        position: absolute;
+        z-index: 1;
+        width: 22.5rem;
+        bottom: -3rem;
+        right: 0.5rem;
+    }
+    .sections-nav
+    {
+        display: flex;
+        height: inherit;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-item
+    {
+      font-size: 1.563rem;  
+    }
+}
+
 /* TABLET */
 @media screen and (max-width:768px)
 {
     *
     {
-        font-family: 'IBM Plex Sans', 'Helvetica';
-        margin: 0;
-        padding: 0;
+
         font-size: 12px;
     }
+    .search-container
+    {
+        display:none;
+    }
 }
+
 /* TABLET PEQUEÑA */
 @media screen and (max-width:767px)
 {
@@ -1010,6 +1102,16 @@ footer
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+    .logo-head-container-sup {
+        display: block;
+        width: 40%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .logo-principal-sup {
+        width: inherit;
+        height: auto;
     }
     .burger-button {
         display: block;
@@ -1022,16 +1124,6 @@ footer
     .burger-button.is-active
     {
         background: #006AFF;
-    }
-    .logo-head-container-sup {
-        display: block;
-        width: 40%;
-        height: auto;
-        margin: 0.5rem;
-    }
-    .logo-principal-sup {
-        width: inherit;
-        height: auto;
     }
     /* desplegable del burguer button */
     .logo-head-container,.nav-item hr, .header-exchange, .header-email, .header-phone,  .social-media-header, .search-container {
@@ -1069,24 +1161,26 @@ footer
     }
     .tc-icon-des
     {
-        width:25px;
-        margin-right:5px;
+        width:1.563rem;
+        margin-right:1rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-des p
     {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 600;
+        text-align: right;
+        margin-left:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
+    .date
     {
-        color: white;
-        font-size: 2.3rem;
-        font-weight: 700;
-        background: #006AFF;
-        border-radius: 2px;
-        border: 1px solid transparent;
-        padding: 0.125rem 0.3125rem;
+        font-size: 1.25rem;
+    }
+    .date-today
+    {
+        font-size:1.563rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.953rem;
     }
     .sections-nav
     {
@@ -1130,7 +1224,22 @@ footer
         background: #006AFF;
         cursor: pointer;
     }
-  
+    .content span:nth-of-type(1)
+    {
+        font-size: 1.953rem;
+    }
+    .content span:nth-of-type(2)
+    {
+        font-size: 1.563rem;
+    }
+    .content span:nth-of-type(3)
+    {
+        font-size: 1.25rem;
+    }
+    .content a
+    {
+        font-size: 1.25rem;
+    }
     footer
     {
         display: flex;
@@ -1224,22 +1333,176 @@ footer
     }  
 }
 /* MOVIL GRANDE */
-@media screen and (max-width:424px)
+@media screen and (max-width:425px)
 {
-    *
+    .social-des
     {
-        font-family: 'IBM Plex Sans', 'Helvetica';
-        margin: 0;
+        margin-bottom: 2.441rem;
+    }
+    .social-icon-des
+    {
+        width: 3.052rem;
+    }
+    .nav-item
+    {
+        font-size: 1.953rem;
+    }
+    .breadcrumbs
+    {
         padding: 0;
-        font-size: 12px;
+    }
+    .breadcrumbs a span
+    {
+        font-size: 1rem;
+    }
+    .breadcrumbs a:nth-of-type(1)
+    {
+        margin-left: 1.25rem;
     }
 
 }
-/* MOVIL PEQUEÑO */
-@media screen and (max-width:360px)
+/* MOVIL MEDIANO */
+@media screen and (max-width:375px)
 {
-
+    .tc-icon-des
+    {
+        width:1.25rem;
+        margin-right:0.8rem;
+    }
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 1rem;
+    }
+    .date-today
+    {
+        font-size:1.25rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.563rem;
+    }
+    .breadcrumbs a span
+    {
+        font-size: 0.8rem;
+    }
+    .content span:nth-of-type(1)
+    {
+        font-size: 1.953rem;
+    }
+    .content span:nth-of-type(2)
+    {
+        font-size: 1.25rem;
+    }
+    .content span:nth-of-type(3)
+    {
+        font-size: 1rem;
+    }
+    .content a
+    {
+        font-size: 1rem;
+    }
+    .logo-footer
+    {
+        width: 175px;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    .logo-footer a span
+    {
+        line-height: 1.375rem;
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .logo-footer hr
+    {
+        border-radius: 1px;
+        border: 1px solid  #29598A;
+        background-color: #29598A;
+    }
+    
 }
 
-
-
+/* MOVIL PEQUEÑO */
+@media screen and (max-width:320px)
+{
+    .burger-button
+    {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.953rem;
+        top: 1.3rem;
+        left: 1.5rem;
+    }
+    .nav-item
+    {
+        font-size: 1.563rem;
+    }
+    .tc-icon-des
+    {
+        width:1rem;
+        margin-right:0.5rem;
+    }
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 0.8rem;
+    }
+    .date-today
+    {
+        font-size:1rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.25rem;
+    } 
+    .main-image
+    {
+        width: 250px;
+        margin: 1rem;
+    }
+    .content span:nth-of-type(1)
+    {
+        font-size: 1.953rem;
+    }
+    .content span:nth-of-type(2)
+    {
+        font-size: 1.2rem;
+    }
+    .content span:nth-of-type(3)
+    {
+        font-size: 1.2rem;
+    }
+    .address-footer a span
+    {
+        font-size: 1.2rem;
+    }
+    .phone-footer-container span
+    {
+        font-size:1.25rem;
+    }
+    .mail-footer a span
+    {
+        font-size: 1rem;
+    }
+    .social-footer figure
+    {
+        width:40px;
+        margin: 0 1.953rem;
+    }
+    .designby-footer span
+    {
+        font-size: 0.64rem;
+    }
+}
