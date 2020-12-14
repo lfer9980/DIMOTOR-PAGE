@@ -1054,9 +1054,13 @@ footer
     {
         font-size: 1rem;
     }
+    .date-today
+    {
+        font-size: 1rem;
+    }
     .TC
     {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .header-phone a
     {
@@ -1252,6 +1256,7 @@ footer
     {
         width:1.563rem;
         margin-right:1rem;
+        line-height: 2.5rem;
     }
     .tc-des p
     {
@@ -1481,6 +1486,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2rem;
     }
     .date
     {

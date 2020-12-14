@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<meta name=“viewport” content=“user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi” />
- -->    <title>Bombeo</title>
+ --><title>Bombeo</title>
     <link rel="icon" type="icono dimotor" href="iconos/motor_icon.svg"/>
     <link rel="stylesheet" href="estilos/bombeo-hero.css">
     <link rel="stylesheet" href="estilos/estilos_productos.css">
@@ -23,15 +23,11 @@
                         </figure>
                     </a>
                 </div>
-                <div class="header-exchange">
+                <div class="header-exchange" id = "tc-superior">
                     <figure>
                         <img class="header-icon" src="iconos/money-bag_white-small.svg" alt="TC">
                     </figure>
-                        <p>
-                            <span class = "date"> Tipo de cambio:&nbsp;</span>
-                            <span class= "TC">$ 19.70 MXN</span>
-                            <span class="date">/ 18 NOV 2020</span>
-                        </p>
+                    <span class = "date"> Tipo de cambio:&nbsp;</span>
                 </div> 
                 <div class="header-phone">
                     <figure>
@@ -87,15 +83,11 @@
                     </a>
                 </div>
 
-                <div class="tc-des">
+                <div class="tc-des" id = "tc-principal">
                     <figure>
                         <img class="tc-icon-des" src="iconos/money-bag_white-small.svg" alt="TC">
                     </figure>
-                        <span class = "date"> Tipo de cambio:&nbsp;</span> <br>
-                        <p>
-                            <span class="date-today">18 NOV 2020</span> <br>
-                            <span class= "TC">$ 19.70 MXN</span>
-                        </p>
+                    <span class = "date"> Tipo de cambio:&nbsp;</span> <br>
                 </div>
 
                 <div class="logo-head-container">
@@ -502,7 +494,7 @@
                 <a href="motores.html">
                     <span>Motores y reductores</span>
                 </a>
-                <a href="presion-constante.html">
+                <a href="hidroneumaticos-presurizadores.html">
                     <span>Presi&oacute;n constante residencial</span>
                 </a>
                 <a href="electricidad.html">
@@ -601,4 +593,5 @@
     </footer>
 </body>
 <script src="js/burgerButton.js"></script>
+<script src="js/TC-API.js" ></script>
 </html>

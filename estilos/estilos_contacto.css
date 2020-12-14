@@ -1063,6 +1063,10 @@ footer
     {
         font-size: 1rem;
     }
+    .date-today
+    {
+        font-size: 1rem;
+    }
     .TC
     {
         font-size: 1.25rem;
@@ -1291,6 +1295,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2.5rem;
     }
     .date
     {
@@ -1556,6 +1561,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2rem;    
     }
     .date
     {
@@ -1619,16 +1625,15 @@ footer
     }
     .tc-icon-des
     {
-        width: 20px;
+        width:1rem;
+        margin-right:0.5rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-des p
     {
-        font-size: 1rem;
+        text-align: right;
+        margin-left:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
-    {
-        font-size: 1.25rem;
-    }
+
     .main-title h1
     {
         font-size: 1.953rem;
@@ -1676,7 +1681,10 @@ footer
     {
         font-size: 1rem;
     }
-
+    .TC
+    {
+        font-size: 1.25rem;
+    }
 
     .address-footer a span
     {

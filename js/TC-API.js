@@ -54,9 +54,26 @@
         const { dato, fecha } = datos[0]
         return dato
     }
+    //function to save and recover data from storage
+    async function cacheExist(nameCache) {
+        if (typeof(Storage) !== 'undefined') {
+            const cacheList = window.sessionStorage.getItem(nameCache)
+
+            if (cacheList) {
+                return JSON.parse(cacheList)
+            }
+            //REQUEST TO API
+            const {bmx: { series: tipoCambio} } = await getData(`${API_BASE}${API_SERIES_1}/datos/${todayDate}${todayDate}?${API_TOKEN}`)
+            window.sessionStorage.setItem(nameCache, JSON.stringify(tipoCambio))
+            return tipoCambio
+
+          } else {
+            const {bmx: { series: tipoCambio} } = await getData(`${API_BASE}${API_SERIES_1}/datos/${todayDate}${todayDate}?${API_TOKEN}`)
+            return tipoCambio
+          }
+    }
     
-    //REQUEST TO API
-    const {bmx: { series: tcDate} } = await getData(`${API_BASE}${API_SERIES_1}/datos/${todayDate}${todayDate}?${API_TOKEN}`)
+    const tcDate = await cacheExist('tc')
 
     const exchange = deconstructDato(tcDate[0])
     const MonthName = convertMonthName(date)
@@ -69,5 +86,5 @@
     const $tcPrinContainer = document.getElementById('tc-principal')
     const HTMLStringPrin = tcTemplate(exchange, day, MonthName, year, "principal")
     const TCPrin = createTemplate(HTMLStringPrin)
-    $tcPrinContainer.append(TCPrin
+    $tcPrinContainer.append(TCPrin)
 }) () 

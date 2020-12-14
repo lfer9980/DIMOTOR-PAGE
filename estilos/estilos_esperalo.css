@@ -912,9 +912,13 @@ footer
     {
         font-size: 1rem;
     }
+    .date-today
+    {
+        font-size: 1rem;
+    }
     .TC
     {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .header-phone a
     {
@@ -1168,6 +1172,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2.5rem;
     }
     .date
     {
@@ -1373,6 +1378,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2rem;
     }
     .date
     {

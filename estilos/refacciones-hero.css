@@ -6,7 +6,7 @@
     height: 38.375rem;
     margin: 0 2.5rem;
     position: relative;
-    background-image: url('https://i.postimg.cc/90JDzPj5/refacciones.png');
+    background-image: url('https://i.postimg.cc/Dypt23CJ/REFACCIONES.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -23,11 +23,11 @@
         margin: 0;
         height: 580px;
         position: relative;
-        background-image: url('https://i.postimg.cc/90JDzPj5/refacciones.png');
+        background-image: url('https://i.postimg.cc/qBLP53yG/REFACCIONES-MOVIL.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-y: 50%;
+        background-attachment: fixed;
+        background-position-y: top;
         background-position-x: 0;
     }
 }

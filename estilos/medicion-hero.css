@@ -6,7 +6,7 @@
     height: 38.375rem;
     margin: 0 2.5rem;
     position: relative;
-    background-image: url('https://i.postimg.cc/pXL94SD2/medicion.png');
+    background-image: url('https://i.postimg.cc/RhX26k4Y/MEDICION.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -24,11 +24,11 @@
         margin: 0;
         height: 580px;
         position: relative;
-        background-image: url('https://i.postimg.cc/pXL94SD2/medicion.png');
+        background-image: url('https://i.postimg.cc/RhX26k4Y/MEDICION.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-y: bottom;
-        background-position-x: 100%;
+        background-attachment: fixed;
+        background-position-y: 100%;
+        background-position-x: 50%;
     }
 }
