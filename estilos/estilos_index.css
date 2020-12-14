@@ -192,7 +192,7 @@ header
 }
 .TC
 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     background: #29598A;
     border-radius: 2px;
@@ -401,7 +401,7 @@ ol, ul
     margin: 0;
     height: 38rem;
     position: relative;
-    background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
+    background-image: url('https://i.postimg.cc/Nj5vTjyk/CONTROL.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1130,7 +1130,7 @@ ol, ul
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-image: url('https://i.postimg.cc/JnLn6V50/proteccion-over.png');
+    background-image: url('https://i.postimg.cc/4dX4RTd7/proteccion-over.png');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0.375rem 0.5rem rgba(9, 26, 43, .47);
@@ -1335,7 +1335,7 @@ ol, ul
     position: relative;
     align-items: center;
     justify-content: center;
-    background-image: url('https://i.postimg.cc/fLHwRBC9/hero-v3.png');
+    background-image: url('https://i.postimg.cc/R068sbhD/PROMOCIONES.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -2139,9 +2139,13 @@ footer
     {
         font-size: 1rem;
     }
+    .date-today
+    {
+        font-size: 1rem;
+    }
     .TC
     {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .header-phone a
     {
@@ -2555,6 +2559,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2.5rem;
     }
     .date
     {
@@ -2623,13 +2628,23 @@ footer
         margin: 0;
         height: 580px;
         position: relative;
-        background-image: url('https://i.postimg.cc/fLHwRBC9/hero-v3.png');
+        background-image: url('https://i.postimg.cc/Hx1qf066/PRESURIZADORES.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: bottom;
-        background-position-x: 100%;
+        background-position-x: 10%;
     }
+    .hero:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .6)
+    }
+    
     .ref-hero-overlay
     {
         display: block;
@@ -2724,14 +2739,23 @@ footer
         position: relative;
         align-items: center;
         justify-content: center;
-        background-image: url('https://i.postimg.cc/fLWzs6cs/hero-v1.png');
+        background-image: url('https://i.postimg.cc/wTzBhLHc/MOTORES-Y-REDUCTORES.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: initial;
         background-position-y: bottom;
-        background-position-x: left;
+        background-position-x: center;
         width: 100%;
         height: 300px;
+    }
+    .promo-container:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .70)
     }
     .promo h1
     {
@@ -2939,6 +2963,7 @@ footer
     {
         text-align: right;
         margin-left:0.5rem;
+        line-height: 2rem;
     }
     .date
     {

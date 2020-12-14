@@ -6,7 +6,7 @@
     height: 38.375rem;
     margin: 0 2.5rem;
     position: relative;
-    background-image: url('https://i.postimg.cc/Z59WKy72/bombeo.png');
+    background-image: url('https://i.postimg.cc/jdSp0ShY/BOMBEO.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -24,11 +24,11 @@
         margin: 0;
         height: 580px;
         position: relative;
-        background-image: url('https://i.postimg.cc/Z59WKy72/bombeo.png');
+        background-image: url('https://i.postimg.cc/jdSp0ShY/BOMBEO.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position-y: bottom;
-        background-position-x: 50%;
+        background-position-x: 20%;
     }
 }
