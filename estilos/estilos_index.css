@@ -1,7 +1,7 @@
 /* html set up*/
 *
 {
-    font-family: 'IBM Plex Sans', 'Segoe UI';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -58,8 +58,8 @@ body
     color: white;
     font-size: 2.5em;
     position: fixed;
-    top: 1.83rem;
-    left: 1rem;
+    top: 1.2rem;
+    left: 0.625rem;
     z-index: 4;
     display: none;
 }
@@ -102,7 +102,7 @@ body
 .float-info
 {
     color: white;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.25rem;
     margin-right: 0.8rem;
@@ -159,7 +159,7 @@ header
     background: -ms-linear-gradient(left, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     background: linear-gradient(to right, rgba(9,26,43,1) 0%, rgba(41,89,138,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091a2b', endColorstr='#29598a', GradientType=1 );
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica';
 }
 
 .logo-head-container-sup {
@@ -183,6 +183,12 @@ header
     font-size: 1.25rem;
     font-weight: 500;
     color:white;
+}
+.date-today
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
 }
 .TC
 {
@@ -315,7 +321,7 @@ header
     height: inherit;
     align-items: center;
     padding: 0 0.64rem;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 1.563rem;
     font-weight: 500;
     color: #091A2B;
@@ -327,9 +333,9 @@ header
 
 .sections-nav hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;  
+    background-color: #29598A;
 }
 
 ol, ul
@@ -359,7 +365,7 @@ ol, ul
     width:100%;
     margin: 0;
     padding-left: 0.4375rem;
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-style: italic;
     font-size: 0.75rem;
     border-radius: 0.3125rem 0px 0px 0.3125rem;
@@ -414,7 +420,7 @@ ol, ul
 .ref-hero-overlay p:nth-of-type(1)
 {
     color: white;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 3.052rem;
     font-weight: 500;
 }
@@ -514,7 +520,7 @@ ol, ul
 
 .float1-container h1, .float2-container h1, .float3-container h1
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -522,7 +528,7 @@ ol, ul
 }
 .float1-container p, .float2-container p, .float3-container p
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
@@ -579,7 +585,7 @@ ol, ul
 
 .productos h1 
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.5rem;
     font-weight: 700;
     width: 100%;
@@ -588,9 +594,9 @@ ol, ul
 }
 .productos hr
 {
-    width: 100%;
     border: 4px solid  #29598A; 
-    border-radius: 0.125rem;
+    background-color: #29598A;
+    border-radius: 4px;
     margin-bottom: 1rem;
 }
 .productos-container
@@ -652,7 +658,7 @@ ol, ul
 }
 .bombeo-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -733,7 +739,7 @@ ol, ul
 }
 .motores-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -814,7 +820,7 @@ ol, ul
 }
 .presion-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -895,7 +901,7 @@ ol, ul
 }
 .electricidad-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -978,7 +984,7 @@ ol, ul
 }
 .control-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -1061,7 +1067,7 @@ ol, ul
 
 .medicion-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -1145,7 +1151,7 @@ ol, ul
 
 .proteccion-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -1228,7 +1234,7 @@ ol, ul
 }
 .refac-overlay a span:nth-of-type(1)
 {
-    font-family: 'Noto Sans JP' sans-serif;
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 0.625rem;
@@ -1292,7 +1298,7 @@ ol, ul
 
 .categorias-name
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.3rem;
     font-weight: 600;
     color: white;
@@ -1309,7 +1315,7 @@ ol, ul
 }
 .promo h1
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
@@ -1318,9 +1324,9 @@ ol, ul
 }
 .promo hr
 {
-    width: 100%;
     border: 4px solid  #29598A; 
-    border-radius: 2px;
+    background-color: #29598A;
+    border-radius: 4px;
     margin-bottom: 1rem;
 }
 .promo-container
@@ -1357,7 +1363,7 @@ ol, ul
 {
 
     color: white;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.5rem;
     font-weight: 500;
     padding: 5rem 2.5rem 1.25rem 2rem;
@@ -1407,7 +1413,7 @@ ol, ul
 }
 .company h1
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 3rem;
     color: #091A2B;
@@ -1431,7 +1437,7 @@ ol, ul
 {
     max-width: 50%;
     padding: 2.5rem 1.25rem;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 500;
     font-size: 1.33rem;
     line-height: 3rem;
@@ -1452,7 +1458,7 @@ ol, ul
 }
 .marcas h1 
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
@@ -1461,9 +1467,9 @@ ol, ul
 }
 .marcas hr
 {
-    width: 100%;
     border: 4px solid  #29598A; 
-    border-radius: 2px;
+    background-color: #29598A;
+    border-radius: 4px;
     margin-bottom: 1rem;
 }
 .marcas-container 
@@ -1498,7 +1504,7 @@ ol, ul
 }
 .contacto h1 
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 2.5rem;
     font-weight: 700;
     color: #006AFF;
@@ -1509,7 +1515,8 @@ ol, ul
 {
     width: 100%;
     border: 4px solid  #29598A; 
-    border-radius: 2px;
+    background-color: #29598A;
+    border-radius: 4px;
     margin-bottom: 1rem;
 }
 .contacto-container
@@ -1540,7 +1547,7 @@ ol, ul
 }
 .contact-subtitle
 {
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 1.953rem;
     font-weight: 700;
 }
@@ -1571,7 +1578,7 @@ ol, ul
 }
 .phone-number span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -1600,7 +1607,7 @@ ol, ul
 }
 .mail-direction span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -1621,7 +1628,7 @@ ol, ul
     text-decoration: none;
     color: #091A2B;
     margin-left: 0.8rem;
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
@@ -1661,7 +1668,7 @@ ol, ul
 }
 .address-container span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-size: 1.333rem;
     font-weight: 500;
     text-align: left;
@@ -1725,16 +1732,16 @@ footer
 .logo-footer a span
 {
     line-height: 1.375rem;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 700;
     font-size: 1rem;
     margin: 4px 0;
 }
 .logo-footer hr
 {
-    width: 100%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
 }
 .address-footer
 {
@@ -1765,7 +1772,7 @@ footer
 .address-footer a span
 {
     line-height: 1.125rem;
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 500;
     font-size: 0.7rem;
 }
@@ -1782,7 +1789,7 @@ footer
 }
 .phone-footer-container span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1828,7 +1835,7 @@ footer
 
 .mail-footer a span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 0.8rem;
 }
@@ -1841,7 +1848,7 @@ footer
 
 .productos-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.25rem;
 }
@@ -1850,6 +1857,7 @@ footer
     width: 60%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -1876,7 +1884,7 @@ footer
 
 .productos-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
 }
@@ -1888,7 +1896,7 @@ footer
 }
 .contacto-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.25rem;
 }
@@ -1897,6 +1905,7 @@ footer
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
 }
@@ -1922,7 +1931,7 @@ footer
 }
 .contacto-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
 }
@@ -1938,7 +1947,7 @@ footer
 }
 .descargables-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -1947,6 +1956,7 @@ footer
     width: 98%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -1972,7 +1982,7 @@ footer
 }
 .descargables-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
 }
@@ -1985,7 +1995,7 @@ footer
 
 .about-title span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -1994,6 +2004,7 @@ footer
     width: 70%;
     border-radius: 2px;
     border: 2px solid  #29598A;
+    background-color: #29598A;
     margin-top: 5px;
     margin-bottom: 1rem;
 }
@@ -2019,7 +2030,7 @@ footer
 }
 .about-categorias a span
 {
-    font-family: 'IBM Plex Sans';
+    font-family: 'IBM Plex Sans', 'Helvetica';
     font-weight: 600;
     font-size: 1rem;
 }
@@ -2047,7 +2058,7 @@ footer
 }
 .designby-footer span
 {
-    font-family: 'Noto Sans SC';
+    font-family: 'Noto Sans SC', 'Helvetica';
     font-weight: 400;
     font-size: 0.625rem;
     margin-right: 0.3125rem;
@@ -2212,7 +2223,7 @@ footer
 {
     *
     {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'IBM Plex Sans', 'Helvetica';
         margin: 0;
         padding: 0;
         font-size: 14px;
@@ -2373,7 +2384,7 @@ footer
     .float-info
     {
         color: white;
-        font-family: 'Noto Sans SC';
+        font-family: 'Noto Sans SC', 'Helvetica';
         font-weight: 600;
         font-size: 1.33rem;
         margin-right: 0.8125rem;
@@ -2479,12 +2490,11 @@ footer
         align-items: center;
         justify-content: flex-end;
     }
-
     .logo-head-container-sup {
         display: block;
-        width: max-content;
+        width: 40%;
         height: auto;
-        margin-right: 1rem;
+        margin: 0.5rem;
     }
     .logo-principal-sup {
         width: inherit;
@@ -2538,24 +2548,26 @@ footer
     }
     .tc-icon-des
     {
-        width:25px;
-        margin-right:5px;
+        width:1.563rem;
+        margin-right:1rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-des p
     {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 600;
+        text-align: right;
+        margin-left:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
+    .date
     {
-        color: white;
-        font-size: 2.3rem;
-        font-weight: 700;
-        background: #006AFF;
-        border-radius: 2px;
-        border: 1px solid transparent;
-        padding: 0.125rem 0.3125rem;
+        font-size: 1.25rem;
+    }
+    .date-today
+    {
+        font-size:1.563rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.953rem;
     }
     .sections-nav
     {
@@ -2599,6 +2611,12 @@ footer
         background: #006AFF;
         cursor: pointer;
     }
+    /* setting all padding in 1 rem */
+    .promo, .company, .marcas, .contacto
+    {  
+        padding: 0 1rem;
+    }
+
     .hero {
         display: block;
         max-width: 100vw;
@@ -2659,7 +2677,7 @@ footer
         top: 26.5rem;
         left: 0;
         right: 0;
-        padding: 0 4rem;
+        padding: 0 1rem;
     }
     .float1-container 
     {
@@ -2693,7 +2711,7 @@ footer
     {
         display:block;
         height: auto;
-        padding: 0 2.5rem;
+        padding: 0 1rem;
         margin-top: 48rem;
     }
     .productos h1 
@@ -2738,7 +2756,6 @@ footer
       
         font-size: 1rem;
     }
-      
     .company-des-container span
     {
         max-width: 100%;
@@ -2847,10 +2864,6 @@ footer
 /* MOVIL GRANDE */
 @media screen and (max-width:425px)
 {
-    .tc-des p span:nth-of-type(2)
-    {
-        font-size: 1.953rem;
-    }
     .social-des
     {
         margin-bottom: 2.441rem;
@@ -2886,6 +2899,7 @@ footer
     .productos hr, .promo hr, .marcas hr, .contacto hr
     {
         border: 2px solid  #29598A; 
+        background-color: #29598A;
     }
     .marcas h1 
     {
@@ -2916,6 +2930,29 @@ footer
 /* MOVIL MEDIANO */
 @media screen and (max-width:375px)
 {
+    .tc-icon-des
+    {
+        width:1.25rem;
+        margin-right:0.8rem;
+    }
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 1rem;
+    }
+    .date-today
+    {
+        font-size:1.25rem;
+        margin: 0.5rem 0;
+    }
+    .TC
+    {
+        font-size: 1.563rem;
+    }
     .productos h1, .promo h1, .contacto h1
     {
         font-size: 1.563rem;
@@ -3004,38 +3041,47 @@ footer
     {
         border-radius: 1px;
         border: 1px solid  #29598A;
+        background-color: #29598A;
     }
 }
 
 /* MOVIL PEQUEÑO*/
 @media screen and (max-width:320px)
 {
-    .logo-principal-sup {
-        width: 150px;
-        height: auto;
-    }
     .burger-button
     {
         width: 40px;
         height: 40px;
         line-height: 40px;
         font-size: 1.953rem;
-        top: 1.3rem;
-        left: 1.5rem;
     }
     .nav-item
     {
         font-size: 1.563rem;
     }
-    .tc-des p span:nth-of-type(1)
+    .tc-icon-des
     {
-        font-size: 1rem;
+        width:1rem;
+        margin-right:0.5rem;
     }
-    .tc-des p span:nth-of-type(2)
+    .tc-des p
+    {
+        text-align: right;
+        margin-left:0.5rem;
+    }
+    .date
+    {
+        font-size: 0.8rem;
+    }
+    .date-today
+    {
+        font-size:1rem;
+        margin: 0.5rem 0;
+    }
+    .TC
     {
         font-size: 1.25rem;
     }
-
     .ref-hero-overlay p:nth-of-type(1)
     {
         font-size: 1.953rem;
@@ -3052,10 +3098,6 @@ footer
     {
         font-size: 1rem;
     }
-    .float
-    {
-        padding: 0 1rem;
-    }
     .productos h1, .promo h1, .contacto h1, .marcas h1
     {
         font-size: 1.953rem;
@@ -3063,10 +3105,6 @@ footer
     .promo
     {
         padding: 1rem;
-    }
-    .productos
-    {
-        padding: 0 1rem;
     }
     .categorias-name
     {
